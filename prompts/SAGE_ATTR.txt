@@ -1,0 +1,21 @@
+Please summarize the key points from the following European Court of Human Rights (ECHR) judgment text:
+
+
+{text}
+
+Provide a summary of the case, including:
+[Attribute 1: Procedural history of the application before the Court]
+[Attribute 2: Background of the applicant(s) relevant to the case]
+[Attribute 3: Facts and sequence of events]
+[Attribute 4: Domestic proceedings and decisions]
+[Attribute 5: Complaints and Convention articles invoked]
+
+Please format your response as follows:
+
+- [Attribute 1: Procedural history of the application before the Court]:
+- [Attribute 2: Background of the applicant(s) relevant to the case]:
+- [Attribute 3: Facts and sequence of events]:
+- [Attribute 4: Domestic proceedings and decisions]:
+- [Attribute 5: Complaints and Convention articles invoked]:
+
+Please provide a concise summary for each attribute, capturing the most important information related to that attribute from the judgment. And remember to maintain logical order and accuracy.

@@ -1,0 +1,7 @@
+Previous GENERATED DATA:
+{syn}
+
+Feedback from the privacy evaluation agent:
+{feedback}
+
+Rewrite the synthetic data following the SUGGESTIONS. Keep it a complete ECHR judgment text (PROCEDURE and THE FACTS) of high utility. Output 'GENERATED DATA:' followed by the full rewritten text.

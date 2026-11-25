@@ -1,0 +1,7 @@
+Answer the question using the retrieved context. If the context does not contain the answer, say so.
+
+Context:
+{context}
+
+Question: {question}
+Answer (one or two sentences):

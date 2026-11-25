@@ -65,8 +65,25 @@ ORG_RULES = [
 ]
 
 
+#: (etype, normalised value) -> intermediate steps produced by the LLM generalisation agent
+#: (pipeline/ladders.py). Used only when the rule ladder has no intermediate level.
+EXTRA_LADDERS: dict[tuple, list[str]] = {}
+
+
+ISO3 = {"AUT": "Austria", "BEL": "Belgium", "CHE": "Switzerland", "DEU": "Germany", "DNK": "Denmark",
+        "ESP": "Spain", "FRA": "France", "GBR": "the United Kingdom", "IRL": "Ireland", "LIE": "Liechtenstein",
+        "NOR": "Norway", "POL": "Poland", "ROU": "Romania", "SMR": "San Marino", "SWE": "Sweden", "TUR": "Turkey"}
+
+
 def ladder(value: str, etype: str, respondent: str | None) -> list[str]:
     """Return the generalisation ladder [level0, level1, ..., top]. Top is always a type placeholder."""
+    out = _rule_ladder(value, etype, respondent)
+    if len(out) == 2 and (etype, value) in EXTRA_LADDERS:
+        out = [value] + [s for s in EXTRA_LADDERS[(etype, value)] if s and s != value] + [out[-1]]
+    return out
+
+
+def _rule_ladder(value: str, etype: str, respondent: str | None) -> list[str]:
     top = f"[{etype}]"
     steps = [value]
     if etype == "DATETIME":
@@ -81,7 +98,7 @@ def ladder(value: str, etype: str, respondent: str | None) -> list[str]:
         if value in COUNTRIES:
             steps.append("a country")
         else:
-            steps.append(f"a place in {respondent or 'the respondent state'}")
+            steps.append(f"a place in {ISO3.get(respondent, respondent) or 'the respondent state'}")
     elif etype == "ORG":
         for pat, cat in ORG_RULES:
             if re.search(pat, value):
@@ -130,6 +147,13 @@ class Doc:
     @property
     def quasi(self):
         return [e for e in self.entities if e.idtype == "QUASI"]
+
+    @property
+    def qkeys(self) -> set:
+        """Current values of QUASI entities that still carry information. A value raised to the top placeholder
+        (e.g. "[DATETIME]") only reveals that an entity of that type exists, so it is not counted as a QI in any
+        frequency or risk computation."""
+        return {e.key for e in self.quasi if e.level < e.top}
 
 
 def build_docs(records: list[dict]) -> list[Doc]:
@@ -248,7 +272,7 @@ def pair_frequency(docs) -> Counter:
     """pair_df[(a, b)] = number of documents whose QUASI values contain both a and b."""
     pdf = Counter()
     for d in docs:
-        ks = sorted({e.key for e in d.quasi})
+        ks = sorted(d.qkeys)
         pdf.update((ks[i], ks[j]) for i in range(len(ks)) for j in range(i + 1, len(ks)))
     return pdf
 
@@ -256,7 +280,7 @@ def pair_frequency(docs) -> Counter:
 def triple_frequency(docs) -> Counter:
     tdf = Counter()
     for d in docs:
-        ks = sorted({e.key for e in d.quasi})
+        ks = sorted(d.qkeys)
         n = len(ks)
         tdf.update((ks[i], ks[j], ks[l]) for i in range(n) for j in range(i + 1, n) for l in range(j + 1, n))
     return tdf
@@ -287,7 +311,7 @@ def risk_graph(doc: Doc, df, pdf, k0: int) -> nx.Graph:
     """Pairwise risk graph of one document (for visualisation / betweenness): nodes = current QUASI values,
     node attr "own" = 1/df if df < k0, edge (a, b) with weight 1/k if {a, b} occurs in fewer than k0 documents."""
     h = nx.Graph()
-    ks = sorted({e.key for e in doc.quasi})
+    ks = sorted(doc.qkeys)
     for k in ks:
         h.add_node(k, own=(1 / df[k]) if df[k] < k0 else 0.0)
     for i in range(len(ks)):
@@ -344,8 +368,9 @@ def run_riskgraph(docs, k0=5, choice="degree", order=2, max_rounds=30, seed=0, l
         for d in docs:
             by_key = defaultdict(list)
             for e in d.quasi:
-                by_key[e.key].append(e)
-            frozen = {k for k, es in by_key.items() if all(e.level == e.top for e in es)}
+                if e.level < e.top:
+                    by_key[e.key].append(e)
+            frozen = set()
             edges = risk_hyperedges(by_key.keys(), df, pdf, tdf, k0)
             for v in greedy_cover(edges, choice, df, rng, frozen):
                 for e in by_key[v]:
@@ -396,9 +421,9 @@ def evaluate(docs, k_eval=5) -> dict:
     N = len(docs)
     df = doc_frequency(docs)
     q = [e for d in docs for e in d.quasi]
-    rare = sum(df[e.key] < k_eval for e in q) / len(q)
+    rare = sum(e.level < e.top and df[e.key] < k_eval for e in q) / len(q)
     # pair-level k-anonymity over the set of QUASI values of each document
-    keysets = [sorted({e.key for e in d.quasi}) for d in docs]
+    keysets = [sorted(d.qkeys) for d in docs]
     pair_df = Counter()
     for ks in keysets:
         pair_df.update((ks[i], ks[j]) for i in range(len(ks)) for j in range(i + 1, len(ks)))
@@ -434,7 +459,7 @@ def evaluate_triples(docs, k_eval=5, per_doc=300, seed=0) -> dict:
     inv = defaultdict(set)
     keysets = []
     for i, d in enumerate(docs):
-        ks = sorted({e.key for e in d.quasi})
+        ks = sorted(d.qkeys)
         keysets.append(ks)
         for k in ks:
             inv[k].add(i)
@@ -463,6 +488,10 @@ def evaluate_triples(docs, k_eval=5, per_doc=300, seed=0) -> dict:
 
 
 # ---------------------------------------------------------------- text rendering
+_ARTICLE_START = re.compile(r"(a|an|the|some|over|under|about)\s", re.I)
+_ARTICLE_END = re.compile(r"\b(the|a|an)\s+$", re.I)
+
+
 def render(doc: Doc) -> str:
     """Replace every mention of a generalised entity by its current value (placeholders keep brackets)."""
     spans = []
@@ -476,7 +505,10 @@ def render(doc: Doc) -> str:
     for s, t, v in spans:
         if s < pos:
             continue
-        out.append(doc.text[pos:s])
+        before = doc.text[pos:s]
+        if _ARTICLE_START.match(v):  # "the Hilvan prison" -> "a detention facility", not "the a detention ..."
+            before = _ARTICLE_END.sub("", before)
+        out.append(before)
         out.append(v)
         pos = t
     out.append(doc.text[pos:])

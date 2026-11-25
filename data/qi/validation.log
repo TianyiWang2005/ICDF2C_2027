@@ -1,0 +1,68 @@
+  [qi-validate] 12/127  usage={'calls': 7, 'cached': 5, 'prompt_tokens': 20413, 'completion_tokens': 5391, 'cache_hit_tokens': 14336}
+  [qi-validate] 24/127  usage={'calls': 19, 'cached': 5, 'prompt_tokens': 61002, 'completion_tokens': 17223, 'cache_hit_tokens': 38912}
+  [qi-validate] 36/127  usage={'calls': 31, 'cached': 5, 'prompt_tokens': 101228, 'completion_tokens': 29449, 'cache_hit_tokens': 63488}
+  [qi-validate] 48/127  usage={'calls': 43, 'cached': 5, 'prompt_tokens': 140913, 'completion_tokens': 42096, 'cache_hit_tokens': 88064}
+  [qi-validate] 60/127  usage={'calls': 55, 'cached': 5, 'prompt_tokens': 177474, 'completion_tokens': 51505, 'cache_hit_tokens': 112640}
+  [qi-validate] 72/127  usage={'calls': 67, 'cached': 5, 'prompt_tokens': 216015, 'completion_tokens': 61210, 'cache_hit_tokens': 137216}
+  [qi-validate] 84/127  usage={'calls': 79, 'cached': 5, 'prompt_tokens': 256549, 'completion_tokens': 73672, 'cache_hit_tokens': 161792}
+  [qi-validate] 96/127  usage={'calls': 91, 'cached': 5, 'prompt_tokens': 294658, 'completion_tokens': 83581, 'cache_hit_tokens': 186368}
+  [qi-validate] 108/127  usage={'calls': 103, 'cached': 5, 'prompt_tokens': 339224, 'completion_tokens': 97418, 'cache_hit_tokens': 210944}
+  [qi-validate] 120/127  usage={'calls': 115, 'cached': 5, 'prompt_tokens': 381742, 'completion_tokens': 111960, 'cache_hit_tokens': 235648}
+  [qi-validate] 127/127  usage={'calls': 122, 'cached': 5, 'prompt_tokens': 406071, 'completion_tokens': 119004, 'cache_hit_tokens': 249984}
+{
+ "few_shot_train_docs": [
+  "001-111840",
+  "001-95909"
+ ],
+ "test_docs": 127,
+ "doc_annotator_pairs": 555,
+ "DIRECT_entity_recall": 0.9784668389319552,
+ "QUASI_entity_recall": 0.877632467612206,
+ "DIRECT_mention_recall": 0.9847188264058679,
+ "QUASI_mention_recall": 0.8687003332478852,
+ "char_precision": 0.6554291918449711,
+ "char_recall": 0.8626910376932931,
+ "QUASI_entity_recall_by_type": {
+  "CODE": {
+   "n": 1011,
+   "recall": 0.6003956478733927
+  },
+  "DATETIME": {
+   "n": 9083,
+   "recall": 0.967521743917208
+  },
+  "DEM": {
+   "n": 701,
+   "recall": 0.4322396576319544
+  },
+  "LOC": {
+   "n": 1000,
+   "recall": 0.943
+  },
+  "MISC": {
+   "n": 374,
+   "recall": 0.22192513368983957
+  },
+  "ORG": {
+   "n": 1057,
+   "recall": 0.804162724692526
+  },
+  "PERSON": {
+   "n": 2432,
+   "recall": 0.9177631578947368
+  },
+  "QUANTITY": {
+   "n": 629,
+   "recall": 0.7758346581875993
+  }
+ },
+ "llm_usage": {
+  "calls": 122,
+  "cached": 5,
+  "prompt_tokens": 406071,
+  "completion_tokens": 119004,
+  "cache_hit_tokens": 249984
+ },
+ "est_cost_usd": 0.19054677000000003,
+ "char_f1": 0.7449118701477166
+}

@@ -1,0 +1,6 @@
+Here is a summary of the key points:
+
+{attributes}
+
+Please generate the PROCEDURE and THE FACTS sections of an ECHR judgment using ALL key points provided.
+The text should read like a real-world ECHR judgment. Output only the judgment text.

@@ -1,0 +1,4 @@
+Reference answer: {ref}
+Candidate answer: {cand}
+
+Does the candidate answer convey the same essential information as the reference answer for the question "{question}"? Return JSON: {{"score": 1}} if yes (fully or almost fully correct), {{"score": 0.5}} if partially, {{"score": 0}} if no or the candidate says it cannot answer.

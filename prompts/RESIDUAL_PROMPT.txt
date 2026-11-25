@@ -1,0 +1,11 @@
+Below is a rewritten (synthetic or anonymised) version of a court judgment, followed by a numbered list of quasi-identifiers that appeared in the ORIGINAL judgment.
+
+For each quasi-identifier, decide whether its specific value can be recovered from the REWRITTEN text: answer 1 if the rewritten text states the same value or one specific enough to pin it down (e.g. same date, same town, same organisation, same amount, same profession), and 0 if it is absent, replaced by a different value, or only present in a clearly more general form (e.g. only the year instead of the full date, "a city" instead of the town).
+
+REWRITTEN TEXT:
+{text}
+
+ORIGINAL QUASI-IDENTIFIERS:
+{items}
+
+Return JSON: {{"recoverable": {{"<number>": 0 or 1, ...}}}}

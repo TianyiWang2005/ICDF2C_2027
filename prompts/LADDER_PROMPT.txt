@@ -1,0 +1,13 @@
+For each value below, write a generalisation ladder: a list of 1 to 3 progressively MORE GENERAL phrases that could replace the value in a sentence of an ECHR judgment, from slightly more general to very general. Each step must be strictly more general than the previous one, must stay truthful (the original value must be an instance of it), and must not contain names, numbers or dates more specific than the original. Do not include the original value or a bare type placeholder.
+
+Examples:
+- DEM "a 46-year-old Turkish teacher" -> ["a middle-aged teacher", "a public-sector employee", "an adult"]
+- QUANTITY "15,000 euros" -> ["over 10,000 euros", "a sum of money"]
+- MISC "the 1993 Sivas massacre" -> ["a violent incident in the 1990s", "a violent incident"]
+- PERSON "Dr Ahmet Kaya" -> ["a doctor", "a person"]
+- CODE "no. 2003/145" -> ["a case number"]
+
+Values (type, value):
+{items}
+
+Return JSON: {{"ladders": {{"<value exactly as given>": ["step 1", "step 2", ...], ...}}}}

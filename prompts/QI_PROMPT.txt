@@ -1,0 +1,26 @@
+Annotate every entity in the document below that could identify the applicant(s) (the individuals to protect).
+
+Entity types (TAB):
+- PERSON: names of people, including titles (e.g. "Mr Gestur Jónsson").
+- CODE: identifying numbers and codes (application numbers, case numbers, ID numbers, licence plates).
+- LOC: cities, regions, countries, addresses, buildings, facilities (e.g. prisons as places, hospitals as places).
+- ORG: named organisations, institutions, courts, companies, political parties, unions.
+- DEM: demographic attributes: nationality, ethnicity, profession/job title, age, religion, diagnosis, native language.
+- DATETIME: dates, times, durations and periods (do not include prepositions).
+- QUANTITY: amounts with units (sums of money, percentages, counts).
+- MISC: other identifying things: named events, products, laws or contracts specific to the person, incidents.
+
+Identifier types:
+- DIRECT: directly and unequivocally identifies an individual to protect (their full name, their application number, ID numbers).
+- QUASI: does not identify alone, but could re-identify the individual when combined with other quasi-identifiers and public background knowledge (e.g. dates of events in their life, places, organisations they dealt with, profession, age, nationality, specific amounts, specific events). Names of other related people are QUASI.
+- Do NOT return entities that need no masking: generic legal boilerplate, Convention articles, the Court, the Commission, the respondent Government as a party, and very general values that match a large population.
+
+Rules:
+- Copy each mention EXACTLY as it appears in the text (same characters, minimal span).
+- Group mentions that refer to the same entity (e.g. "John Smith" and "Mr Smith") into one entity with several mentions.
+- List every distinct mention string of an entity once; repeated identical occurrences are found automatically.
+
+Return JSON: {{"entities": [{{"type": "<TYPE>", "identifier": "DIRECT|QUASI", "mentions": ["<exact text>", ...]}}]}}
+
+{examples}DOCUMENT:
+{text}

@@ -1,0 +1,13 @@
+  [sage] 25/254  usage={'calls': 236, 'cached': 45, 'prompt_tokens': 528915, 'completion_tokens': 164575, 'cache_hit_tokens': 240384}
+  [sage] 50/254  usage={'calls': 424, 'cached': 45, 'prompt_tokens': 1023206, 'completion_tokens': 297480, 'cache_hit_tokens': 504576}
+  [sage] 75/254  usage={'calls': 569, 'cached': 45, 'prompt_tokens': 1362731, 'completion_tokens': 394037, 'cache_hit_tokens': 673664}
+  [sage] 100/254  usage={'calls': 791, 'cached': 45, 'prompt_tokens': 2025575, 'completion_tokens': 574943, 'cache_hit_tokens': 1003392}
+  [sage] 125/254  usage={'calls': 969, 'cached': 45, 'prompt_tokens': 2538767, 'completion_tokens': 706835, 'cache_hit_tokens': 1276928}
+  [sage] 150/254  usage={'calls': 1156, 'cached': 45, 'prompt_tokens': 3015767, 'completion_tokens': 839889, 'cache_hit_tokens': 1519616}
+  [sage] 175/254  usage={'calls': 1380, 'cached': 45, 'prompt_tokens': 3593462, 'completion_tokens': 999573, 'cache_hit_tokens': 1818624}
+  [sage] 200/254  usage={'calls': 1547, 'cached': 45, 'prompt_tokens': 3984762, 'completion_tokens': 1110758, 'cache_hit_tokens': 2013568}
+  [sage] 225/254  usage={'calls': 1730, 'cached': 45, 'prompt_tokens': 4444906, 'completion_tokens': 1239366, 'cache_hit_tokens': 2228864}
+  [sage] 250/254  usage={'calls': 1887, 'cached': 45, 'prompt_tokens': 4999738, 'completion_tokens': 1357732, 'cache_hit_tokens': 2577920}
+  [sage] 254/254  usage={'calls': 1895, 'cached': 45, 'prompt_tokens': 5035917, 'completion_tokens': 1363726, 'cache_hit_tokens': 2603776}
+254 docs, safe=222, mean rounds=3.26, len orig->syn 5182 -> 3467
+usage {'calls': 1895, 'cached': 45, 'prompt_tokens': 5035917, 'completion_tokens': 1363726, 'cache_hit_tokens': 2603776} est. cost $2.339

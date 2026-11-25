@@ -1,0 +1,6 @@
+Read the ECHR judgment text below and write {n} question-answer pairs that a legal researcher could ask a retrieval-augmented assistant about the SUBSTANCE of this case (what happened, which rights were invoked, how the domestic proceedings went, what the complaint was). The question must be answerable from this document alone, must describe the case well enough to retrieve it (without using any names, application numbers or exact dates), and the answer must not rely on names, application numbers or exact dates. Answers: one or two sentences.
+
+TEXT:
+{text}
+
+Return JSON: {{"qa": [{{"question": "...", "answer": "..."}}]}}

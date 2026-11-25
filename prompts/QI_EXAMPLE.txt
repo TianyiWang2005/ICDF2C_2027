@@ -1,0 +1,6 @@
+EXAMPLE DOCUMENT:
+{text}
+
+EXAMPLE OUTPUT:
+{output}
+

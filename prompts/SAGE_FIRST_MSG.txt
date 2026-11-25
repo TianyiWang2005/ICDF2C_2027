@@ -1,0 +1,5 @@
+I will give you the real data (TRUE DATA) and synthetic data (GENERATED DATA), please help me assess and provide suggestions from the privacy level of TRUE DATA:
+{true}
+
+GENERATED DATA:
+{syn}

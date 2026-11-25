@@ -1,0 +1,57 @@
+{
+ "few_shot_train_docs": [
+  "001-111840",
+  "001-95909"
+ ],
+ "test_docs": 127,
+ "doc_annotator_pairs": 555,
+ "DIRECT_entity_recall": 0.9784668389319552,
+ "QUASI_entity_recall": 0.877632467612206,
+ "DIRECT_mention_recall": 0.9847188264058679,
+ "QUASI_mention_recall": 0.8687003332478852,
+ "char_precision": 0.6554291918449711,
+ "char_recall": 0.8626910376932931,
+ "QUASI_entity_recall_by_type": {
+  "CODE": {
+   "n": 1011,
+   "recall": 0.6003956478733927
+  },
+  "DATETIME": {
+   "n": 9083,
+   "recall": 0.967521743917208
+  },
+  "DEM": {
+   "n": 701,
+   "recall": 0.4322396576319544
+  },
+  "LOC": {
+   "n": 1000,
+   "recall": 0.943
+  },
+  "MISC": {
+   "n": 374,
+   "recall": 0.22192513368983957
+  },
+  "ORG": {
+   "n": 1057,
+   "recall": 0.804162724692526
+  },
+  "PERSON": {
+   "n": 2432,
+   "recall": 0.9177631578947368
+  },
+  "QUANTITY": {
+   "n": 629,
+   "recall": 0.7758346581875993
+  }
+ },
+ "llm_usage": {
+  "calls": 122,
+  "cached": 5,
+  "prompt_tokens": 406071,
+  "completion_tokens": 119004,
+  "cache_hit_tokens": 249984
+ },
+ "est_cost_usd": 0.19054677000000003,
+ "char_f1": 0.7449118701477166
+}
