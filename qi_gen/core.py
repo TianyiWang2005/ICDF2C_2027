@@ -25,19 +25,44 @@ def strip_accents(s: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
 
+_PREP = re.compile(r"^(in|on|at|during|around|about|since|by|from|until|of|throughout)\s+")
+_ALIASES = {"turkiye": "turkey", "republic of turkiye": "turkey", "republic of turkey": "turkey",
+            "uk": "united kingdom", "great britain": "united kingdom", "britain": "united kingdom"}
+# SAGE writes vague periods in many equivalent ways; map them to one canonical phrase per decade
+_PERIOD = [(r"(?:the )?(?:middle|mid|mid-point) (?:of )?(?:the )?(\d{3}0s)", r"mid-\1"),
+           (r"(?:the )?(?:beginning|start|first half|early part) of (?:the )?(\d{3}0s)", r"early \1"),
+           (r"(?:the )?(?:end|second half|latter part|later part|late part) of (?:the )?(\d{3}0s)", r"late \1"),
+           (r"mid ?- ?(\d{3}0s)", r"mid-\1")]
+
+
 def normalise(text: str, etype: str) -> str:
+    """Canonical form of a QI value, so that equivalent surface forms written by the LLM in different documents
+    (Turkey / Türkiye, "the 1990s" / "1990s", "middle of the 1990s" / "mid-1990s") count as the same value."""
     s = strip_accents(text).lower().strip()
-    s = s.replace("’", "'").replace("‑", "-")
+    s = s.replace("’", "'").replace("‑", "-").replace("–", "-")
     s = _TITLES.sub("", s)
-    s = re.sub(r"^the\s+", "", s)
     s = re.sub(r"[“”\"(),;:]", " ", s)
     s = re.sub(r"\s+", " ", s).strip(" .-")
-    return s
+    for _ in range(2):
+        s = _PREP.sub("", s)
+        s = re.sub(r"^the\s+", "", s)
+    if etype == "DATETIME":
+        for pat, rep in _PERIOD:
+            s = re.sub(pat, rep, s)
+    return _ALIASES.get(s, s)
 
 
 # ---------------------------------------------------------------- generalisation hierarchies
 MONTHS = ("january february march april may june july august september october november december").split()
 _YEAR = re.compile(r"\b(1[89]\d\d|20\d\d)\b")
+_DECADE = re.compile(r"\b(1[89]\d0|20\d0)s\b")
+
+
+def _century(decade: str) -> str:
+    c = int(decade[:2]) + 1
+    return f"{c}{'st' if c == 21 else 'th'} century"
+
+
 _MONTH_YEAR = re.compile(r"\b(" + "|".join(MONTHS) + r")\s+(1[89]\d\d|20\d\d)\b")
 COUNTRIES = {w for w in """albania andorra armenia austria azerbaijan belgium bulgaria croatia cyprus denmark estonia
 finland france georgia germany greece hungary iceland ireland italy latvia liechtenstein lithuania luxembourg malta
@@ -79,7 +104,12 @@ def ladder(value: str, etype: str, respondent: str | None) -> list[str]:
     """Return the generalisation ladder [level0, level1, ..., top]. Top is always a type placeholder."""
     out = _rule_ladder(value, etype, respondent)
     if len(out) == 2 and (etype, value) in EXTRA_LADDERS:
-        out = [value] + [s for s in EXTRA_LADDERS[(etype, value)] if s and s != value] + [out[-1]]
+        mid = []
+        for st in EXTRA_LADDERS[(etype, value)]:
+            st = normalise(st, etype)  # LLM steps share the canonical vocabulary of observed values
+            if st and st != value and st not in mid and not st.startswith("["):
+                mid.append(st)
+        out = [value] + mid + [out[-1]]
     return out
 
 
@@ -91,9 +121,13 @@ def _rule_ladder(value: str, etype: str, respondent: str | None) -> list[str]:
         years = _YEAR.findall(value)
         if my and not re.fullmatch(r"(" + "|".join(MONTHS) + r")\s+\d{4}", value):
             steps.append(" / ".join(f"{m} {y}" for m, y in my))
+        decades = [d + "s" for d in _DECADE.findall(value)]
         if years:
             steps.append(" / ".join(dict.fromkeys(years)))
-            steps.append(" / ".join(dict.fromkeys(f"{y[:3]}0s" for y in years)))
+        decs = list(dict.fromkeys([f"{y[:3]}0s" for y in years] + decades))
+        if decs:
+            steps.append(" / ".join(decs))
+            steps.append(" / ".join(dict.fromkeys(_century(d) for d in decs)))
     elif etype == "LOC":
         if value in COUNTRIES:
             steps.append("a country")
@@ -110,6 +144,14 @@ def _rule_ladder(value: str, etype: str, respondent: str | None) -> list[str]:
         if not out or out[-1] != s:
             out.append(s)
     return out
+
+
+# ---------------------------------------------------------------- common-value option (sensitivity analysis)
+#: If set to a fraction rho, a value shared by at least rho*N documents of the corpus is treated as
+#: non-identifying (TAB guideline: "very general attribute values that encompass a large number of individuals may
+#: be ignored") and excluded from every single/pair/triple risk computation. None = strict definition (main runs).
+COMMON_FRAC: float | None = None
+_COMMON_KEYS: set = set()
 
 
 # ---------------------------------------------------------------- data structures
@@ -153,7 +195,7 @@ class Doc:
         """Current values of QUASI entities that still carry information. A value raised to the top placeholder
         (e.g. "[DATETIME]") only reveals that an entity of that type exists, so it is not counted as a QI in any
         frequency or risk computation."""
-        return {e.key for e in self.quasi if e.level < e.top}
+        return {e.key for e in self.quasi if e.level < e.top and e.key not in _COMMON_KEYS}
 
 
 def build_docs(records: list[dict]) -> list[Doc]:
@@ -233,6 +275,10 @@ def doc_frequency(docs: list[Doc]) -> Counter:
     df = Counter()
     for d in docs:
         df.update({e.key for e in d.entities})
+    _COMMON_KEYS.clear()
+    if COMMON_FRAC:
+        thr = COMMON_FRAC * len(docs)
+        _COMMON_KEYS.update(k for k, c in df.items() if c >= thr)
     return df
 
 
@@ -322,8 +368,9 @@ def risk_graph(doc: Doc, df, pdf, k0: int) -> nx.Graph:
     return h
 
 
-def greedy_cover(edges, choice, df, rng, frozen):
-    """Pick values until every unsafe unit contains a picked value. `frozen` values (already at top) are skipped."""
+def greedy_cover(edges, choice, df, rng, frozen, cost=None):
+    """Pick values until every unsafe unit contains a picked value. `frozen` values (already at top) are skipped.
+    `cost[v]` = information loss caused by raising v by one level (used by choice="cost")."""
     edges = [(set(u) - frozen, w) for u, w in edges]
     edges = [(u, w) for u, w in edges if u]
     picked = []
@@ -332,9 +379,11 @@ def greedy_cover(edges, choice, df, rng, frozen):
         for u, w in edges:
             for v in u:
                 score[v] += w
-        if choice == "degree":  # risk-weighted degree in the (hyper)graph
+        if choice in ("cost", "lookahead", "jump"):  # risk removed per unit of information loss
+            v = max(score, key=lambda x: (score[x] / cost[x], -df[x]))
+        elif choice == "degree":  # risk-weighted degree in the (hyper)graph, ignoring cost
             v = max(score, key=lambda x: (score[x], -df[x]))
-        elif choice == "rarest":
+        elif choice == "rarest":  # ours: rarest value among those on an unsafe edge
             v = min(score, key=lambda x: (df[x], -score[x]))
         elif choice == "random":
             v = rng.choice(sorted(score))
@@ -353,7 +402,16 @@ def greedy_cover(edges, choice, df, rng, frozen):
     return picked
 
 
-def run_riskgraph(docs, k0=5, choice="degree", order=2, max_rounds=30, seed=0, log=None):
+def _safe_level(e, df, k0) -> int:
+    """Lowest level above the current one whose value is already shared by >= k0 documents of the corpus
+    (counting this document), i.e. the first level at which the value stops being rare on its own; top if none."""
+    for lv in range(e.level + 1, e.top):
+        if df[(e.etype, e.ladder[lv])] + 1 >= k0:
+            return lv
+    return e.top
+
+
+def run_riskgraph(docs, k0=5, choice="rarest", order=2, max_rounds=30, seed=0, log=None):
     """Main method. Each round: recompute corpus statistics, list each document's unsafe values / combinations
     (up to `order` values) as a risk (hyper)graph, greedily pick values by `choice` until every unsafe unit is
     covered, and raise the picked values by one level. Repeat until nothing is unsafe (or max_rounds).
@@ -368,15 +426,19 @@ def run_riskgraph(docs, k0=5, choice="degree", order=2, max_rounds=30, seed=0, l
         for d in docs:
             by_key = defaultdict(list)
             for e in d.quasi:
-                if e.level < e.top:
+                if e.level < e.top and e.key not in _COMMON_KEYS:
                     by_key[e.key].append(e)
             frozen = set()
             edges = risk_hyperedges(by_key.keys(), df, pdf, tdf, k0)
-            for v in greedy_cover(edges, choice, df, rng, frozen):
+            look = choice in ("lookahead", "jump")
+            target = {id(e): _safe_level(e, df, k0) if look else e.level + 1 for es in by_key.values() for e in es}
+            cost = {k: sum((target[id(e)] - e.level) / e.top for e in es) for k, es in by_key.items()}
+            for v in greedy_cover(edges, choice, df, rng, frozen, cost):
                 for e in by_key[v]:
                     if e.level < e.top:
-                        e.level += 1
-                        raised += 1
+                        new = target[id(e)] if choice == "jump" else e.level + 1
+                        raised += new - e.level
+                        e.level = new
         if log is not None:
             log.append({"order": order, "round": rnd, "raised": raised})
         if raised == 0:
@@ -456,6 +518,7 @@ def evaluate_triples(docs, k_eval=5, per_doc=300, seed=0) -> dict:
     at least one QUASI-value triple shared by fewer than k_eval documents. Triples are sampled (per_doc per
     document), so the result is a lower bound on the true share."""
     rng = random.Random(seed)
+    doc_frequency(docs)  # refresh the common-value set
     inv = defaultdict(set)
     keysets = []
     for i, d in enumerate(docs):

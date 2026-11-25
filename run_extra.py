@@ -19,7 +19,7 @@ def main():
     ap.add_argument("--tab_dir", required=True)
     ap.add_argument("--out", default="results_tab_v2")
     ap.add_argument("--k0", type=int, nargs="+", default=[5])
-    ap.add_argument("--configs", nargs="+", default=["betweenness:2", "degree:3", "rarest:3"])
+    ap.add_argument("--configs", nargs="+", default=["betweenness:2", "lookahead:2", "rarest:3", "degree:3", "cost:3"])
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     docs = build_docs(load_tab(sorted(glob.glob(os.path.join(a.tab_dir, "echr_*.json")))))

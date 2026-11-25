@@ -24,7 +24,8 @@ from qi_gen.io import load_jsonl
 from run_experiments import measure
 
 # corpora saved for downstream evaluation (method key -> saved?)
-SAVE = {"sage", "suppress", "rarity", "ours_o2", "ours_o3", "random_budget_o2", "random_budget_o3"}
+SAVE = {"sage", "suppress", "rarity", "ours_o2", "ours_o3", "random_budget_o2", "random_budget_o3",
+        "rg_degree_o2", "rg_degree_o3"}
 
 
 def dump_corpus(docs, path, recs_by_id):
@@ -62,7 +63,12 @@ def main():
     ap.add_argument("--graphs", default="data/graphs")
     ap.add_argument("--k0", type=int, nargs="+", default=[2, 5, 10])
     ap.add_argument("--seeds", type=int, default=3)
+    ap.add_argument("--common_frac", type=float, default=None,
+                    help="sensitivity analysis: values shared by >= this fraction of documents are non-identifying")
     a = ap.parse_args()
+    if a.common_frac:
+        import qi_gen.core as C
+        C.COMMON_FRAC = a.common_frac
     for p in (a.out, a.corpora, a.graphs):
         os.makedirs(p, exist_ok=True)
     if a.ladders and os.path.exists(a.ladders):
@@ -97,11 +103,14 @@ def main():
         budgets = {}
         for choice, order, key, name in [
                 ("random", 2, "rg_random_o2", "SAGE + risk graph, random node"),
-                ("rarest", 2, "rg_rarest_o2", "SAGE + risk graph, rarest node"),
+                ("degree", 2, "rg_degree_o2", "SAGE + risk graph, weighted degree"),
+                ("cost", 2, "rg_cost_o2", "SAGE + risk graph, cost-aware degree"),
+                ("lookahead", 2, "rg_lookahead_o2", "SAGE + risk graph, cost-aware degree with look-ahead"),
                 ("betweenness", 2, "rg_betweenness_o2", "SAGE + risk graph, betweenness"),
-                ("degree", 2, "ours_o2", "SAGE + risk graph, weighted degree (ours, order 2)"),
-                ("rarest", 3, "rg_rarest_o3", "SAGE + risk graph, rarest node (order 3)"),
-                ("degree", 3, "ours_o3", "SAGE + risk graph, weighted degree (ours, order 3)")]:
+                ("rarest", 2, "ours_o2", "SAGE + risk graph, rarest-first (ours, order 2)"),
+                ("degree", 3, "rg_degree_o3", "SAGE + risk graph, weighted degree (order 3)"),
+                ("cost", 3, "rg_cost_o3", "SAGE + risk graph, cost-aware degree (order 3)"),
+                ("rarest", 3, "ours_o3", "SAGE + risk graph, rarest-first (ours, order 3)")]:
             reset(docs); log = []; t = time.time()
             run_riskgraph(docs, k0=k0, choice=choice, order=order, log=log)
             logs[f"{key}_k{k0}"] = log

@@ -1,0 +1,1071 @@
+{
+ "random_k2": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 46465
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 19095
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 8693
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 4976
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 3232
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 1992
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 988
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 565
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 362
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 223
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 88
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 58
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 26
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 15
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 12
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 9
+  },
+  {
+   "order": 2,
+   "round": 17,
+   "raised": 0
+  }
+ ],
+ "rarest_k2": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 44019
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 10037
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 3915
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 2035
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 1243
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 825
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 574
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 456
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 301
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 174
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 85
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 59
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 66
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 56
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 45
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 42
+  },
+  {
+   "order": 2,
+   "round": 17,
+   "raised": 10
+  },
+  {
+   "order": 2,
+   "round": 18,
+   "raised": 9
+  },
+  {
+   "order": 2,
+   "round": 19,
+   "raised": 3
+  },
+  {
+   "order": 2,
+   "round": 20,
+   "raised": 0
+  }
+ ],
+ "degree_k2": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 40556
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 9410
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 3975
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 1991
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 1382
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 940
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 653
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 438
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 448
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 357
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 245
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 167
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 129
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 91
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 43
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 29
+  },
+  {
+   "order": 2,
+   "round": 17,
+   "raised": 37
+  },
+  {
+   "order": 2,
+   "round": 18,
+   "raised": 37
+  },
+  {
+   "order": 2,
+   "round": 19,
+   "raised": 27
+  },
+  {
+   "order": 2,
+   "round": 20,
+   "raised": 24
+  },
+  {
+   "order": 2,
+   "round": 21,
+   "raised": 12
+  },
+  {
+   "order": 2,
+   "round": 22,
+   "raised": 3
+  },
+  {
+   "order": 2,
+   "round": 23,
+   "raised": 0
+  }
+ ],
+ "cost_k2": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 43008
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 9511
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 4508
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 2395
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 1562
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 1099
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 719
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 569
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 476
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 419
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 394
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 330
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 286
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 242
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 228
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 174
+  },
+  {
+   "order": 2,
+   "round": 17,
+   "raised": 128
+  },
+  {
+   "order": 2,
+   "round": 18,
+   "raised": 131
+  },
+  {
+   "order": 2,
+   "round": 19,
+   "raised": 104
+  },
+  {
+   "order": 2,
+   "round": 20,
+   "raised": 89
+  },
+  {
+   "order": 2,
+   "round": 21,
+   "raised": 62
+  },
+  {
+   "order": 2,
+   "round": 22,
+   "raised": 24
+  },
+  {
+   "order": 2,
+   "round": 23,
+   "raised": 24
+  },
+  {
+   "order": 2,
+   "round": 24,
+   "raised": 35
+  },
+  {
+   "order": 2,
+   "round": 25,
+   "raised": 34
+  },
+  {
+   "order": 2,
+   "round": 26,
+   "raised": 25
+  },
+  {
+   "order": 2,
+   "round": 27,
+   "raised": 8
+  },
+  {
+   "order": 2,
+   "round": 28,
+   "raised": 6
+  },
+  {
+   "order": 2,
+   "round": 29,
+   "raised": 13
+  },
+  {
+   "order": 2,
+   "round": 30,
+   "raised": 18
+  }
+ ],
+ "random_k5": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 47040
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 22725
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 14977
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 8374
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 2526
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 700
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 246
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 136
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 127
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 31
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 2
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 0
+  }
+ ],
+ "rarest_k5": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 45664
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 16574
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 6601
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 2688
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 1457
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 817
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 417
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 265
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 105
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 45
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 12
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 0
+  }
+ ],
+ "degree_k5": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 44505
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 13072
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 6185
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 3659
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 2436
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 1608
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 1132
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 729
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 512
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 365
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 244
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 159
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 81
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 44
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 14
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 0
+  }
+ ],
+ "cost_k5": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 45285
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 14327
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 7746
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 4727
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 2783
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 1620
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 987
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 590
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 367
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 287
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 190
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 104
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 82
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 56
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 34
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 35
+  },
+  {
+   "order": 2,
+   "round": 17,
+   "raised": 2
+  },
+  {
+   "order": 2,
+   "round": 18,
+   "raised": 0
+  }
+ ],
+ "random_k10": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 47373
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 27108
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 17420
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 5717
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 2396
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 1298
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 780
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 404
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 61
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 10
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 37
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 23
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 8
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 0
+  }
+ ],
+ "rarest_k10": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 46110
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 22889
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 6034
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 2119
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 862
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 456
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 363
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 325
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 270
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 93
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 220
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 337
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 161
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 26
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 0
+  }
+ ],
+ "degree_k10": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 45490
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 19001
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 8008
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 3614
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 1883
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 948
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 506
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 205
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 92
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 82
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 125
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 68
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 18
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 0
+  }
+ ],
+ "cost_k10": [
+  {
+   "order": 2,
+   "round": 1,
+   "raised": 46006
+  },
+  {
+   "order": 2,
+   "round": 2,
+   "raised": 20184
+  },
+  {
+   "order": 2,
+   "round": 3,
+   "raised": 8899
+  },
+  {
+   "order": 2,
+   "round": 4,
+   "raised": 3516
+  },
+  {
+   "order": 2,
+   "round": 5,
+   "raised": 1516
+  },
+  {
+   "order": 2,
+   "round": 6,
+   "raised": 789
+  },
+  {
+   "order": 2,
+   "round": 7,
+   "raised": 536
+  },
+  {
+   "order": 2,
+   "round": 8,
+   "raised": 479
+  },
+  {
+   "order": 2,
+   "round": 9,
+   "raised": 289
+  },
+  {
+   "order": 2,
+   "round": 10,
+   "raised": 192
+  },
+  {
+   "order": 2,
+   "round": 11,
+   "raised": 126
+  },
+  {
+   "order": 2,
+   "round": 12,
+   "raised": 138
+  },
+  {
+   "order": 2,
+   "round": 13,
+   "raised": 46
+  },
+  {
+   "order": 2,
+   "round": 14,
+   "raised": 56
+  },
+  {
+   "order": 2,
+   "round": 15,
+   "raised": 50
+  },
+  {
+   "order": 2,
+   "round": 16,
+   "raised": 47
+  },
+  {
+   "order": 2,
+   "round": 17,
+   "raised": 27
+  },
+  {
+   "order": 2,
+   "round": 18,
+   "raised": 0
+  }
+ ]
+}

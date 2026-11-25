@@ -1,0 +1,228 @@
+{
+ "quasi_entities_original_gold": {
+  "total": 8131,
+  "per_doc": 32.011811023622045,
+  "by_type": {
+   "DATETIME": 4601,
+   "PERSON": 1254,
+   "ORG": 592,
+   "CODE": 477,
+   "LOC": 421,
+   "QUANTITY": 344,
+   "DEM": 289,
+   "MISC": 153
+  }
+ },
+ "quasi_entities_sage_llm": {
+  "total": 3564,
+  "per_doc": 14.031496062992126,
+  "by_type": {
+   "DATETIME": 1484,
+   "ORG": 733,
+   "DEM": 509,
+   "MISC": 362,
+   "LOC": 291,
+   "QUANTITY": 94,
+   "PERSON": 89,
+   "CODE": 2
+  }
+ },
+ "sage_qi_values_distinct": 2016,
+ "sage_qi_values_df1_%": 82.0436507936508,
+ "sage_qi_values_most_common": [
+  "DEM: national of the respondent state (50)",
+  "DATETIME: early 2000s (48)",
+  "DATETIME: late 1990s (47)",
+  "DATETIME: mid-2000s (44)",
+  "DATETIME: mid-1990s (43)",
+  "DEM: lawyer (38)",
+  "DATETIME: early 1990s (37)",
+  "ORG: court of cassation (36)",
+  "DEM: national of that state (34)",
+  "ORG: court of appeal (27)",
+  "DATETIME: 1990s (21)",
+  "DATETIME: following year (20)",
+  "DATETIME: early 1980s (19)",
+  "DATETIME: late 1980s (19)",
+  "ORG: state security court (17)",
+  "DATETIME: late 1940s (16)",
+  "DATETIME: late 2000s (16)",
+  "DATETIME: 1950s (15)",
+  "ORG: high court (15)",
+  "DEM: national of a contracting state (14)",
+  "ORG: district court (14)",
+  "ORG: regional court (14)",
+  "LOC: strasbourg (14)",
+  "LOC: united kingdom (14)",
+  "DEM: national of a council of europe member state (13)"
+ ],
+ "ours_o2_k5_by_type": {
+  "CODE": {
+   "n": 2,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "DATETIME": {
+   "n": 1484,
+   "info_loss_%": 55.39869721473498,
+   "unchanged_%": 12.870619946091644,
+   "suppressed_%": 19.339622641509433
+  },
+  "DEM": {
+   "n": 509,
+   "info_loss_%": 78.96201702685005,
+   "unchanged_%": 9.82318271119843,
+   "suppressed_%": 60.117878192534384
+  },
+  "LOC": {
+   "n": 291,
+   "info_loss_%": 66.1512027491409,
+   "unchanged_%": 0.0,
+   "suppressed_%": 32.302405498281786
+  },
+  "MISC": {
+   "n": 362,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "ORG": {
+   "n": 733,
+   "info_loss_%": 63.65393360618463,
+   "unchanged_%": 4.911323328785811,
+   "suppressed_%": 32.06002728512961
+  },
+  "PERSON": {
+   "n": 89,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "QUANTITY": {
+   "n": 94,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  }
+ },
+ "ours_o3_k5_by_type": {
+  "CODE": {
+   "n": 2,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "DATETIME": {
+   "n": 1484,
+   "info_loss_%": 61.34883198562458,
+   "unchanged_%": 0.2695417789757412,
+   "suppressed_%": 21.428571428571427
+  },
+  "DEM": {
+   "n": 509,
+   "info_loss_%": 93.36935166994111,
+   "unchanged_%": 0.0,
+   "suppressed_%": 76.03143418467583
+  },
+  "LOC": {
+   "n": 291,
+   "info_loss_%": 71.1340206185567,
+   "unchanged_%": 0.0,
+   "suppressed_%": 42.2680412371134
+  },
+  "MISC": {
+   "n": 362,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "ORG": {
+   "n": 733,
+   "info_loss_%": 66.10959527057754,
+   "unchanged_%": 0.0,
+   "suppressed_%": 32.06002728512961
+  },
+  "PERSON": {
+   "n": 89,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "QUANTITY": {
+   "n": 94,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  }
+ },
+ "sage_safe_vs_not": {
+  "not_safe": {
+   "docs": 32,
+   "mean_rounds": 5.0,
+   "mean_quasi_sage": 12.40625,
+   "residual_rate_%": 0.4916420845624385
+  },
+  "safe": {
+   "docs": 222,
+   "mean_rounds": 3.0045045045045047,
+   "mean_quasi_sage": 14.265765765765765,
+   "residual_rate_%": 4.835535563677256
+  }
+ },
+ "examples": [
+  {
+   "doc_id": "001-101231",
+   "sage_excerpt": "**PROCEDURE**\n\n1. The case originated in an application (no. [CODE]) against the Republic of Türkiye lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a national of a Council of Europe member State, \"[PERSON]\" (\"the applicant\"), at some point in the middle part of the 2000s.\n\n2. The applicant was represented by \"Representative B\", a lawyer practising in a large city in Türkiye. The Turkish Government (\"the Government\") were represented by their Agent. By letter of a date in the latter part of the 2000s the Court gave notice of the application to the Government and decided, under Article 29 § 1 of the Con",
+   "ours_o3_excerpt": "**PROCEDURE**\n\n1. The case originated in an application (no. [CODE]) against the Republic of Türkiye lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a [DEM], \"[PERSON]\" (\"the applicant\"), at some point in the middle part of the 2000s.\n\n2. The applicant was represented by \"[PERSON]\", a [DEM] practising in a place in Turkey. a public authority (\"the Government\") were represented by their Agent. By letter of [DATETIME] the Court gave notice of the application to the Government and decided, under Article 29 § 1 of the Convention, to rule simultaneously on the admissibility and merits of the application. Th",
+   "changes": [
+    "PERSON: representative b -> [PERSON]",
+    "DEM: national of a council of europe member state -> [DEM]",
+    "DEM: lawyer -> [DEM]",
+    "LOC: a large city in turkiye -> a place in Turkey",
+    "ORG: turkish government -> a public authority",
+    "DATETIME: a date in late 2000s -> [DATETIME]",
+    "DATETIME: early 1980s -> 20th century",
+    "LOC: a region outside the country of his eventual residence -> a place in Turkey",
+    "DATETIME: early 2000s -> 2000s",
+    "LOC: an intermediate country -> a place in Turkey",
+    "DATETIME: early part of 2002 -> 2000s",
+    "DEM: asylum seeker -> a person"
+   ]
+  },
+  {
+   "doc_id": "001-101444",
+   "sage_excerpt": "**PROCEDURE**\n\n1. The application was lodged against a Contracting State under Article 34 of the Convention on an unspecified date in the mid-2000s by a national of that State, represented by a lawyer. The Government were represented by their Agent. Some time later, the President of the relevant Section decided to give notice of the application to the Government.\n\n**THE FACTS**\n\n2. The applicant was born in the late 1950s and lives in a city in the respondent State. At the material time he was employed in the public sector in a professional capacity.\n\n3. The applicant was suspended from his duties in the early 1980s and reinstated several years later. He subsequently requested that the compe",
+   "ours_o3_excerpt": "**PROCEDURE**\n\n1. The application was lodged against a Contracting State under Article 34 of the Convention on an unspecified date in the mid-2000s by a person, represented by a lawyer. The Government were represented by their Agent. Some time later, the President of the relevant Section decided to give notice of the application to the Government.\n\n**THE FACTS**\n\n2. The applicant was born in the 20th century and lives in a city in the respondent State. At the material time he was employed in the [DEM] in a [DEM].\n\n3. The applicant was suspended from his duties in the 20th century and reinstated several years later. He subsequently requested that the competent public authority reimburse the s",
+   "changes": [
+    "DEM: national of that state -> a person",
+    "DEM: professional capacity -> [DEM]",
+    "DATETIME: late 1950s -> 20th century",
+    "DATETIME: early 1980s -> 20th century",
+    "DATETIME: early 1990s -> 1990s",
+    "ORG: first-instance administrative court -> a court",
+    "ORG: government finance authority -> a public authority",
+    "MISC: suspension -> [MISC]"
+   ]
+  },
+  {
+   "doc_id": "001-102115",
+   "sage_excerpt": "**PROCEDURE**\n\n1. The applicant, an elderly man born in the early 1930s, lodged an application against Sweden with the European Court of Human Rights in the mid-2000s under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\"). He was represented by a lawyer. The Swedish Government (\"the Government\") were represented by an Agent of the Ministry for Foreign Affairs.\n\n2. At a later stage the Court declared the application partly inadmissible and communicated the complaint concerning the lack of an oral hearing before the administrative courts to the Government. It further decided to examine the admissibility and merits of that complaint tog",
+   "ours_o3_excerpt": "**PROCEDURE**\n\n1. The applicant, a person born in the 20th century, lodged an application against [LOC] with the European Court of Human Rights in the 2000s under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\"). He was represented by a lawyer. a public authority (\"the Government\") were represented by an Agent of a public authority.\n\n2. At a later stage the Court declared the application partly inadmissible and communicated the complaint concerning the lack of an oral hearing before the administrative courts to the Government. It further decided to examine the admissibility and merits of that complaint together (Article 29 § 1 of the",
+   "changes": [
+    "DEM: elderly man -> a person",
+    "DATETIME: early 1930s -> 20th century",
+    "LOC: sweden -> [LOC]",
+    "DATETIME: mid-2000s -> 2000s",
+    "ORG: swedish government -> a public authority",
+    "ORG: ministry for foreign affairs -> a public authority",
+    "LOC: coastal locality in sweden -> [LOC]",
+    "DATETIME: late 1940s -> 20th century",
+    "DEM: meat-processing industry -> [DEM]",
+    "DATETIME: early 1980s -> 20th century",
+    "DATETIME: late 1980s -> 20th century",
+    "DEM: degenerative joint condition affecting his lower back and one hip -> [DEM]"
+   ]
+  }
+ ]
+}

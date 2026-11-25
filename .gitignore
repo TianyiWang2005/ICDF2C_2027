@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.jsonl
 .DS_Store
-# work in progress (not yet complete)
-results_tab_v3/
-results_tab_v3.log
+# large uncompressed copies (the .gz versions are committed)
+data/graphs/*.json
+results/sage/utility_answers.json
+results/sage_v1/utility_answers.json

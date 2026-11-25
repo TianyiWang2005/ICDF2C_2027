@@ -49,13 +49,14 @@ def main():
         reset(docs); add("DIRECT removal only", k0)
         reset(docs); suppress_all(docs); add("Suppress all QUASI", k0)
         reset(docs); run_method(docs, k0=k0); add("Rarity only (single-value k-anon.)", k0)
-        for choice, name in [("random", "Risk graph + random node"), ("rarest", "Risk graph + rarest node"),
-                             ("degree", "Risk graph + weighted degree (ours)")]:
+        for choice, name in [("random", "Risk graph + random node"), ("rarest", "Risk graph + rarest-first (ours)"),
+                             ("degree", "Risk graph + weighted degree"),
+                             ("cost", "Risk graph + cost-aware degree")]:
             reset(docs); log = []; t = time.time()
             run_riskgraph(docs, k0=k0, choice=choice, log=log)
             logs[f"{choice}_k{k0}"] = log
             add(name, k0, {"rounds": len(log), "seconds": round(time.time() - t, 1)})
-            if choice == "degree":
+            if choice == "rarest":
                 budget = total_steps(docs)
                 with open(os.path.join(a.out, f"generalised_k{k0}.jsonl"), "w", encoding="utf-8") as f:
                     for d in docs:

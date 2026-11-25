@@ -1,0 +1,85 @@
+  [utility original] 50/508  usage={'calls': 106, 'cached': 1, 'prompt_tokens': 175767, 'completion_tokens': 3875, 'cache_hit_tokens': 8832}
+  [utility original] 100/508  usage={'calls': 211, 'cached': 1, 'prompt_tokens': 375817, 'completion_tokens': 7849, 'cache_hit_tokens': 38784}
+  [utility original] 150/508  usage={'calls': 309, 'cached': 1, 'prompt_tokens': 533288, 'completion_tokens': 10778, 'cache_hit_tokens': 71552}
+  [utility original] 200/508  usage={'calls': 407, 'cached': 2, 'prompt_tokens': 684841, 'completion_tokens': 13672, 'cache_hit_tokens': 124288}
+  [utility original] 250/508  usage={'calls': 509, 'cached': 2, 'prompt_tokens': 862544, 'completion_tokens': 17099, 'cache_hit_tokens': 204544}
+  [utility original] 300/508  usage={'calls': 607, 'cached': 3, 'prompt_tokens': 1013911, 'completion_tokens': 20145, 'cache_hit_tokens': 258688}
+  [utility original] 350/508  usage={'calls': 708, 'cached': 6, 'prompt_tokens': 1169352, 'completion_tokens': 23824, 'cache_hit_tokens': 330752}
+  [utility original] 400/508  usage={'calls': 804, 'cached': 7, 'prompt_tokens': 1283044, 'completion_tokens': 27067, 'cache_hit_tokens': 384256}
+  [utility original] 450/508  usage={'calls': 898, 'cached': 9, 'prompt_tokens': 1424605, 'completion_tokens': 29869, 'cache_hit_tokens': 443776}
+  [utility original] 500/508  usage={'calls': 999, 'cached': 9, 'prompt_tokens': 1596217, 'completion_tokens': 33465, 'cache_hit_tokens': 527872}
+  [utility original] 508/508  usage={'calls': 1007, 'cached': 9, 'prompt_tokens': 1598284, 'completion_tokens': 33517, 'cache_hit_tokens': 527872}
+{'corpus': 'original', 'questions': 508, 'qa_score_%': 53.93700787401575, 'retrieval_hit@2_%': 48.031496062992126}
+  [utility ours_o2_k5] 50/508  usage={'calls': 1122, 'cached': 10, 'prompt_tokens': 1715862, 'completion_tokens': 37749, 'cache_hit_tokens': 533760}
+  [utility ours_o2_k5] 100/508  usage={'calls': 1211, 'cached': 10, 'prompt_tokens': 1791812, 'completion_tokens': 40410, 'cache_hit_tokens': 540288}
+  [utility ours_o2_k5] 150/508  usage={'calls': 1315, 'cached': 12, 'prompt_tokens': 1891302, 'completion_tokens': 43939, 'cache_hit_tokens': 556416}
+  [utility ours_o2_k5] 200/508  usage={'calls': 1411, 'cached': 13, 'prompt_tokens': 1974999, 'completion_tokens': 46723, 'cache_hit_tokens': 578048}
+  [utility ours_o2_k5] 250/508  usage={'calls': 1508, 'cached': 14, 'prompt_tokens': 2058371, 'completion_tokens': 49483, 'cache_hit_tokens': 599040}
+  [utility ours_o2_k5] 300/508  usage={'calls': 1611, 'cached': 15, 'prompt_tokens': 2149729, 'completion_tokens': 52573, 'cache_hit_tokens': 620544}
+  [utility ours_o2_k5] 350/508  usage={'calls': 1707, 'cached': 18, 'prompt_tokens': 2225309, 'completion_tokens': 55555, 'cache_hit_tokens': 646272}
+  [utility ours_o2_k5] 400/508  usage={'calls': 1810, 'cached': 19, 'prompt_tokens': 2305496, 'completion_tokens': 59176, 'cache_hit_tokens': 673664}
+  [utility ours_o2_k5] 450/508  usage={'calls': 1902, 'cached': 21, 'prompt_tokens': 2380488, 'completion_tokens': 62154, 'cache_hit_tokens': 695168}
+  [utility ours_o2_k5] 500/508  usage={'calls': 2002, 'cached': 21, 'prompt_tokens': 2472334, 'completion_tokens': 65494, 'cache_hit_tokens': 725504}
+  [utility ours_o2_k5] 508/508  usage={'calls': 2011, 'cached': 21, 'prompt_tokens': 2475818, 'completion_tokens': 65634, 'cache_hit_tokens': 726656}
+{'corpus': 'ours_o2_k5', 'questions': 508, 'qa_score_%': 46.45669291338583, 'retrieval_hit@2_%': 42.71653543307087}
+  [utility ours_o3_k5] 50/508  usage={'calls': 2097, 'cached': 41, 'prompt_tokens': 2567462, 'completion_tokens': 68787, 'cache_hit_tokens': 741888}
+  [utility ours_o3_k5] 100/508  usage={'calls': 2190, 'cached': 52, 'prompt_tokens': 2665830, 'completion_tokens': 72079, 'cache_hit_tokens': 756992}
+  [utility ours_o3_k5] 150/508  usage={'calls': 2273, 'cached': 71, 'prompt_tokens': 2750824, 'completion_tokens': 74913, 'cache_hit_tokens': 771072}
+  [utility ours_o3_k5] 200/508  usage={'calls': 2357, 'cached': 84, 'prompt_tokens': 2832574, 'completion_tokens': 77421, 'cache_hit_tokens': 796032}
+  [utility ours_o3_k5] 250/508  usage={'calls': 2440, 'cached': 102, 'prompt_tokens': 2916522, 'completion_tokens': 80251, 'cache_hit_tokens': 823808}
+  [utility ours_o3_k5] 300/508  usage={'calls': 2516, 'cached': 122, 'prompt_tokens': 2990594, 'completion_tokens': 82818, 'cache_hit_tokens': 842880}
+  [utility ours_o3_k5] 350/508  usage={'calls': 2607, 'cached': 134, 'prompt_tokens': 3070962, 'completion_tokens': 85846, 'cache_hit_tokens': 871040}
+  [utility ours_o3_k5] 400/508  usage={'calls': 2696, 'cached': 144, 'prompt_tokens': 3139778, 'completion_tokens': 88895, 'cache_hit_tokens': 897408}
+  [utility ours_o3_k5] 450/508  usage={'calls': 2781, 'cached': 159, 'prompt_tokens': 3217610, 'completion_tokens': 91884, 'cache_hit_tokens': 923008}
+  [utility ours_o3_k5] 500/508  usage={'calls': 2872, 'cached': 167, 'prompt_tokens': 3305231, 'completion_tokens': 95070, 'cache_hit_tokens': 954112}
+  [utility ours_o3_k5] 508/508  usage={'calls': 2881, 'cached': 167, 'prompt_tokens': 3308647, 'completion_tokens': 95209, 'cache_hit_tokens': 955264}
+{'corpus': 'ours_o3_k5', 'questions': 508, 'qa_score_%': 47.24409448818898, 'retrieval_hit@2_%': 42.32283464566929}
+  [utility random_budget_o2_k5] 50/508  usage={'calls': 2972, 'cached': 181, 'prompt_tokens': 3406008, 'completion_tokens': 98798, 'cache_hit_tokens': 961024}
+  [utility random_budget_o2_k5] 100/508  usage={'calls': 3067, 'cached': 191, 'prompt_tokens': 3507165, 'completion_tokens': 102398, 'cache_hit_tokens': 972416}
+  [utility random_budget_o2_k5] 150/508  usage={'calls': 3155, 'cached': 202, 'prompt_tokens': 3594012, 'completion_tokens': 105224, 'cache_hit_tokens': 981760}
+  [utility random_budget_o2_k5] 200/508  usage={'calls': 3242, 'cached': 217, 'prompt_tokens': 3681674, 'completion_tokens': 108071, 'cache_hit_tokens': 1005824}
+  [utility random_budget_o2_k5] 250/508  usage={'calls': 3327, 'cached': 229, 'prompt_tokens': 3762595, 'completion_tokens': 110732, 'cache_hit_tokens': 1028352}
+  [utility random_budget_o2_k5] 300/508  usage={'calls': 3410, 'cached': 246, 'prompt_tokens': 3845732, 'completion_tokens': 113520, 'cache_hit_tokens': 1051008}
+  [utility random_budget_o2_k5] 350/508  usage={'calls': 3493, 'cached': 261, 'prompt_tokens': 3919990, 'completion_tokens': 116402, 'cache_hit_tokens': 1078272}
+  [utility random_budget_o2_k5] 400/508  usage={'calls': 3590, 'cached': 270, 'prompt_tokens': 4001621, 'completion_tokens': 120163, 'cache_hit_tokens': 1106048}
+  [utility random_budget_o2_k5] 450/508  usage={'calls': 3675, 'cached': 281, 'prompt_tokens': 4077939, 'completion_tokens': 123282, 'cache_hit_tokens': 1129344}
+  [utility random_budget_o2_k5] 500/508  usage={'calls': 3765, 'cached': 291, 'prompt_tokens': 4167484, 'completion_tokens': 126246, 'cache_hit_tokens': 1157760}
+  [utility random_budget_o2_k5] 508/508  usage={'calls': 3773, 'cached': 291, 'prompt_tokens': 4169495, 'completion_tokens': 126304, 'cache_hit_tokens': 1157760}
+{'corpus': 'random_budget_o2_k5', 'questions': 508, 'qa_score_%': 45.669291338582674, 'retrieval_hit@2_%': 42.125984251968504}
+  [utility rarity_k5] 50/508  usage={'calls': 3861, 'cached': 312, 'prompt_tokens': 4270473, 'completion_tokens': 130186, 'cache_hit_tokens': 1164032}
+  [utility rarity_k5] 100/508  usage={'calls': 3947, 'cached': 325, 'prompt_tokens': 4360860, 'completion_tokens': 133266, 'cache_hit_tokens': 1173632}
+  [utility rarity_k5] 150/508  usage={'calls': 4033, 'cached': 340, 'prompt_tokens': 4448344, 'completion_tokens': 136337, 'cache_hit_tokens': 1186816}
+  [utility rarity_k5] 200/508  usage={'calls': 4116, 'cached': 357, 'prompt_tokens': 4533659, 'completion_tokens': 139059, 'cache_hit_tokens': 1212160}
+  [utility rarity_k5] 250/508  usage={'calls': 4192, 'cached': 379, 'prompt_tokens': 4612729, 'completion_tokens': 141560, 'cache_hit_tokens': 1235456}
+  [utility rarity_k5] 300/508  usage={'calls': 4279, 'cached': 395, 'prompt_tokens': 4699072, 'completion_tokens': 144588, 'cache_hit_tokens': 1257088}
+  [utility rarity_k5] 350/508  usage={'calls': 4361, 'cached': 413, 'prompt_tokens': 4772806, 'completion_tokens': 147393, 'cache_hit_tokens': 1286140}
+  [utility rarity_k5] 400/508  usage={'calls': 4447, 'cached': 425, 'prompt_tokens': 4841139, 'completion_tokens': 150513, 'cache_hit_tokens': 1308924}
+  [utility rarity_k5] 450/508  usage={'calls': 4535, 'cached': 436, 'prompt_tokens': 4922103, 'completion_tokens': 153792, 'cache_hit_tokens': 1332988}
+  [utility rarity_k5] 500/508  usage={'calls': 4625, 'cached': 447, 'prompt_tokens': 5010906, 'completion_tokens': 157052, 'cache_hit_tokens': 1361916}
+  [utility rarity_k5] 508/508  usage={'calls': 4633, 'cached': 447, 'prompt_tokens': 5012953, 'completion_tokens': 157114, 'cache_hit_tokens': 1361916}
+{'corpus': 'rarity_k5', 'questions': 508, 'qa_score_%': 45.86614173228347, 'retrieval_hit@2_%': 41.732283464566926}
+  [utility sage_k5] 50/508  usage={'calls': 4728, 'cached': 459, 'prompt_tokens': 5116572, 'completion_tokens': 160838, 'cache_hit_tokens': 1367804}
+  [utility sage_k5] 100/508  usage={'calls': 4824, 'cached': 466, 'prompt_tokens': 5217708, 'completion_tokens': 164400, 'cache_hit_tokens': 1380604}
+  [utility sage_k5] 150/508  usage={'calls': 4906, 'cached': 481, 'prompt_tokens': 5303519, 'completion_tokens': 167323, 'cache_hit_tokens': 1393532}
+  [utility sage_k5] 200/508  usage={'calls': 4997, 'cached': 494, 'prompt_tokens': 5398007, 'completion_tokens': 170404, 'cache_hit_tokens': 1421052}
+  [utility sage_k5] 250/508  usage={'calls': 5085, 'cached': 503, 'prompt_tokens': 5479454, 'completion_tokens': 173162, 'cache_hit_tokens': 1441532}
+  [utility sage_k5] 300/508  usage={'calls': 5176, 'cached': 515, 'prompt_tokens': 5568598, 'completion_tokens': 176230, 'cache_hit_tokens': 1467516}
+  [utility sage_k5] 350/508  usage={'calls': 5258, 'cached': 528, 'prompt_tokens': 5639340, 'completion_tokens': 178843, 'cache_hit_tokens': 1491196}
+  [utility sage_k5] 400/508  usage={'calls': 5349, 'cached': 538, 'prompt_tokens': 5712302, 'completion_tokens': 182340, 'cache_hit_tokens': 1517564}
+  [utility sage_k5] 450/508  usage={'calls': 5436, 'cached': 551, 'prompt_tokens': 5795719, 'completion_tokens': 185591, 'cache_hit_tokens': 1539324}
+  [utility sage_k5] 500/508  usage={'calls': 5527, 'cached': 559, 'prompt_tokens': 5888551, 'completion_tokens': 188868, 'cache_hit_tokens': 1569532}
+  [utility sage_k5] 508/508  usage={'calls': 5537, 'cached': 559, 'prompt_tokens': 5893207, 'completion_tokens': 189103, 'cache_hit_tokens': 1570428}
+{'corpus': 'sage_k5', 'questions': 508, 'qa_score_%': 48.326771653543304, 'retrieval_hit@2_%': 42.71653543307087}
+  [utility suppress_k5] 50/508  usage={'calls': 5627, 'cached': 580, 'prompt_tokens': 5998004, 'completion_tokens': 192745, 'cache_hit_tokens': 1581948}
+  [utility suppress_k5] 100/508  usage={'calls': 5707, 'cached': 597, 'prompt_tokens': 6083505, 'completion_tokens': 195589, 'cache_hit_tokens': 1594236}
+  [utility suppress_k5] 150/508  usage={'calls': 5786, 'cached': 619, 'prompt_tokens': 6171124, 'completion_tokens': 198526, 'cache_hit_tokens': 1607804}
+  [utility suppress_k5] 200/508  usage={'calls': 5858, 'cached': 644, 'prompt_tokens': 6250079, 'completion_tokens': 201088, 'cache_hit_tokens': 1630076}
+  [utility suppress_k5] 250/508  usage={'calls': 5935, 'cached': 669, 'prompt_tokens': 6333016, 'completion_tokens': 203741, 'cache_hit_tokens': 1655292}
+  [utility suppress_k5] 300/508  usage={'calls': 6013, 'cached': 692, 'prompt_tokens': 6416837, 'completion_tokens': 206624, 'cache_hit_tokens': 1680252}
+  [utility suppress_k5] 350/508  usage={'calls': 6092, 'cached': 713, 'prompt_tokens': 6489908, 'completion_tokens': 209391, 'cache_hit_tokens': 1701884}
+  [utility suppress_k5] 400/508  usage={'calls': 6176, 'cached': 731, 'prompt_tokens': 6563856, 'completion_tokens': 212870, 'cache_hit_tokens': 1730300}
+  [utility suppress_k5] 450/508  usage={'calls': 6254, 'cached': 747, 'prompt_tokens': 6636127, 'completion_tokens': 215635, 'cache_hit_tokens': 1752572}
+  [utility suppress_k5] 500/508  usage={'calls': 6340, 'cached': 763, 'prompt_tokens': 6727557, 'completion_tokens': 218894, 'cache_hit_tokens': 1787004}
+  [utility suppress_k5] 508/508  usage={'calls': 6349, 'cached': 763, 'prompt_tokens': 6731018, 'completion_tokens': 219032, 'cache_hit_tokens': 1787772}
+{'corpus': 'suppress_k5', 'questions': 508, 'qa_score_%': 47.34251968503937, 'retrieval_hit@2_%': 41.53543307086614}
+usage {'calls': 6349, 'cached': 763, 'prompt_tokens': 6731018, 'completion_tokens': 219032, 'cache_hit_tokens': 1787772} $1.70

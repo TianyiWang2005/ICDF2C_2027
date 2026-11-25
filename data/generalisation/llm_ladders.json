@@ -7,163 +7,107 @@
 "an application number",
 "a reference number"
 ],
-"DATETIME\t1920s": [
-"the early twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1930s": [
-"the mid-twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1930s and 1940s": [
-"the mid-twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1940s": [
-"the mid-twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1950s": [
-"the mid-twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1960s": [
-"the mid-twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1960s and 1970s": [
-"the mid-to-late twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1970s": [
-"the late twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1980s": [
-"the late twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1980s and 1990s": [
-"the late twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1990s": [
-"the late twentieth century",
-"the twentieth century"
-],
-"DATETIME\t1990s and early 2000s": [
-"the turn of the twenty-first century",
-"around the turn of the century",
-"a period spanning two centuries"
-],
-"DATETIME\t2000s": [
-"the early twenty-first century",
-"the twenty-first century"
-],
-"DATETIME\t2010s": [
-"the early twenty-first century",
-"the twenty-first century"
+"DATETIME\t11 p.m": [
+"a late evening hour",
+"a time of day"
 ],
 "DATETIME\t[month year]": [
 "a month in a given year",
-"a point in time"
+"a period of time"
 ],
 "DATETIME\t[year]": [
-"a given year",
-"a point in time"
+"a year",
+"a period of time"
 ],
 "DATETIME\ta couple of years later": [
-"a short time later",
+"a few years later",
 "some time later",
-"later"
+"at a later time"
 ],
 "DATETIME\ta custodial sentence of moderate length": [
 "a custodial sentence",
-"a sentence of imprisonment",
+"a term of imprisonment",
 "a penalty"
 ],
-"DATETIME\ta date in the 2000s": [
-"a date in the early twenty-first century",
-"a date in the twenty-first century"
-],
-"DATETIME\ta date in the latter part of the 2000s": [
-"a date in the later part of the early twenty-first century",
-"a date in the twenty-first century"
-],
-"DATETIME\ta date in the second half of the 1990s": [
-"a date in the later 1990s",
-"a date in the late twentieth century"
-],
 "DATETIME\ta date in the winter of that period": [
-"a date in a winter month of that period",
-"a date in that period"
+"a date in a winter season",
+"a date in a season",
+"a time of year"
+],
+"DATETIME\ta decade after the action was brought": [
+"several years after the proceedings began",
+"some time after the proceedings began",
+"after the proceedings began"
 ],
 "DATETIME\ta few days later": [
-"a short time later",
-"some time later",
-"later"
+"several days later",
+"some days later",
+"at a later time"
 ],
 "DATETIME\ta few months": [
-"a short period",
-"some time",
-"a period"
+"several months",
+"a period of months",
+"a period of time"
 ],
 "DATETIME\ta few months afterwards": [
-"a short time afterwards",
-"some time afterwards",
-"afterwards"
+"several months afterwards",
+"some months afterwards",
+"at a later time"
 ],
 "DATETIME\ta few months later": [
-"a short time later",
-"some time later",
-"later"
+"several months later",
+"some months later",
+"at a later time"
 ],
 "DATETIME\ta few months thereafter": [
-"a short time thereafter",
-"some time thereafter",
-"thereafter"
+"several months thereafter",
+"some months thereafter",
+"at a later time"
 ],
 "DATETIME\ta few weeks": [
-"a short period",
-"some time",
-"a period"
+"several weeks",
+"a period of weeks",
+"a period of time"
 ],
 "DATETIME\ta few weeks after that designation": [
-"a short time after that designation",
-"some time after that designation",
+"several weeks after that designation",
+"some weeks after that designation",
 "after that designation"
 ],
 "DATETIME\ta few weeks later": [
-"a short time later",
-"some time later",
-"later"
+"several weeks later",
+"some weeks later",
+"at a later time"
 ],
 "DATETIME\ta few years": [
-"a short period of years",
-"some years",
-"a period"
+"several years",
+"a period of years",
+"a period of time"
 ],
 "DATETIME\ta few years later": [
-"a short time later",
-"some time later",
-"later"
+"several years later",
+"some years later",
+"at a later time"
 ],
 "DATETIME\ta full day": [
+"a whole day",
 "a day",
 "a period of time"
 ],
 "DATETIME\ta further few months": [
-"a further short period",
-"a further period of time"
+"a further several months",
+"an additional period of months",
+"an additional period of time"
 ],
 "DATETIME\ta further period of several years": [
-"a further extended period",
-"a further period of time"
+"an additional period of years",
+"an additional period of time",
+"a period of time"
 ],
 "DATETIME\ta further two and a half years later": [
 "a further period of years later",
-"a further time later",
-"later"
+"some years later",
+"at a later time"
 ],
 "DATETIME\ta lengthy custodial sentence": [
 "a long custodial sentence",
@@ -176,13 +120,13 @@
 "a penalty"
 ],
 "DATETIME\ta lengthy term of imprisonment": [
-"a substantial term of imprisonment",
+"a long term of imprisonment",
 "a term of imprisonment",
-"a period of detention"
+"a penalty"
 ],
 "DATETIME\ta number of days": [
 "several days",
-"a short period",
+"some days",
 "a period of time"
 ],
 "DATETIME\ta number of years later": [
@@ -190,968 +134,599 @@
 "some years later",
 "at a later time"
 ],
-"DATETIME\ta period in the 1990s": [
-"a period in the late twentieth century",
-"a period in the past"
-],
 "DATETIME\ta period of months": [
 "several months",
-"a medium-length period",
-"a period of time"
+"a period of time",
+"a duration"
 ],
 "DATETIME\ta period of several weeks": [
 "several weeks",
-"a few weeks",
-"a short period"
+"a period of time",
+"a duration"
 ],
 "DATETIME\ta probationary period of several years": [
-"a probationary period of some years",
+"a probationary period of years",
 "a probationary period",
-"a period of supervision"
+"a period of time"
 ],
 "DATETIME\ta short term of imprisonment": [
 "a brief term of imprisonment",
 "a term of imprisonment",
-"a period of detention"
+"a penalty"
+],
+"DATETIME\ta year": [
+"about a year",
+"a period of months",
+"a period of time"
 ],
 "DATETIME\ta year and a half": [
 "about eighteen months",
-"more than a year",
+"a period of months",
 "a period of time"
 ],
-"DATETIME\tabout a decade after the action was brought": [
-"several years after the action was brought",
-"some time after the proceedings began",
-"at a later stage of the proceedings"
-],
-"DATETIME\tabout a year": [
-"approximately twelve months",
-"more than six months",
-"a period of time"
-],
-"DATETIME\tabout a year later": [
-"approximately twelve months later",
-"some months later",
+"DATETIME\ta year later": [
+"about a year later",
+"some time later",
 "at a later time"
 ],
-"DATETIME\tabout five days": [
-"several days",
-"a few days",
-"a short period"
-],
-"DATETIME\tabout twelve months": [
-"approximately a year",
-"more than six months",
-"a period of time"
-],
 "DATETIME\tapproximately a year": [
-"about twelve months",
-"more than six months",
+"about a year",
+"a period of months",
 "a period of time"
 ],
 "DATETIME\tapproximately a year after the indictment": [
-"about twelve months after the indictment",
-"some months after the indictment",
-"at a later stage of the proceedings"
+"about a year after the indictment",
+"some time after the indictment",
+"after the indictment"
 ],
 "DATETIME\tapproximately eighteen months": [
-"about a year and a half",
-"more than a year",
+"about eighteen months",
+"a period of months",
 "a period of time"
 ],
 "DATETIME\tapproximately five months": [
-"several months",
-"a few months",
+"about five months",
+"a period of months",
 "a period of time"
 ],
 "DATETIME\tapproximately five weeks": [
-"several weeks",
-"a few weeks",
-"a short period"
+"about five weeks",
+"a period of weeks",
+"a period of time"
 ],
 "DATETIME\tapproximately five years": [
-"several years",
-"a number of years",
-"a period of time"
+"a period of several years",
+"a long period of time"
 ],
 "DATETIME\tapproximately five years across two instances": [
-"several years across two instances",
-"a number of years in total",
-"a period of time"
+"a period of several years in total",
+"a long period of time overall"
 ],
 "DATETIME\tapproximately five years later": [
-"several years later",
-"some years later",
-"at a later time"
+"several years afterwards",
+"at a much later time"
 ],
 "DATETIME\tapproximately half of the reduced sentence": [
-"a substantial part of the reduced sentence",
-"part of the reduced sentence",
-"part of a sentence"
+"a substantial portion of the sentence",
+"part of the sentence"
 ],
 "DATETIME\tapproximately one month afterwards": [
 "several weeks afterwards",
-"some time afterwards",
-"at a later time"
+"some time afterwards"
 ],
 "DATETIME\tapproximately one to two weeks": [
-"one to two weeks",
-"a couple of weeks",
-"a short period"
+"a period of days",
+"a short period of time"
 ],
 "DATETIME\tapproximately one year": [
-"about twelve months",
-"more than six months",
-"a period of time"
+"about a year",
+"a period of many months"
 ],
 "DATETIME\tapproximately seven months": [
 "several months",
-"a few months",
-"a period of time"
+"a substantial period of time"
 ],
 "DATETIME\tapproximately ten days to two weeks": [
-"one to two weeks",
-"a couple of weeks",
-"a short period"
+"a period of days",
+"a short period of time"
 ],
 "DATETIME\tapproximately three months": [
 "several months",
-"a few months",
 "a period of time"
 ],
 "DATETIME\tapproximately three months after the incident": [
-"several months after the incident",
-"some time after the incident",
-"at a later time"
+"several months after the events",
+"some time after the events"
 ],
 "DATETIME\tapproximately twenty years": [
-"about two decades",
-"several decades",
+"a period of many years",
 "a long period of time"
 ],
 "DATETIME\tapproximately twenty-six hours'": [
 "about a day",
-"more than a few hours",
 "a period of time"
 ],
 "DATETIME\tapproximately two weeks": [
-"a couple of weeks",
-"several days",
-"a short period"
+"a period of days",
+"a short period of time"
 ],
 "DATETIME\tapproximately two years": [
-"about two years",
-"more than a year",
+"a couple of years",
 "a period of time"
 ],
 "DATETIME\tapproximately two years later": [
-"about two years later",
-"some years later",
-"at a later time"
-],
-"DATETIME\taround 11 p.m": [
-"late in the evening",
-"in the evening",
-"at night"
-],
-"DATETIME\taround the turn of the millennium": [
-"around the year 2000",
-"at the end of the twentieth century",
-"at a time in the past"
+"a couple of years afterwards",
+"some time afterwards"
 ],
 "DATETIME\tautumn of that year": [
-"the latter part of that year",
-"later that year",
-"at a later time that year"
+"a season of that year",
+"a period of that year"
 ],
 "DATETIME\tautumn of the year following that decision": [
-"the latter part of the year following that decision",
-"later in the year following that decision",
-"at a later time after that decision"
-],
-"DATETIME\tbeginning of the 1990s": [
-"the early 1990s",
-"a period in the late twentieth century",
-"a period in the past"
-],
-"DATETIME\tbeginning of the 2010s": [
-"the early 2010s",
-"a period in the 2010s",
-"a period in the past"
+"a season of the following year",
+"a period after that decision"
 ],
 "DATETIME\tbeginning of the following month": [
-"the start of a subsequent month",
-"a subsequent month",
-"a later point in time"
+"early in the following month",
+"a time in the following month"
 ],
 "DATETIME\tbeginning of the following year": [
-"the start of a subsequent year",
-"a subsequent year",
-"a later point in time"
+"early in the following year",
+"a time in the following year"
 ],
 "DATETIME\tbetween eight and twelve years": [
-"several years",
-"a number of years",
-"a period of time"
+"a period of several years",
+"a long period of time"
 ],
 "DATETIME\tbetween five and eight years": [
-"several years",
-"a number of years",
-"a period of time"
-],
-"DATETIME\tduring the 2000s": [
-"in the 2000s",
-"in the early 2000s",
-"a period in the past"
-],
-"DATETIME\tearly 1930s": [
-"the 1930s",
-"a decade in the 20th century",
-"a period in the past"
-],
-"DATETIME\tearly 1940s": [
-"the 1940s",
-"a decade in the 20th century",
-"a period in the past"
-],
-"DATETIME\tearly 1950s": [
-"the 1950s",
-"a decade in the 20th century",
-"a period in the past"
-],
-"DATETIME\tearly 1960s": [
-"the 1960s",
-"a decade in the 20th century",
-"a period in the past"
-],
-"DATETIME\tearly 1970s": [
-"the 1970s",
-"the 1970s or thereabouts",
-"the twentieth century"
-],
-"DATETIME\tearly 1980s": [
-"the 1980s",
-"the 1980s or thereabouts",
-"the twentieth century"
-],
-"DATETIME\tearly 1990s": [
-"the 1990s",
-"the 1990s or thereabouts",
-"the late twentieth century"
-],
-"DATETIME\tearly 2000s": [
-"the 2000s",
-"the 2000s or thereabouts",
-"the early twenty-first century"
-],
-"DATETIME\tearly 2010s": [
-"the 2010s",
-"the 2010s or thereabouts",
-"the twenty-first century"
-],
-"DATETIME\tearly part of the 2000s": [
-"the 2000s",
-"the 2000s or thereabouts",
-"the early twenty-first century"
-],
-"DATETIME\tearly part of the 2000s decade": [
-"the 2000s",
-"the 2000s or thereabouts",
-"the early twenty-first century"
+"a period of several years",
+"a long period of time"
 ],
 "DATETIME\tearly part of the following year": [
-"the following year",
-"a subsequent period",
-"a later time"
+"early in the following year",
+"a time in the following year"
 ],
 "DATETIME\tearly the following year": [
-"the following year",
-"a subsequent period",
-"a later time"
+"early in the following year",
+"a time in the following year"
 ],
 "DATETIME\tearly years of the following decade": [
-"the following decade",
-"a subsequent period",
-"a later time"
+"the early part of the following decade",
+"a period in the following decade"
 ],
 "DATETIME\teight days after the arrest": [
-"about a week after the arrest",
-"a short time after the arrest",
+"several days after the arrest",
 "some time after the arrest"
 ],
 "DATETIME\teight years": [
 "several years",
-"a number of years",
-"a long period"
+"a long period of time"
 ],
 "DATETIME\teighteen months": [
-"more than a year",
-"a period of over a year",
-"a considerable period"
+"a year and a half",
+"a period of time"
 ],
 "DATETIME\teighteen months later": [
-"more than a year later",
-"a considerable time later",
-"some time later"
+"a year and a half afterwards",
+"some time afterwards"
 ],
 "DATETIME\televen months": [
-"nearly a year",
-"a period of several months",
-"a considerable period"
+"several months",
+"a period of time"
 ],
 "DATETIME\tend of term": [
-"the close of the school year",
-"the end of an academic period",
-"a point in time"
+"the close of a period",
+"a time at the end of a period"
 ],
 "DATETIME\tend of that year": [
-"late that year",
-"towards the close of the year",
-"a point in time"
-],
-"DATETIME\tend of the 1970s": [
-"the late 1970s",
-"a period in the 1970s",
-"a period in the past"
-],
-"DATETIME\tend of the 1980s": [
-"the late 1980s",
-"a period in the 1980s",
-"a period in the past"
-],
-"DATETIME\tend of the 1990s": [
-"the late 1990s",
-"a period in the 1990s",
-"a period in the past"
+"late in that year",
+"a time in that year"
 ],
 "DATETIME\tfifteen years": [
-"more than a decade",
-"a long period"
+"many years",
+"a long period of time"
 ],
 "DATETIME\tfifteen years'": [
-"more than a decade",
-"a long period"
-],
-"DATETIME\tfirst half of the 1960s": [
-"the 1960s",
-"the mid-twentieth century",
-"a past period"
-],
-"DATETIME\tfirst half of the 1980s": [
-"the 1980s",
-"the late twentieth century",
-"a past period"
-],
-"DATETIME\tfirst half of the 1990s": [
-"the 1990s",
-"the late twentieth century",
-"a past period"
-],
-"DATETIME\tfirst half of the 2000s": [
-"the 2000s",
-"the early twenty-first century",
-"a past period"
-],
-"DATETIME\tfirst half of the 2010s": [
-"the 2010s",
-"the early twenty-first century",
-"a past period"
+"many years",
+"a long period of time"
 ],
 "DATETIME\tfirst term": [
-"an initial period of office",
-"a period of time"
+"an initial period",
+"a period"
+],
+"DATETIME\tfive days": [
+"several days",
+"a short period of time"
 ],
 "DATETIME\tfive weeks": [
 "several weeks",
-"a period of weeks",
-"a short period"
+"a period of time"
 ],
 "DATETIME\tfive years": [
 "several years",
-"a number of years",
-"a period of time"
+"a long period of time"
 ],
 "DATETIME\tfollowing autumn": [
-"a later season",
+"the next season",
 "a later period"
 ],
 "DATETIME\tfollowing day": [
-"a later day",
-"a later period"
+"the next day",
+"a later time"
 ],
 "DATETIME\tfollowing month": [
-"a later month",
-"a later period"
+"a short period afterwards",
+"a period of time"
 ],
 "DATETIME\tfollowing months": [
-"a later period of months",
-"a later period"
+"a period of some months afterwards",
+"a period of time"
 ],
 "DATETIME\tfollowing three years": [
-"a period of a few years",
-"a later period"
+"a period of a few years afterwards",
+"a period of time"
 ],
 "DATETIME\tfollowing year": [
-"a later year",
-"a later period"
+"a year afterwards",
+"a period of time"
 ],
 "DATETIME\tfollowing years": [
-"a later period of years",
-"a later period"
+"a period of some years afterwards",
+"a period of time"
 ],
 "DATETIME\tfour days": [
 "a few days",
 "a short period"
 ],
-"DATETIME\tlate 1930s": [
-"the later part of that decade",
-"the 1930s",
-"that decade"
-],
-"DATETIME\tlate 1940s": [
-"the later part of that decade",
-"the 1940s",
-"that decade"
-],
-"DATETIME\tlate 1950s": [
-"the later part of that decade",
-"the 1950s",
-"that decade"
-],
-"DATETIME\tlate 1960s": [
-"the later part of that decade",
-"the 1960s",
-"that decade"
-],
-"DATETIME\tlate 1970s": [
-"the later part of that decade",
-"the 1970s",
-"that decade"
-],
-"DATETIME\tlate 1980s": [
-"the later part of that decade",
-"the 1980s",
-"that decade"
-],
-"DATETIME\tlate 1980s and early 1990s": [
-"the late 1980s and early 1990s",
-"the turn of that decade",
-"that period"
-],
-"DATETIME\tlate 1990s": [
-"the later part of that decade",
-"the 1990s",
-"that decade"
-],
-"DATETIME\tlate 2000s": [
-"the later part of that decade",
-"the 2000s",
-"that decade"
-],
-"DATETIME\tlate 2010s": [
-"the later part of that decade",
-"the 2010s",
-"that decade"
-],
 "DATETIME\tlater in the same decade": [
-"a later point in that decade",
-"a later period"
+"later in the same period",
+"at a later time"
 ],
 "DATETIME\tlater that month": [
-"a later point that month",
-"a later period"
+"later in that period",
+"at a later time"
 ],
 "DATETIME\tlater that same year": [
-"a later point that year",
-"a later period"
+"later in that period",
+"at a later time"
 ],
 "DATETIME\tlater that year": [
-"a later point that year",
-"a later period"
-],
-"DATETIME\tlatter half of the 1990s": [
-"the later part of that decade",
-"the 1990s",
-"that decade"
+"later in that period",
+"at a later time"
 ],
 "DATETIME\tlatter part of that year": [
-"a later point that year",
-"a later period"
-],
-"DATETIME\tlatter part of the 1990s": [
-"the later part of that decade",
-"the 1990s",
-"that decade"
-],
-"DATETIME\tlatter part of the 2000s": [
-"the later part of that decade",
-"the 2000s",
-"that decade"
+"a later part of that period",
+"at a later time"
 ],
 "DATETIME\tlengthy term of imprisonment": [
 "a long custodial sentence",
-"a custodial sentence"
-],
-"DATETIME\tmid- to late 1990s": [
-"the middle and later part of that decade",
-"the 1990s",
-"that decade"
-],
-"DATETIME\tmid-1920s": [
-"the middle of that decade",
-"the 1920s",
-"that decade"
-],
-"DATETIME\tmid-1930s": [
-"the middle of that decade",
-"the 1930s",
-"that decade"
-],
-"DATETIME\tmid-1940s": [
-"the middle of that decade",
-"the 1940s",
-"that decade"
-],
-"DATETIME\tmid-1940s to the mid-1970s": [
-"the middle of that period",
-"a period of several decades",
-"that period"
-],
-"DATETIME\tmid-1950s": [
-"the middle of that decade",
-"the 1950s",
-"that decade"
-],
-"DATETIME\tmid-1960s": [
-"the middle of that decade",
-"the 1960s",
-"that decade"
-],
-"DATETIME\tmid-1970s": [
-"the middle of that decade",
-"the 1970s",
-"that decade"
-],
-"DATETIME\tmid-1980s": [
-"the middle of that decade",
-"the 1980s",
-"that decade"
-],
-"DATETIME\tmid-1990s": [
-"the middle of that decade",
-"the 1990s",
-"that decade"
-],
-"DATETIME\tmid-2000s": [
-"the middle of that decade",
-"the 2000s",
-"that decade"
-],
-"DATETIME\tmid-2010s": [
-"the middle of that decade",
-"the 2010s",
-"that decade"
+"a period of detention"
 ],
 "DATETIME\tmid-twentieth century": [
-"the middle of that century",
-"the twentieth century",
-"that century"
-],
-"DATETIME\tmiddle of the 2010s": [
-"a period in the 2010s",
-"a period in the early 21st century",
-"a period in the past"
+"the middle of the twentieth century",
+"the twentieth century"
 ],
 "DATETIME\tmore than nine years": [
-"several years",
-"a long period",
-"a period of time"
+"more than several years",
+"a long period"
 ],
 "DATETIME\tmore than one year but less than three": [
 "a period of a few years",
-"a period of some years",
 "a period of time"
 ],
 "DATETIME\tmore than two years": [
-"several years",
-"a period of some years",
-"a period of time"
+"more than a year",
+"a period of years"
 ],
 "DATETIME\tnext year": [
-"a subsequent year",
-"a later period",
-"a future time"
-],
-"DATETIME\ton the following day": [
-"a day later",
-"a subsequent time",
-"a later time"
-],
-"DATETIME\tone evening in the mid-1990s": [
-"an evening in the 1990s",
-"an evening in the past",
-"a time in the past"
-],
-"DATETIME\tone month": [
-"a period of some weeks",
-"a short period",
+"a year afterwards",
 "a period of time"
 ],
+"DATETIME\tone month": [
+"a few weeks",
+"a short period"
+],
 "DATETIME\tone year's": [
-"a period of some months",
-"a period of time",
-"a duration"
+"a year's",
+"a period of time"
 ],
 "DATETIME\tone-hour": [
-"a period of some minutes",
-"a short period",
+"a short duration",
 "a period of time"
 ],
 "DATETIME\tover a week": [
 "more than several days",
-"a period of days"
+"a period of time"
 ],
 "DATETIME\tover the following two years": [
-"for a period of years thereafter",
-"for some time afterwards"
+"over a period of a few years",
+"over a period of time"
 ],
 "DATETIME\troughly a year": [
-"approximately twelve months",
-"a period of months"
+"about a year",
+"a period of time"
 ],
 "DATETIME\troughly two years": [
-"approximately a couple of years",
-"a period of years"
+"about a couple of years",
+"a period of time"
 ],
 "DATETIME\tsame year": [
-"within that twelve-month period",
-"at around that time"
-],
-"DATETIME\tsecond half of the 1940s": [
-"the late 1940s",
-"the 1940s"
-],
-"DATETIME\tsecond half of the 1960s": [
-"the late 1960s",
-"the 1960s"
-],
-"DATETIME\tsecond half of the 1980s": [
-"the late 1980s",
-"the 1980s"
-],
-"DATETIME\tsecond half of the 1990s": [
-"the late 1990s",
-"the 1990s"
-],
-"DATETIME\tsecond half of the 2000s": [
-"the late 2000s",
-"the 2000s"
-],
-"DATETIME\tsecond half of the 2010s": [
-"the late 2010s",
-"a period in the 2010s",
-"a period in the recent past"
-],
-"DATETIME\tsecond half of the first decade of the 2000s": [
-"the late 2000s",
-"a period in the 2000s",
-"a period in the early 21st century"
+"that period",
+"a period of time"
 ],
 "DATETIME\tsecond half of the twentieth century": [
-"the late twentieth century",
-"a period in the twentieth century",
-"a period in the past"
+"the latter part of the twentieth century",
+"the twentieth century"
 ],
 "DATETIME\tsecond or third day of his detention": [
 "an early day of his detention",
-"a day shortly after his detention began",
-"a time during his detention"
+"an early stage of his detention"
 ],
 "DATETIME\tseven days'": [
-"about a week",
-"a short period",
-"a period of time"
+"a week's",
+"a short period"
 ],
 "DATETIME\tseven months": [
-"about half a year",
-"a number of months",
-"an extended period"
+"several months",
+"a period of time"
 ],
 "DATETIME\tseveral days": [
 "a few days",
-"a short period",
-"a period of time"
+"a short period"
 ],
 "DATETIME\tseveral decades": [
-"a few decades",
-"a long period",
-"an extended period"
+"a long period of years",
+"a long period"
 ],
 "DATETIME\tseveral decades ago": [
-"a few decades ago",
 "a long time ago",
-"in the past"
+"at an earlier time"
 ],
 "DATETIME\tseveral hours per day": [
-"a few hours per day",
-"part of each day",
-"for a substantial part of the day"
+"a number of hours each day",
+"a period of time each day"
 ],
 "DATETIME\tseveral months": [
-"a period of months",
+"a number of months",
 "a period of time"
 ],
 "DATETIME\tseveral weeks": [
-"a period of weeks",
+"a number of weeks",
 "a period of time"
 ],
 "DATETIME\tseveral weeks later": [
-"a period of weeks afterwards",
-"a period of time afterwards",
-"at a later time"
+"a number of weeks afterwards",
+"a period of time afterwards"
 ],
 "DATETIME\tseveral years": [
-"a period of years",
+"a number of years",
 "a period of time"
 ],
 "DATETIME\tseveral years after the events at issue": [
-"a period of years after the relevant events",
-"a period of time after the relevant events",
-"at a later time"
+"a number of years after the relevant events",
+"a period of time after the relevant events"
 ],
 "DATETIME\tseveral years'": [
-"a period of years",
+"a number of years'",
 "a period of time"
 ],
 "DATETIME\tshortly afterwards": [
-"a short time later",
-"at a later time"
+"a short time afterwards",
+"a period of time afterwards"
 ],
 "DATETIME\tshortly before the end of that year": [
-"a short time before the end of the year",
-"a short time before the end of the relevant period",
-"at an earlier time"
+"around the end of that year",
+"at some point during that year",
+"at an unspecified time"
 ],
 "DATETIME\tshortly thereafter": [
-"a short time after that",
-"at a later time"
+"soon after",
+"at a later point",
+"at an unspecified time"
 ],
 "DATETIME\tsix years'": [
+"several years'",
 "a period of years",
 "a period of time"
 ],
 "DATETIME\tsix-year": [
-"a multi-year period",
-"a long period",
-"a period"
+"several-year",
+"multi-year",
+"of some duration"
 ],
 "DATETIME\tsixtieth day of his detention": [
 "a late stage of his detention",
-"a stage of his detention",
-"a period during his detention"
+"a point during his detention",
+"a point in time"
 ],
 "DATETIME\tsome days after his arrest": [
 "a short time after his arrest",
-"a time after his arrest",
-"a time in the proceedings"
+"at a later point after his arrest",
+"at an unspecified time"
 ],
 "DATETIME\tsome days later": [
 "a short time later",
-"a time later",
-"a later time"
+"at a later point",
+"at an unspecified time"
 ],
 "DATETIME\tsome five weeks later": [
 "several weeks later",
 "a number of weeks later",
-"a later period"
+"at a later point"
 ],
 "DATETIME\tsome four years": [
 "several years",
 "a number of years",
-"a long period"
+"a period of time"
 ],
 "DATETIME\tsome months": [
 "several months",
 "a number of months",
-"a period"
+"a period of time"
 ],
 "DATETIME\tsome months after the publication of the summons": [
-"a period after the publication of the summons",
-"a time after the summons",
-"a time in the proceedings"
+"a few months after a procedural document was published",
+"a few months after a procedural step",
+"a period of months after a procedural event"
 ],
 "DATETIME\tsome months earlier": [
-"several months earlier",
-"a number of months earlier",
-"an earlier period"
+"a few months before",
+"a period of months before",
+"an earlier period of months"
 ],
 "DATETIME\tsome months later": [
-"several months later",
-"a number of months later",
-"a later period"
+"a few months afterwards",
+"a period of months afterwards",
+"a later period of months"
 ],
 "DATETIME\tsome time later": [
-"a while later",
-"a later time",
-"a subsequent time"
+"a while afterwards",
+"at a later point",
+"at a later time"
 ],
 "DATETIME\tsome two weeks later": [
-"a couple of weeks later",
-"a short time later",
-"a later time"
+"about two weeks afterwards",
+"a couple of weeks afterwards",
+"a short period afterwards"
 ],
 "DATETIME\tsome two years after his acquittal": [
-"a couple of years after his acquittal",
-"a period after his acquittal",
-"a time after his acquittal"
+"about two years after a court decision in his favour",
+"about two years after a judicial outcome",
+"a couple of years after a legal proceeding"
 ],
 "DATETIME\tsome two years after the application was lodged": [
-"a couple of years after the application was lodged",
-"a period after the application was lodged",
-"a time after the application was lodged"
+"about two years after a legal complaint was filed",
+"about two years after a legal step",
+"a couple of years after a procedural event"
 ],
 "DATETIME\tsome two years after the trial": [
-"a couple of years after the trial",
-"a period after the trial",
-"a time after the trial"
+"about two years after a court hearing",
+"about two years after a judicial proceeding",
+"a couple of years after a legal proceeding"
 ],
 "DATETIME\tsome two years later": [
-"a couple of years later",
-"a period later",
-"a later time"
+"about two years afterwards",
+"a couple of years afterwards",
+"a period of years afterwards"
 ],
 "DATETIME\tsome weeks": [
-"several weeks",
-"a number of weeks",
-"a period"
+"a few weeks",
+"a short period of weeks",
+"a period of time"
 ],
 "DATETIME\tsome weeks earlier": [
-"several weeks earlier",
-"a number of weeks earlier",
-"an earlier period"
+"a short time earlier",
+"a period before",
+"earlier"
 ],
 "DATETIME\tsome weeks later": [
-"several weeks later",
-"a number of weeks later",
-"a later period"
+"a short time later",
+"a period afterwards",
+"later"
 ],
 "DATETIME\tsome weeks thereafter": [
-"several weeks thereafter",
-"a number of weeks thereafter",
-"a later period"
+"a short time after that",
+"a period afterwards",
+"afterwards"
 ],
 "DATETIME\tsome years ago": [
-"several years ago",
+"a few years ago",
 "a number of years ago",
-"a past period"
-],
-"DATETIME\tsome years before the application was lodged": [
-"several years before the application was lodged",
-"a period before the application was lodged",
-"a time before the application was lodged"
+"in the past"
 ],
 "DATETIME\tsome years before the events at issue": [
-"several years before the events at issue",
-"a period before the events at issue",
-"a time before the events at issue"
+"a few years before the events at issue",
+"a number of years before the events at issue",
+"before the events at issue"
 ],
 "DATETIME\tsome years before the refusal complained of": [
-"several years before the refusal complained of",
-"a period before the refusal complained of",
-"a time before the refusal complained of"
+"a few years before the refusal complained of",
+"a number of years before the refusal complained of",
+"before the refusal complained of"
 ],
 "DATETIME\tsome years later": [
-"several years later",
+"a few years later",
 "a number of years later",
-"a later period"
+"later"
 ],
 "DATETIME\tspring of that year": [
 "a season of that year",
-"a part of that year",
-"a time that year"
+"part of that year",
+"that year"
 ],
 "DATETIME\tspring of the following year": [
 "a season of the following year",
-"a part of the following year",
-"a time the following year"
+"part of the following year",
+"the following year"
 ],
 "DATETIME\tstart of the following year": [
-"an early part of the following year",
-"a part of the following year",
-"a time the following year"
+"the beginning of the following year",
+"part of the following year",
+"the following year"
 ],
 "DATETIME\tsummer": [
 "a warm season",
-"a season",
-"a time of year"
+"a period of the year"
 ],
 "DATETIME\tsummer of a subsequent year": [
-"a season of a subsequent year",
-"a part of a subsequent year",
-"a time in a subsequent year"
+"a warm season in a later year",
+"a period of a later year"
 ],
 "DATETIME\tsummer of the following year": [
-"a season of the following year",
-"a part of the following year",
-"a time the following year"
+"a warm season in the next year",
+"a period of the next year"
 ],
 "DATETIME\tthe1960s": [
 "a decade in the mid-twentieth century",
-"a decade of the twentieth century",
-"a past period"
+"a period of the twentieth century"
 ],
 "DATETIME\tthirty days": [
-"about a month",
-"a number of days",
-"a period"
+"several weeks",
+"a period of time"
 ],
 "DATETIME\tthirty years": [
 "several decades",
-"a number of decades",
-"a long period"
+"a long period of time"
 ],
 "DATETIME\tthree days": [
 "a few days",
-"a short period",
-"a period"
+"a short period of time"
 ],
 "DATETIME\tthree further days": [
-"a few further days",
-"a further short period",
-"a further period"
+"a few additional days",
+"a short additional period of time"
 ],
 "DATETIME\tthree months": [
-"a few months",
-"a number of months",
-"a period"
+"several months",
+"a period of time"
 ],
 "DATETIME\tthree occasions": [
-"a few occasions",
 "several occasions",
-"multiple occasions"
+"multiple instances"
 ],
 "DATETIME\tthree weeks": [
 "a few weeks",
-"a number of weeks",
-"a period"
+"a short period",
+"a period of time"
 ],
 "DATETIME\ttowards the end of that year": [
-"a late part of that year",
-"a part of that year",
-"a time that year"
-],
-"DATETIME\ttowards the end of the 1980s": [
-"in the late 1980s",
-"in the 1980s",
-"in the late twentieth century"
+"late in the year",
+"in the latter part of a year",
+"at a point in time"
 ],
 "DATETIME\tturn of the decade": [
 "around the change of decade",
-"around the end of a decade",
-"at a time of transition between decades"
+"around a decade boundary",
+"at a point in time"
+],
+"DATETIME\tturn of the millennium": [
+"around the change of millennium",
+"around a millennium boundary",
+"at a point in time"
 ],
 "DATETIME\ttwelve months": [
 "about a year",
+"a period of roughly a year",
 "a period of time"
 ],
 "DATETIME\ttwenty-two months": [
@@ -1160,38 +735,38 @@
 "a period of time"
 ],
 "DATETIME\ttwo and a half years": [
-"over two years",
+"about two to three years",
 "a period of a few years",
 "a period of time"
 ],
 "DATETIME\ttwo and a half years later": [
-"over two years afterwards",
+"a few years afterwards",
 "some years afterwards",
-"at a later time"
+"at a later point in time"
 ],
 "DATETIME\ttwo consecutive detention periods": [
 "successive periods of detention",
-"periods of detention",
-"periods of deprivation of liberty"
+"more than one period of detention",
+"periods of detention"
 ],
 "DATETIME\ttwo days earlier": [
 "a short time earlier",
 "shortly before",
-"at an earlier time"
+"at an earlier point in time"
 ],
 "DATETIME\ttwo later occasions the same year": [
 "later occasions in the same year",
-"later occasions that year",
-"on later occasions"
+"later occasions within a year",
+"later points in time"
 ],
 "DATETIME\ttwo preceding tax years": [
 "the preceding tax years",
 "earlier tax years",
-"earlier years"
+"earlier periods"
 ],
 "DATETIME\ttwo sittings": [
-"a couple of sessions",
-"several sessions",
+"a couple of sittings",
+"several sittings",
 "a number of sessions"
 ],
 "DATETIME\ttwo to three years": [
@@ -1200,39 +775,39 @@
 "a period of time"
 ],
 "DATETIME\ttwo years": [
+"about two years",
 "a couple of years",
-"a few years",
 "a period of time"
 ],
 "DATETIME\ttwo years'": [
-"a couple of years'",
-"a few years'",
+"about two years",
+"a couple of years",
 "a period of time"
 ],
 "DATETIME\tyear and a half": [
 "about a year and a half",
-"a period of over a year",
+"roughly a year to two years",
 "a period of time"
 ],
 "DATETIME\tyear before the trial": [
 "the period preceding the trial",
-"before the trial",
-"at an earlier time"
+"a period before the proceedings",
+"an earlier point in time"
 ],
 "DATETIME\tyears following the second world war": [
 "the post-war years",
-"the years after the war",
-"a period after a major conflict"
+"the years after a major war",
+"a period after a war"
 ],
 "DATETIME\tyears preceding their marriage": [
 "the years before their marriage",
-"before their marriage",
-"at an earlier time"
+"the period before their marriage",
+"an earlier period"
 ],
 "DEM\ta lawyer practising in the same town": [
-"a legal professional in the same area",
+"a lawyer",
 "a legal professional",
-"a professional"
+"a person"
 ],
 "DEM\ta man": [
 "an adult male",
@@ -1242,32 +817,32 @@
 "DEM\ta man in his late thirties": [
 "a middle-aged man",
 "an adult male",
-"an adult"
+"a person"
 ],
 "DEM\ta moderate mental health condition": [
 "a mental health condition",
 "a health condition",
-"a medical condition"
+"a condition"
 ],
 "DEM\ta national of a country in the great lakes region": [
+"a national of a country in that region",
 "a national of an African country",
-"a foreign national",
-"a person"
+"a foreign national"
 ],
 "DEM\ta national of a west african country": [
+"a national of a country in that region",
 "a national of an African country",
-"a foreign national",
-"a person"
+"a foreign national"
 ],
 "DEM\ta national of that state": [
 "a national of the respondent state",
-"a citizen of a state",
+"a national of a state",
 "a person"
 ],
 "DEM\ta substantial term of imprisonment": [
 "a lengthy prison sentence",
 "a prison sentence",
-"a custodial measure"
+"a penalty"
 ],
 "DEM\ta woman": [
 "an adult female",
@@ -1275,28 +850,29 @@
 "a person"
 ],
 "DEM\tadministrative clerk": [
+"a clerical employee",
 "an office worker",
-"an employee",
-"a worker"
+"an employee"
 ],
 "DEM\tadministrative role": [
+"a clerical position",
 "an office position",
-"an employment position",
 "a job"
 ],
 "DEM\tadult": [
 "a grown person",
-"a person"
+"a person",
+"an individual"
 ],
 "DEM\tadult male": [
-"an adult man",
+"a grown man",
 "an adult",
 "a person"
 ],
 "DEM\tadult male national of the respondent state": [
-"an adult male citizen of the respondent state",
-"an adult citizen of a state",
-"an adult person"
+"an adult male national of a state",
+"an adult national of a state",
+"a person"
 ],
 "DEM\tadult of middle age": [
 "a middle-aged adult",
@@ -1309,14 +885,14 @@
 "a person"
 ],
 "DEM\tage of 67": [
-"in his late sixties",
+"in his or her late sixties",
 "an older age",
-"an advanced age"
+"an adult age"
 ],
 "DEM\talcohol problem": [
-"an alcohol-related condition",
-"a health condition",
-"a personal condition"
+"an alcohol-related issue",
+"a health issue",
+"a problem"
 ],
 "DEM\taquaculture businesses": [
 "fish-farming businesses",
@@ -1329,19 +905,18 @@
 "an employee"
 ],
 "DEM\tas a man": [
-"as an adult male",
 "as an adult",
 "as a person"
 ],
 "DEM\tasylum seeker": [
-"an applicant for international protection",
+"a person seeking international protection",
 "a migrant",
-"a foreign national"
+"a person"
 ],
 "DEM\tborn in the 1940s": [
 "born in the mid-twentieth century",
 "born in the twentieth century",
-"an older adult"
+"an older person"
 ],
 "DEM\tborn in the second half of the twentieth century": [
 "born in the twentieth century",
@@ -1349,27 +924,27 @@
 ],
 "DEM\tbritish": [
 "of British origin",
-"of European origin",
+"of a European nationality",
 "of a national origin"
 ],
 "DEM\tbritish citizen": [
-"a citizen of a European state",
-"a citizen of a state",
-"a person"
+"a national of the United Kingdom",
+"a national of a European state",
+"a national of a state"
 ],
 "DEM\tbritish national": [
+"a national of the United Kingdom",
 "a national of a European state",
-"a national of a state",
-"a person"
+"a national of a state"
 ],
 "DEM\tbritish nationals": [
+"nationals of the United Kingdom",
 "nationals of a European state",
-"nationals of a state",
-"persons"
+"nationals of a state"
 ],
 "DEM\tbusiness dealings with associates abroad": [
 "commercial dealings with foreign associates",
-"commercial dealings abroad",
+"commercial dealings with associates",
 "business activity"
 ],
 "DEM\tcar driver": [
@@ -1389,42 +964,42 @@
 ],
 "DEM\tchronic dietary condition": [
 "a long-term dietary condition",
-"a long-term medical condition",
-"a medical condition"
+"a long-term health condition",
+"a health condition"
 ],
 "DEM\tchronic metabolic condition": [
 "a long-term metabolic condition",
-"a long-term medical condition",
-"a medical condition"
+"a long-term health condition",
+"a health condition"
 ],
 "DEM\tchronic musculoskeletal condition affecting his back and one arm": [
 "a long-term musculoskeletal condition affecting part of his body",
 "a long-term musculoskeletal condition",
-"a long-term medical condition"
+"a long-term health condition"
 ],
 "DEM\tchronic respiratory condition": [
 "a long-term respiratory condition",
-"a long-term medical condition",
-"a medical condition"
+"a long-term health condition",
+"a health condition"
 ],
 "DEM\tchronic slowly progressing medical condition affecting his mobility and functional capacity": [
 "a long-term medical condition affecting his mobility",
 "a long-term medical condition",
-"a medical condition"
+"a health condition"
 ],
 "DEM\tcitizen of a state party": [
-"a citizen of a contracting state",
-"a citizen of a state",
+"a national of a Contracting State",
+"a national of a state",
 "a person"
 ],
 "DEM\tcitizen of the respondent state": [
-"a citizen of the state concerned",
-"a citizen of a state",
+"a national of the respondent State",
+"a national of a state",
 "a person"
 ],
 "DEM\tcitizens of the respondent state": [
-"citizens of the state concerned",
-"citizens of a state",
+"nationals of the respondent State",
+"nationals of a state",
 "persons"
 ],
 "DEM\tcivil servant": [
@@ -1433,17 +1008,17 @@
 "an employee"
 ],
 "DEM\tcivilian administrative post": [
+"a civilian administrative position",
 "an administrative position",
-"a non-military post",
-"a post"
+"a position"
 ],
 "DEM\tcivilian solicitor": [
-"a solicitor",
-"a legal professional",
+"a solicitor in civilian practice",
+"a lawyer",
 "a professional"
 ],
 "DEM\tclerical and technical capacities": [
-"administrative and technical roles",
+"clerical and technical roles",
 "support roles",
 "work roles"
 ],
@@ -1454,13 +1029,13 @@
 ],
 "DEM\tco": [
 "a co-applicant",
-"an applicant",
-"a party"
+"a party",
+"a person"
 ],
 "DEM\tcommunication disability": [
 "a disability affecting communication",
 "a disability",
-"a medical condition"
+"a health condition"
 ],
 "DEM\tcompulsory military service": [
 "mandatory military service",
@@ -1470,92 +1045,92 @@
 "DEM\tconstruction sector": [
 "the building industry",
 "an industry sector",
-"a sector of activity"
+"a sector of employment"
 ],
 "DEM\tcounsel practising in a major city": [
 "counsel practising in a city",
-"counsel practising in an urban area",
-"a legal representative"
+"a lawyer",
+"a legal professional"
 ],
 "DEM\tcounsel practising in that city": [
 "counsel practising in a city",
-"counsel practising in an urban area",
-"a legal representative"
+"a lawyer",
+"a legal professional"
 ],
 "DEM\tcounsel practising in the respondent state": [
-"counsel practising in the state concerned",
 "counsel practising in a state",
-"a legal representative"
+"a lawyer",
+"a legal professional"
 ],
 "DEM\tcounsel practising within the respondent state": [
-"counsel practising within the state concerned",
 "counsel practising within a state",
-"a legal representative"
+"a lawyer",
+"a legal professional"
 ],
 "DEM\tcreditor": [
-"a person owed a debt",
+"a person owed money",
 "a party to a debt",
 "a person"
 ],
 "DEM\tcypriot national": [
+"a national of Cyprus",
 "a national of a European state",
-"a national of a state",
-"a person"
+"a national of a state"
 ],
 "DEM\tdaughters of the first and second applicants": [
-"children of the applicants",
-"relatives of the applicants",
-"family members"
+"the applicants' daughters",
+"the applicants' children",
+"relatives of the applicants"
 ],
 "DEM\tdebarred him from public service": [
-"restricted his access to public employment",
-"restricted his employment opportunities",
-"limited his professional opportunities"
+"excluded him from public employment",
+"restricted his employment",
+"restricted his activity"
 ],
 "DEM\tdegenerative joint condition affecting his lower back and one hip": [
 "a degenerative joint condition affecting part of his body",
 "a degenerative joint condition",
-"a long-term medical condition"
+"a long-term health condition"
 ],
 "DEM\tdisability": [
-"a medical condition",
+"a health impairment",
 "a health condition",
 "a condition"
 ],
 "DEM\tdisability allowance": [
-"a disability-related allowance",
-"a social security allowance",
+"an allowance for persons with disabilities",
+"a social benefit",
 "a benefit"
 ],
 "DEM\tdisability benefits": [
-"disability-related benefits",
 "social security benefits",
-"benefits"
+"financial support from the State",
+"welfare assistance"
 ],
 "DEM\tdisability-related social security allowance": [
 "a social security allowance",
-"a social security payment",
-"a benefit"
+"a State benefit",
+"financial support from the State"
 ],
 "DEM\tdisability-related social security benefit": [
 "a social security benefit",
-"a welfare benefit",
-"financial support"
+"a State benefit",
+"financial support from the State"
 ],
 "DEM\tdiscretionary indeterminate sentences": [
 "indeterminate sentences",
-"a type of custodial sentence",
-"a criminal sentence"
+"a form of custodial sentence",
+"a criminal penalty"
 ],
 "DEM\tdiscretionary life prisoner": [
 "a life-sentence prisoner",
-"a prisoner",
+"a prisoner serving a long sentence",
 "a detained person"
 ],
 "DEM\tdriver transporting members of the public": [
-"a transport driver",
-"a driver",
-"a worker"
+"a professional driver",
+"a transport worker",
+"an employee"
 ],
 "DEM\tdrug addict": [
 "a person with a substance dependency",
@@ -1564,12 +1139,13 @@
 ],
 "DEM\tearly twenties": [
 "a young adult",
-"an adult"
+"an adult",
+"a person"
 ],
 "DEM\teducational capacity": [
-"a learning ability",
-"a personal capacity",
-"a personal attribute"
+"a professional role in education",
+"an occupational role",
+"a form of employment"
 ],
 "DEM\telderly man": [
 "an older man",
@@ -1582,34 +1158,34 @@
 "a person with an occupation"
 ],
 "DEM\temployed in a professional capacity": [
-"in professional work",
-"in skilled employment",
+"in professional employment",
+"in an occupational role",
 "in work"
 ],
 "DEM\temployed in an administrative or technical capacity": [
-"in administrative or technical work",
-"in office or technical work",
+"in an administrative or technical role",
+"in an occupational role",
 "in work"
 ],
 "DEM\temployed in the private sector": [
-"in private-sector work",
-"in non-public employment",
+"in private-sector employment",
+"in an occupational role",
 "in work"
 ],
 "DEM\temployed in the public sector": [
-"in public-sector work",
-"in state employment",
+"in public-sector employment",
+"in an occupational role",
 "in work"
 ],
 "DEM\temployer": [
 "a person providing work",
-"a person in an employment relationship",
+"a person in an occupational role",
 "a person"
 ],
 "DEM\teyesight problem": [
 "a visual impairment",
 "a health condition",
-"a personal condition"
+"a health issue"
 ],
 "DEM\tfive nationals": [
 "several nationals",
@@ -1618,47 +1194,53 @@
 ],
 "DEM\tforeign national": [
 "a non-national",
-"a person of foreign origin",
+"a person from another country",
 "a person"
 ],
 "DEM\tforeign nationals": [
 "non-nationals",
-"persons of foreign origin",
+"persons from other countries",
 "persons"
 ],
 "DEM\tformer employee": [
-"a former worker",
 "a person previously in work",
+"a person with past employment",
 "a person"
 ],
 "DEM\tfourteen years old": [
-"an adolescent",
-"a young person",
-"a minor"
-],
-"DEM\tfurther minor child": [
-"another child",
-"a child",
+"a young teenager",
+"a minor",
 "a young person"
 ],
+"DEM\tfurther minor child": [
+"another minor child",
+"another child",
+"a child"
+],
 "DEM\the was a man": [
-"he was an adult",
-"he was a person"
+"an adult male",
+"an adult",
+"a person"
 ],
 "DEM\thead teacher": [
-"a school principal",
-"a senior school staff member",
-"an education worker"
+"a senior school role",
+"an educational role",
+"an occupational role"
 ],
 "DEM\thealth condition affecting her physical capacity": [
 "a physical health condition",
 "a health condition",
-"a personal condition"
+"a health issue"
+],
+"DEM\this early sixties": [
+"an older adult",
+"an adult",
+"a person"
 ],
 "DEM\this mother tongue differs from the official language of that state": [
-"he speaks a language other than the state's official language",
-"he speaks a minority language",
-"he speaks a particular language"
+"a person whose first language is not the official language",
+"a person with a different first language",
+"a person"
 ],
 "DEM\this native language": [
 "his first language",
@@ -1667,36 +1249,28 @@
 ],
 "DEM\this sex": [
 "his gender",
-"a personal characteristic"
-],
-"DEM\tin his early sixties": [
-"in later middle age",
-"an older adult",
-"an adult"
-],
-"DEM\tin their forties": [
-"middle-aged",
-"adults"
+"a personal characteristic",
+"a characteristic"
 ],
 "DEM\tinsurance sector": [
-"the financial sector",
-"a business sector",
-"an economic sector"
+"a financial sector",
+"an economic sector",
+"an industry"
 ],
 "DEM\tinventor": [
 "a creator of a device",
-"a professional",
-"a person"
+"a professional role",
+"an occupational role"
 ],
 "DEM\tjudge advocate": [
-"a military legal officer",
 "a legal officer",
-"a legal professional"
+"a legal professional",
+"a professional role"
 ],
 "DEM\tjunior administrative post": [
-"an administrative post",
 "an administrative role",
-"a job"
+"an occupational role",
+"a form of employment"
 ],
 "DEM\tlanguage of the respondent state": [
 "an official language",
@@ -1706,45 +1280,45 @@
 "DEM\tlasting impairment affecting his ability to communicate": [
 "a communication impairment",
 "a health condition",
-"a personal condition"
+"a health issue"
 ],
 "DEM\tlawyer": [
 "a legal professional",
 "a professional",
-"a person"
+"a person with an occupation"
 ],
 "DEM\tlawyer practising in a city in turkey": [
-"a lawyer practising in a Turkish city",
-"a lawyer practising in Turkey",
-"a legal professional"
+"a lawyer practising in a city",
+"a legal professional",
+"a professional"
 ],
 "DEM\tlawyer practising in the region": [
-"a regional lawyer",
-"a lawyer",
-"a legal professional"
+"a lawyer practising locally",
+"a legal professional",
+"a professional"
 ],
 "DEM\tlawyer practising in the respondent state": [
-"a lawyer in the respondent state",
-"a lawyer",
-"a legal professional"
+"a lawyer practising in the country",
+"a legal professional",
+"a professional"
 ],
 "DEM\tlawyer practising in turkey": [
-"a Turkish lawyer",
-"a lawyer",
-"a legal professional"
+"a lawyer practising in a country",
+"a legal professional",
+"a professional"
 ],
 "DEM\tleading figure in a commercial venture": [
-"a senior person in a business",
-"a business participant",
+"a senior participant in a business",
+"a businessperson",
 "a person"
 ],
 "DEM\tlegal officer": [
 "an officer with legal duties",
 "a legal professional",
-"a professional"
+"an employee"
 ],
 "DEM\tlegal practitioners": [
-"people practising law",
+"people working in law",
 "legal professionals",
 "professionals"
 ],
@@ -1754,19 +1328,19 @@
 "an occupation"
 ],
 "DEM\tlegal representative": [
-"a lawyer",
+"a representative with legal training",
 "a legal professional",
-"a professional"
+"a person acting for another"
 ],
 "DEM\tlegal representative practising in a regional bar": [
-"a lawyer in a regional bar",
-"a lawyer",
-"a legal professional"
+"a legal representative practising in a local area",
+"a legal professional",
+"a person acting for another"
 ],
 "DEM\tless responsible lower-paid work": [
-"lower-paid work",
-"work of lower status",
-"employment"
+"lower-level work",
+"less senior employment",
+"work"
 ],
 "DEM\tlocal councillor": [
 "a local elected official",
@@ -1775,108 +1349,106 @@
 ],
 "DEM\tmale": [
 "a man",
-"a person",
-"an individual"
+"a person"
 ],
 "DEM\tmale national of a contracting state": [
-"a male citizen of a state party",
-"a citizen of a state",
+"a man who is a national of a State Party",
+"a national of a State Party",
 "a person"
 ],
 "DEM\tmale national of the respondent state": [
-"a male citizen of the respondent state",
-"a citizen of the respondent state",
+"a man who is a national of the respondent State",
+"a national of the respondent State",
 "a person"
 ],
 "DEM\tman": [
 "a male person",
-"a person",
-"an individual"
+"a person"
 ],
 "DEM\tman of mature age": [
 "an older man",
-"an adult man",
+"an adult",
 "a person"
 ],
 "DEM\tman of retirement age": [
 "an elderly man",
-"an older man",
+"an older adult",
 "a person"
 ],
 "DEM\tmandatory life prisoner": [
 "a prisoner serving a life sentence",
-"a prisoner",
-"a detained person"
+"a long-term prisoner",
+"a prisoner"
 ],
 "DEM\tmanual and technical occupations in the industrial and service sectors": [
 "manual and technical jobs",
-"manual occupations",
-"occupations"
+"practical occupations",
+"types of work"
 ],
 "DEM\tmanual worker": [
-"a worker in manual labour",
-"a worker",
-"an employee"
+"a worker in a manual job",
+"an employee",
+"a person"
 ],
 "DEM\tmarked myopic degeneration in the applicant's left eye": [
-"a degenerative eye condition",
-"an eye condition",
-"a health condition"
+"a serious eye condition",
+"a medical condition",
+"a health issue"
 ],
 "DEM\tmarried couple": [
+"a couple who are married",
 "a couple",
-"two persons",
-"persons"
+"two people"
 ],
 "DEM\tmarried man": [
-"a husband",
-"a man",
+"a man who is married",
+"an adult man",
 "a person"
 ],
 "DEM\tmeat-processing industry": [
-"the food-processing industry",
+"a food-processing industry",
 "an industry",
-"a sector"
+"a sector of activity"
 ],
 "DEM\tmember of a civic association engaged in charitable and educational activities": [
-"a member of a civic association",
+"a member of a charitable organisation",
 "a member of an organisation",
 "a person"
 ],
 "DEM\tmember of a majority group": [
-"a member of a larger group",
-"a group member",
+"a person belonging to a larger group",
+"a person in a group",
 "a person"
 ],
 "DEM\tmember of a minority group": [
-"a member of a smaller group",
-"a group member",
+"a person belonging to a smaller group",
+"a person in a group",
 "a person"
 ],
 "DEM\tmember of a religious minority": [
-"a member of a minority faith",
+"a person belonging to a smaller religious group",
 "a religious person",
 "a person"
 ],
 "DEM\tmember of the armed forces": [
-"a member of the military",
-"a serviceman",
+"a person serving in the military",
+"a serviceman or servicewoman",
 "a person"
 ],
 "DEM\tmembers of the armed forces": [
-"members of the military",
-"servicemen",
-"persons"
+"people serving in the military",
+"military personnel",
+"people"
 ],
 "DEM\tmental-health condition": [
 "a psychological condition",
-"a health condition",
-"a condition"
+"a medical condition",
+"a health issue"
 ],
 "DEM\tmid-forties": [
-"in his forties",
 "middle-aged",
-"an adult"
+"an adult",
+"a person"
 ],
 "DEM\tmid-level administrator": [
 "an administrator",
@@ -1884,18 +1456,18 @@
 "an employee"
 ],
 "DEM\tmid-twentieth century": [
+"the middle of the twentieth century",
 "the twentieth century",
-"a past period",
-"a period"
+"a past period"
 ],
 "DEM\tmiddle-aged adult": [
+"an adult of middle age",
 "an adult",
-"a person",
-"an individual"
+"a person"
 ],
 "DEM\tmiddle-management position with responsibility for administrative and budgetary matters": [
 "a management position",
-"a position of responsibility",
+"a senior position",
 "a job"
 ],
 "DEM\tmilitary service": [
@@ -1904,37 +1476,36 @@
 "an obligation"
 ],
 "DEM\tminor": [
-"a child",
+"a person under the age of majority",
 "a young person",
 "a person"
 ],
 "DEM\tminority shareholder and de facto manager": [
-"a shareholder and manager",
+"a part-owner involved in running a business",
 "a business participant",
 "a person"
 ],
 "DEM\tminors": [
-"children",
-"young persons",
-"persons"
+"people under the age of majority",
+"young people",
+"people"
 ],
 "DEM\tmunicipal trading-standards officer": [
-"a municipal officer",
+"a local authority officer",
 "a public official",
-"an official"
+"an employee"
 ],
 "DEM\tnational of [country]": [
-"a citizen of a country",
+"a national of a State",
 "a citizen",
 "a person"
 ],
 "DEM\tnational of [member state]": [
-"a citizen of a member state",
-"a citizen of a state",
-"a person"
+"a national of a European state",
+"a national of a state"
 ],
 "DEM\tnational of [respondent state]": [
-"a national of a state involved in the proceedings",
+"a national of a European state",
 "a national of a state"
 ],
 "DEM\tnational of a central african state": [
@@ -1946,16 +1517,15 @@
 "a national of a state"
 ],
 "DEM\tnational of a contracting state": [
-"a national of a state bound by an international treaty",
+"a national of a European state",
 "a national of a state"
 ],
 "DEM\tnational of a council of europe member state": [
-"a national of a European intergovernmental organisation member state",
 "a national of a European state",
 "a national of a state"
 ],
 "DEM\tnational of a non-member state": [
-"a national of a state outside an international organisation",
+"a national of a state outside the organisation",
 "a national of a state"
 ],
 "DEM\tnational of a south asian state": [
@@ -1967,141 +1537,125 @@
 "a national of a state"
 ],
 "DEM\tnational of a state party to the convention": [
-"a national of a state bound by an international treaty",
+"a national of a European state",
 "a national of a state"
 ],
 "DEM\tnational of a west african state": [
 "a national of an African state",
-"a national of a state"
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of an east african country": [
 "a national of an African country",
 "a national of a foreign country",
-"a foreign national"
+"a person"
 ],
 "DEM\tnational of another contracting party": [
-"a national of a different party to the Convention",
-"a national of a foreign State",
-"a foreign national"
+"a national of a party to an international agreement",
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of another member state": [
-"a national of a different member State",
-"a national of a foreign State",
-"a foreign national"
+"a national of a member state",
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of marovia": [
-"a national of a foreign country",
-"a foreign national",
+"a national of a European state",
+"a national of a foreign state",
 "a person"
 ],
 "DEM\tnational of one contracting state": [
-"a national of a State party to the Convention",
-"a national of a foreign State",
-"a foreign national"
+"a national of a party to an international agreement",
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of one of the contracting states": [
-"a national of a State party to the Convention",
-"a national of a foreign State",
-"a foreign national"
+"a national of a party to an international agreement",
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of one state": [
-"a national of a particular country",
-"a national of a foreign State",
-"a foreign national"
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of state b": [
-"a national of a foreign country",
-"a foreign national",
+"a national of a foreign state",
 "a person"
 ],
 "DEM\tnational of that state": [
-"a national of the country concerned",
-"a national of a foreign State",
-"a foreign national"
+"a national of a foreign state",
+"a person"
 ],
 "DEM\tnational of the republic of maltavia": [
-"a national of a foreign country",
-"a foreign national",
-"a person"
+"a national of a European country",
+"a national of a country"
 ],
 "DEM\tnational of the respondent state": [
-"a citizen of a country involved in the proceedings",
-"a citizen of a country",
-"a person"
+"a national of a state party to the proceedings",
+"a national of a country"
 ],
 "DEM\tnational of the same east african country": [
-"a citizen of a country in the same region",
-"a citizen of an African country",
-"a person"
+"a national of the same African country",
+"a national of the same country"
 ],
 "DEM\tnational of the same state": [
-"a citizen of the same country",
-"a citizen of a country",
-"a person"
+"a national of the same country",
+"a national of a country"
 ],
 "DEM\tnational of turkey": [
-"a citizen of a European country",
-"a citizen of a country",
-"a person"
+"a national of a European country",
+"a national of a country"
 ],
 "DEM\tnationals of a council of europe member state": [
-"citizens of a European country",
-"citizens of a country",
-"persons"
+"nationals of a European state",
+"nationals of a country"
 ],
 "DEM\tnationals of that state": [
-"citizens of that country",
-"citizens of a country",
-"persons"
+"nationals of that country",
+"nationals of a country"
 ],
 "DEM\tnationals of the respondent state": [
-"citizens of a country involved in the proceedings",
-"citizens of a country",
-"persons"
+"nationals of a state party to the proceedings",
+"nationals of a country"
 ],
 "DEM\tnon-commissioned officer": [
-"a military officer of lower rank",
-"a member of the armed forces",
-"a person"
+"a military officer",
+"a member of the armed forces"
 ],
 "DEM\tnot a woman": [
-"a person of another gender",
+"a person of a different gender",
 "a person"
 ],
 "DEM\tnot in employment": [
 "without a job",
-"a person not working",
-"a person"
-],
-"DEM\tof secondary-school age": [
-"a school-age person",
-"a young person",
-"a person"
+"outside the labour market",
+"in a personal situation"
 ],
 "DEM\tofficer role": [
-"a member of the armed forces",
-"a public servant",
-"a person"
+"a position in the armed forces",
+"a professional role",
+"an occupational role"
 ],
 "DEM\tofficial of the competent ministry": [
-"a civil servant",
-"a public-sector employee",
-"a person"
+"a civil servant in a government department",
+"a public official",
+"a person in public service"
 ],
 "DEM\toperated a modest trading enterprise": [
 "ran a small business",
-"was self-employed",
-"was economically active"
+"ran a business",
+"engaged in commercial activity"
 ],
 "DEM\toperated a small enterprise in the services sector": [
 "ran a small business",
-"was self-employed",
-"was economically active"
+"ran a business",
+"engaged in commercial activity"
 ],
 "DEM\toperating a small agricultural cooperative": [
-"ran a small agricultural business",
-"was self-employed in agriculture",
-"was economically active"
+"running a small farming business",
+"running a business",
+"engaged in economic activity"
 ],
 "DEM\torthopaedic specialist": [
 "a medical specialist",
@@ -2110,13 +1664,13 @@
 ],
 "DEM\tover 60 years old": [
 "an older person",
-"an elderly person",
-"an adult"
+"an adult",
+"a person"
 ],
 "DEM\tover retirement age": [
 "an older person",
-"an elderly person",
-"an adult"
+"an adult",
+"a person"
 ],
 "DEM\tparents of several children": [
 "a family with children",
@@ -2325,8 +1879,8 @@
 ],
 "DEM\tsecondary-school age": [
 "school age",
-"young person",
-"a minor"
+"a young person",
+"a person"
 ],
 "DEM\tsecondary-school qualifications": [
 "school-level qualifications",
@@ -2335,18 +1889,18 @@
 ],
 "DEM\tself-employed": [
 "working independently",
-"in independent work",
-"economically active"
+"in a form of employment",
+"a worker"
 ],
 "DEM\tself-employed in a commercial capacity": [
 "self-employed in business",
 "working independently in business",
-"economically active in business"
+"a worker"
 ],
 "DEM\tself-employed in the publishing sector": [
 "self-employed in a media-related sector",
-"self-employed in a sector of activity",
-"economically active in a sector of activity"
+"working independently in a media-related sector",
+"a worker"
 ],
 "DEM\tself-employed professional": [
 "an independent professional",
@@ -2354,29 +1908,29 @@
 "a worker"
 ],
 "DEM\tself-employed tradesman": [
-"a self-employed manual worker",
-"an independent manual worker",
+"an independent tradesperson",
+"a manual worker",
 "a worker"
 ],
 "DEM\tsenior officer": [
 "a high-ranking officer",
 "an officer of rank",
-"an officer"
+"an official"
 ],
 "DEM\tsenior police officer": [
 "a high-ranking police officer",
 "a police officer of rank",
-"a police officer"
+"a law-enforcement official"
 ],
 "DEM\tsenior position": [
-"a high-ranking post",
-"a post of responsibility",
-"a post"
+"a high-ranking role",
+"a position of responsibility",
+"a role"
 ],
 "DEM\tsenior position within a lawful political party": [
-"a high-ranking post in a political party",
-"a post of responsibility in a political party",
-"a post in a political party"
+"a high-ranking role in a political party",
+"a position of responsibility in a political party",
+"a role in a political party"
 ],
 "DEM\tserving a sentence of imprisonment": [
 "detained under a prison sentence",
@@ -2385,7 +1939,7 @@
 ],
 "DEM\tserving a sentence of indeterminate detention": [
 "detained under an indeterminate sentence",
-"in detention",
+"in long-term detention",
 "deprived of liberty"
 ],
 "DEM\tserving a term of imprisonment": [
@@ -2394,29 +1948,29 @@
 "deprived of liberty"
 ],
 "DEM\tserving in the armed forces of the respondent state": [
-"serving in the armed forces",
+"serving in the national armed forces",
 "serving in the military",
-"in military service"
+"a member of the armed forces"
 ],
 "DEM\tserving in the ranks of the national armed forces": [
-"serving in the armed forces",
+"serving in the national military",
 "serving in the military",
-"in military service"
+"a member of the armed forces"
 ],
 "DEM\tserving member of the armed forces": [
-"a member of the armed forces",
 "a member of the military",
-"a person in military service"
+"a member of the armed forces",
+"a person in state service"
 ],
 "DEM\tserving members of its military forces": [
+"members of the national military",
 "members of the armed forces",
-"members of the military",
-"persons in military service"
+"persons in state service"
 ],
 "DEM\tseventeen": [
 "a teenager",
-"a young person",
-"a minor"
+"a minor",
+"a young person"
 ],
 "DEM\tsignificant visual impairment in his left eye": [
 "a visual impairment",
@@ -2426,62 +1980,62 @@
 "DEM\tsite contractor": [
 "a construction contractor",
 "a contractor",
-"a business"
+"a worker"
 ],
 "DEM\tsmall business in the cultural sector": [
 "a business in the cultural sector",
-"a business in a sector of activity",
+"a small enterprise",
 "a business"
 ],
 "DEM\tsmall passenger-transport business": [
 "a transport business",
-"a business in the transport sector",
+"a small enterprise",
 "a business"
 ],
 "DEM\tsmall wholesale distribution business": [
 "a distribution business",
-"a business in the distribution sector",
+"a small enterprise",
 "a business"
 ],
 "DEM\tsocial worker": [
 "a welfare professional",
 "a public-service professional",
-"a professional"
+"a worker"
 ],
 "DEM\tsoldier": [
-"a member of the armed forces",
 "a member of the military",
-"a person in military service"
+"a member of the armed forces",
+"a person in state service"
 ],
 "DEM\tsolicitor": [
-"a lawyer",
 "a legal professional",
+"a lawyer",
 "a professional"
 ],
 "DEM\tsolicitor in private practice": [
 "a lawyer in private practice",
-"a legal professional in private practice",
-"a professional in private practice"
+"a legal professional",
+"a professional"
 ],
 "DEM\tsolicitor practising in the east midlands": [
-"a lawyer practising in a region",
-"a legal professional practising in a region",
-"a professional practising in a region"
+"a lawyer practising in a region of the country",
+"a legal professional",
+"a professional"
 ],
 "DEM\tsolicitors practising in the respondent state": [
-"lawyers practising in the state",
-"legal professionals practising in the state",
-"professionals practising in the state"
+"lawyers practising in the country",
+"legal professionals",
+"professionals"
 ],
 "DEM\tstudent": [
 "a learner",
-"a young person in education",
-"a person in education"
+"a young person",
+"a person"
 ],
 "DEM\tsupervisory position": [
-"a post with supervisory duties",
-"a post of responsibility",
-"a post"
+"a role with oversight duties",
+"a position of responsibility",
+"a role"
 ],
 "DEM\tsurviving spouse": [
 "a bereaved spouse",
@@ -2493,23 +2047,28 @@
 "spouses",
 "family members"
 ],
+"DEM\ttheir forties": [
+"middle-aged",
+"adults",
+"persons"
+],
 "DEM\tthree nationals of a council of europe member state": [
-"several nationals of a European state",
 "several foreign nationals",
+"several nationals of another country",
 "several persons"
 ],
 "DEM\ttime-wage basis": [
-"a wage basis",
-"a basis of remuneration",
-"a basis of payment"
+"a wage-based arrangement",
+"a form of remuneration",
+"a payment arrangement"
 ],
 "DEM\tturkish national": [
-"a national of a state",
+"a national of the country",
 "a foreign national",
 "a person"
 ],
 "DEM\tturkish nationals": [
-"nationals of a state",
+"nationals of the country",
 "foreign nationals",
 "persons"
 ],
@@ -2519,383 +2078,440 @@
 "a person"
 ],
 "DEM\ttwo lawyers": [
-"several lawyers",
-"several legal professionals",
-"several professionals"
+"two legal professionals",
+"two professionals",
+"two persons"
 ],
 "DEM\ttwo nationals of that state": [
-"two nationals of a state",
-"two persons connected to a state"
+"two citizens of that country",
+"two citizens of a country",
+"two persons"
 ],
 "DEM\ttwo nationals of the respondent state": [
-"two nationals of the respondent country",
-"two persons connected to the respondent country"
+"two citizens of the respondent country",
+"two citizens of a country",
+"two persons"
 ],
 "DEM\tunited kingdom national": [
 "a national of a European state",
-"a national of a state"
+"a national of a state",
+"a person"
 ],
 "DEM\tunited kingdom nationals": [
 "nationals of a European state",
-"nationals of a state"
+"nationals of a state",
+"persons"
 ],
 "DEM\tvoluntarily unemployed": [
 "unemployed by choice",
-"without employment"
+"without employment",
+"not in work"
 ],
 "DEM\tvoluntary sector": [
-"non-profit organisations",
-"civil-society organisations"
+"the non-profit sector",
+"an organisational sector",
+"a sector of activity"
 ],
 "DEM\twelder": [
 "a skilled manual worker",
+"a manual worker",
 "a worker"
 ],
 "DEM\twhite british ethnic background": [
 "a white ethnic background",
-"an ethnic background"
+"an ethnic background",
+"a personal characteristic"
 ],
 "DEM\twhite-collar capacity": [
 "a professional capacity",
-"an occupational capacity"
+"an occupational capacity",
+"a work-related capacity"
 ],
 "DEM\twholly owned a small commercial enterprise": [
 "owned a small business",
-"owned a business"
+"owned a business",
+"was self-employed"
 ],
 "DEM\twidowed": [
-"having lost a spouse",
-"a person with a certain marital status"
+"bereaved of a spouse",
+"unmarried through bereavement",
+"a marital status"
 ],
 "DEM\twidowed parent": [
-"a parent who has lost a spouse",
-"a parent"
+"a bereaved parent",
+"a parent",
+"a person with children"
 ],
 "DEM\twidowed parent's allowance": [
-"a bereavement-related benefit",
-"a social-security benefit"
+"a bereavement-related social benefit",
+"a social security benefit",
+"a financial benefit"
 ],
 "DEM\twidower": [
-"a man who has lost a spouse",
-"a person who has lost a spouse"
+"a bereaved man",
+"a man",
+"a person"
 ],
 "DEM\twidowers": [
-"men who have lost a spouse",
-"persons who have lost a spouse"
+"bereaved men",
+"men",
+"persons"
 ],
 "DEM\twidows": [
-"women who have lost a spouse",
-"persons who have lost a spouse"
+"bereaved women",
+"women",
+"persons"
 ],
 "DEM\tworked in an educational or public-service capacity": [
-"worked in an educational or public-sector role",
-"worked in a public-facing role"
+"worked in an educational or public role",
+"worked in a public-facing role",
+"worked in an institutional role"
 ],
 "DEM\tworked in the public service": [
-"worked in the public sector",
-"worked in public employment"
+"worked in public employment",
+"worked in public administration",
+"worked in an institutional setting"
 ],
 "DEM\tyoung child": [
 "a child",
-"a minor"
+"a minor",
+"a young person"
 ],
 "MISC\t1985 act": [
 "a statute from the 1980s",
-"a statute"
+"a statute",
+"a legal instrument"
 ],
 "MISC\t2004 act": [
 "a statute from the 2000s",
-"a statute"
+"a statute",
+"a legal instrument"
 ],
 "MISC\ta certain witness": [
 "a witness",
-"a person giving evidence"
+"a person giving evidence",
+"a participant in proceedings"
 ],
 "MISC\ta condition requiring specialist referral": [
 "a medical condition needing specialist care",
-"a medical condition"
+"a medical condition",
+"a health condition"
 ],
 "MISC\ta course of therapeutic procedures": [
 "a course of medical treatment",
-"medical treatment"
+"medical treatment",
+"a form of care"
 ],
 "MISC\ta double taxation convention between the two states concerned": [
-"a tax treaty between the states concerned",
-"an international tax agreement"
+"a tax treaty between the states involved",
+"a tax treaty between states",
+"an international agreement"
 ],
 "MISC\ta drug-related offence": [
-"an offence related to controlled substances",
-"a criminal offence"
+"an offence connected with drugs",
+"a criminal offence",
+"an offence"
 ],
 "MISC\ta large cloth poster bearing a slogan of a political nature": [
 "a large poster with a political message",
-"a poster with a message"
+"a poster with a message",
+"a displayed item"
 ],
 "MISC\ta legislative reform reorganising the court system": [
 "a reform of the court system",
-"a legal reform"
+"a reform of the judiciary",
+"an institutional reform"
 ],
 "MISC\ta lengthy term of imprisonment": [
 "a long prison sentence",
-"a prison sentence"
+"a prison sentence",
+"a custodial penalty"
 ],
 "MISC\ta mortgage offer conditional on medical insurance": [
-"a loan offer subject to a condition",
+"a loan offer subject to a medical condition",
+"a loan offer with conditions",
 "a financial offer"
 ],
 "MISC\ta novel and delicate situation": [
-"a difficult situation",
+"an unusual and sensitive situation",
+"an unusual situation",
 "a situation"
 ],
 "MISC\ta police unit in an unmarked car escorted a commercial vehicle carrying a cash delivery": [
-"police in an unmarked vehicle escorted a commercial vehicle",
-"law-enforcement officers escorted a vehicle"
+"law-enforcement officers in an unmarked vehicle escorted a vehicle transporting money",
+"officers escorted a vehicle transporting valuables",
+"officers escorted a vehicle"
 ],
 "MISC\ta programme of events connected with a cultural and religious occasion": [
+"events connected with a cultural and religious occasion",
 "events connected with a cultural occasion",
-"cultural events"
+"organised events"
 ],
 "MISC\ta public event of considerable scale held in the city that year": [
+"a large public event held in the city",
 "a large public event",
 "a public event"
 ],
 "MISC\ta secondary school": [
 "a school",
-"an educational institution"
+"an educational institution",
+"an institution"
 ],
 "MISC\ta serious offence against the state": [
 "a serious criminal offence",
-"a criminal offence"
+"a criminal offence",
+"an offence"
 ],
 "MISC\ta short theatrical performance touching on that theme": [
-"a theatrical performance",
+"a short performance on that theme",
+"a performance on a theme",
 "a performance"
 ],
 "MISC\ta term of imprisonment": [
 "a prison sentence",
-"a custodial sanction"
+"a custodial penalty",
+"a penalty"
 ],
 "MISC\ta theft-related offence": [
-"an offence involving property",
-"a criminal offence"
+"an offence connected with theft",
+"a criminal offence",
+"an offence"
 ],
 "MISC\ta weapon was used to threaten a member of the public": [
-"a weapon was used to threaten a person",
-"a person was threatened with a weapon"
+"a threat involving a weapon",
+"a threat against a person",
+"a criminal offence"
 ],
 "MISC\tabsence without leave": [
-"an unauthorised absence from duty",
-"a disciplinary matter",
-"a workplace or service-related issue"
+"unauthorised absence from duty",
+"a breach of military discipline",
+"a disciplinary matter"
 ],
 "MISC\tabstract of evidence": [
-"a summary of evidence",
-"a legal document",
-"a document"
+"a summary of the evidence",
+"a document in criminal proceedings",
+"a procedural document"
 ],
 "MISC\taccredited offending-behaviour programme": [
-"a recognised rehabilitation programme",
+"a rehabilitation programme for offenders",
 "a correctional programme",
-"a programme"
+"a programme in the criminal justice system"
 ],
 "MISC\tacquitted on a procedural ground": [
 "acquitted for a formal reason",
-"acquitted",
-"found not guilty"
+"acquitted without a ruling on the merits",
+"acquitted"
 ],
 "MISC\taction was declared inadmissible": [
-"the complaint was rejected on formal grounds",
-"the complaint was rejected",
-"a legal claim was dismissed"
+"the proceedings were rejected on formal grounds",
+"the proceedings were not examined on the merits",
+"the proceedings ended without a decision on the merits"
 ],
 "MISC\tactions against the indivisible integrity of the state": [
-"conduct threatening the unity of the state",
-"conduct against state interests",
-"political conduct"
+"conduct threatening the territorial unity of the state",
+"conduct against the integrity of the state",
+"conduct against state interests"
 ],
 "MISC\tactivities aimed at undermining the constitutional order": [
-"conduct against the constitutional system",
-"conduct against the established order",
-"political conduct"
+"conduct directed against the constitutional system",
+"conduct against the constitutional order",
+"conduct against the established order"
 ],
 "MISC\tactivities of an unlawful association": [
-"activities of a prohibited group",
-"activities of a group",
-"collective activities"
+"activities of a prohibited organisation",
+"activities of an illegal group",
+"unlawful collective activity"
 ],
 "MISC\tactivities of an unregistered association": [
-"activities of an informal group",
-"activities of a group",
+"activities of an informal organisation",
+"activities of an unrecognised group",
 "collective activities"
 ],
 "MISC\tactivities on behalf of the prohibited association": [
-"activities in support of a banned group",
-"activities in support of a group",
-"collective activities"
+"activities in support of a banned organisation",
+"activities linked to an illegal group",
+"unlawful collective activity"
 ],
 "MISC\tadditional contract for the sale of the flats to a bank": [
-"a further property transaction",
-"a commercial agreement",
-"a legal arrangement"
+"a further agreement concerning the sale of property to a financial institution",
+"a further property transaction with a financial institution",
+"a contractual arrangement"
 ],
 "MISC\tagreement under which the wife waived all maintenance claims in respect of the child and the applicant undertook not to institute paternity proceedings": [
-"a settlement concerning maintenance and paternity",
+"an agreement on maintenance and paternity proceedings",
 "a family-law agreement",
-"a legal agreement"
+"a private agreement"
 ],
 "MISC\taiding and abetting an armed organisation": [
 "supporting an armed group",
-"assisting an organisation",
-"involvement in an organisation's activities"
+"supporting an illegal organisation",
+"assisting an unlawful group"
 ],
 "MISC\taiding and abetting an illegal organisation through propaganda": [
-"supporting an unlawful group by disseminating material",
-"assisting an organisation",
-"involvement in an organisation's activities"
+"supporting an illegal organisation by disseminating ideas",
+"supporting an unlawful group",
+"assisting an unlawful group"
 ],
 "MISC\taiding and abetting it": [
-"supporting it",
-"assisting an entity",
-"involvement in an activity"
+"supporting an organisation",
+"assisting a group",
+"providing assistance"
 ],
 "MISC\taliens act": [
 "legislation on foreign nationals",
 "immigration legislation",
-"a legal instrument"
+"domestic legislation"
 ],
 "MISC\tallegations of bias in the jury's deliberations": [
-"complaints about the jury's conduct",
-"objections to the proceedings",
-"procedural complaints"
+"complaints about impartiality in the jury's discussions",
+"complaints about the fairness of the proceedings",
+"complaints about the conduct of the trial"
 ],
 "MISC\taltering the constitutional order by unlawful means": [
-"unlawfully changing the constitutional system",
-"an offence against the State",
-"a serious offence"
+"changing the constitutional system through illegal conduct",
+"conduct against the constitutional order",
+"conduct against the established order"
 ],
 "MISC\tamendment to the co-operative's statute": [
-"a change to the organisation's rules",
-"an internal organisational change",
-"an organisational matter"
+"a change to the rules of a co-operative",
+"a change to an organisation's internal rules",
+"an organisational change"
 ],
 "MISC\tan administrative circular issued in the early 1990s": [
-"an administrative instruction from that period",
-"an official instruction",
-"an administrative measure"
+"an administrative circular from that period",
+"an administrative instruction",
+"an official document"
 ],
 "MISC\tan age exemption certificate": [
+"a certificate concerning an exemption",
 "an official certificate",
 "an official document"
 ],
 "MISC\tan offence against the person": [
 "a violent offence",
+"an offence involving harm to a person",
 "a criminal offence"
 ],
 "MISC\tanger management relationships alcohol awareness and men and violence": [
-"a programme addressing behavioural and relationship issues",
-"a rehabilitation programme"
+"programmes on anger and relationships",
+"offending-behaviour programmes",
+"rehabilitation programmes"
 ],
 "MISC\tanonymous denunciation letter": [
-"an anonymous report",
-"a communication"
+"an anonymous complaint",
+"a denunciation",
+"a communication to the authorities"
 ],
 "MISC\tanti-discrimination legislation": [
 "legislation on equal treatment",
+"legislation protecting rights",
 "domestic legislation"
 ],
 "MISC\tanti-terrorism legislation": [
-"legislation on security matters",
+"legislation on terrorism",
+"security legislation",
 "domestic legislation"
 ],
 "MISC\tappeal against conviction was subsequently dismissed by the appellate court": [
-"a subsequent unsuccessful appeal",
-"a later legal proceeding"
+"the appeal was later rejected",
+"the appeal was unsuccessful",
+"the appeal was decided"
 ],
 "MISC\tappeal tribunal": [
 "an appellate body",
-"a judicial body"
+"a judicial body",
+"a public authority"
 ],
 "MISC\tapplicable civil procedure rules": [
+"rules of civil procedure",
 "procedural rules",
 "legal rules"
 ],
 "MISC\tapplicable legislation": [
-"relevant legal provisions",
-"domestic law"
+"the relevant legislation",
+"domestic law",
+"the law"
 ],
 "MISC\tapplicable legislation on the legal status of children": [
-"legislation concerning children",
-"domestic law"
+"legislation on the status of children",
+"legislation concerning minors",
+"domestic legislation"
 ],
 "MISC\tapplicable provision of the municipal tax legislation": [
 "a provision of local tax law",
-"domestic law"
+"a tax-law provision",
+"a legal provision"
 ],
 "MISC\tapplicable statutory provision governing the exclusion of evidence": [
-"a rule on the admissibility of evidence",
-"domestic law"
+"a rule on the exclusion of evidence",
+"a rule of criminal procedure",
+"a legal rule"
 ],
 "MISC\tapplicant's company": [
+"the applicant's business",
 "a business entity",
 "an organisation"
 ],
 "MISC\tarmed robberies": [
+"robberies involving weapons",
 "violent property offences",
-"criminal offences"
+"serious criminal offences"
 ],
 "MISC\tarmy act 1955": [
 "military legislation",
-"domestic law"
+"legislation on military discipline",
+"domestic legislation"
 ],
 "MISC\tarticle 417 of the civil code": [
-"a provision of civil law",
-"domestic law"
+"a provision of the civil code",
+"a civil-law provision",
+"a legal provision"
 ],
 "MISC\tassociation of a kind whose activities are restricted under domestic law": [
-"a restricted association",
+"an organisation subject to legal restrictions",
+"a restricted organisation",
 "an organisation"
 ],
 "MISC\tattempting to undermine the constitutional order": [
+"attempting to act against the constitutional system",
 "conduct against the constitutional order",
-"a criminal offence"
+"conduct against the established order"
 ],
 "MISC\tbereavement allowance": [
-"a social benefit",
+"a social security benefit",
 "financial support"
 ],
 "MISC\tbereavement payment": [
 "a social security payment",
-"a financial benefit"
+"financial assistance"
 ],
 "MISC\tbereavement-related social security allowance": [
-"a social security allowance",
-"a financial benefit"
+"a social security benefit",
+"financial support"
 ],
 "MISC\tbill of indictment": [
-"a formal charging document",
+"a formal criminal charge",
 "a legal document"
 ],
 "MISC\tbuffer zone": [
-"a restricted area",
-"a designated area"
+"a designated area",
+"a geographical area"
 ],
 "MISC\tbusiness dealings of a financial nature": [
-"financial transactions",
-"commercial activity",
-"economic activity"
+"commercial activities",
+"economic activities"
 ],
 "MISC\tcampaign against a local educational institution's proposal to build on a recreational field": [
-"a campaign against a local development proposal",
-"a local protest",
+"a protest against a development proposal",
 "a public campaign"
 ],
 "MISC\tcensored": [
 "restricted",
-"subject to control"
+"controlled"
 ],
 "MISC\tcerebral event": [
-"a medical condition affecting the brain",
-"a medical condition"
+"a medical condition",
+"a health issue"
 ],
 "MISC\tcertificate": [
 "an official document",
@@ -2907,15 +2523,14 @@
 ],
 "MISC\tcharge under the general criminal law": [
 "a criminal charge",
-"a legal charge"
+"a legal accusation"
 ],
 "MISC\tchild-related social security allowance": [
-"a social security allowance",
-"a financial benefit"
+"a social security benefit",
+"financial support"
 ],
 "MISC\tcivil action against several of them": [
-"a civil action against multiple parties",
-"a civil action",
+"a civil claim",
 "legal proceedings"
 ],
 "MISC\tclaim for legal costs": [
@@ -2924,64 +2539,59 @@
 ],
 "MISC\tclose arrest": [
 "a form of detention",
-"a restriction of liberty"
+"restriction of liberty"
 ],
 "MISC\tcode of criminal procedure": [
 "procedural law",
-"a legal code"
+"legal rules"
 ],
 "MISC\tcommercial offence": [
-"an offence",
-"a legal violation"
+"a criminal offence",
+"an offence"
 ],
 "MISC\tcompensation proceedings": [
-"proceedings for redress",
-"legal proceedings"
+"legal proceedings",
+"court proceedings"
 ],
 "MISC\tcompetitive examination for a post in a public institution": [
-"a competitive examination for public employment",
 "a recruitment examination",
 "an examination"
 ],
 "MISC\tcompiled a list of associations which had been permitted to collect set up stands and displays in the commercial premises": [
-"compiled a list of permitted organisations",
-"compiled a list",
-"prepared documentation"
+"prepared a list of authorised groups",
+"made a list"
 ],
 "MISC\tconcealed compartment capable of hiding illicit goods": [
 "a hidden space",
-"a concealed area"
+"a hiding place"
 ],
 "MISC\tconflict on the island": [
-"a conflict in a region",
-"an armed conflict"
+"a dispute in the region",
+"a conflict"
 ],
 "MISC\tconspiracy to commit serious offences": [
-"a conspiracy to commit offences",
 "a criminal conspiracy",
-"criminal conduct"
+"a conspiracy"
 ],
 "MISC\tconspiracy to import controlled drugs": [
-"a conspiracy to import prohibited substances",
-"a criminal conspiracy",
-"criminal conduct"
+"a drug-related conspiracy",
+"a criminal conspiracy"
 ],
 "MISC\tconspiracy to import controlled substances into the country and to supply them": [
-"a conspiracy to import and supply prohibited substances",
-"a criminal conspiracy",
-"criminal conduct"
+"a drug-related conspiracy",
+"a criminal conspiracy"
 ],
 "MISC\tconstruction contract": [
-"a building contract",
+"a building agreement",
 "a contract"
 ],
 "MISC\tcontrolled drug": [
-"a prohibited substance",
-"an illicit substance"
+"an illegal substance",
+"a prohibited substance"
 ],
 "MISC\tconvicted": [
 "found guilty",
-"subject to a criminal finding"
+"subject to a legal decision"
 ],
 "MISC\tconvicted by a majority verdict": [
 "found guilty by a majority",
@@ -2989,24 +2599,23 @@
 ],
 "MISC\tcorporal punishment": [
 "physical punishment",
-"a form of punishment"
+"punishment"
 ],
 "MISC\tcourt martial": [
-"a military tribunal",
+"a military court",
 "a court"
 ],
 "MISC\tcourt-martial": [
-"a military tribunal",
+"a military court",
 "a court"
 ],
 "MISC\tcourt-martial proceedings": [
-"military tribunal proceedings",
+"military court proceedings",
 "legal proceedings"
 ],
 "MISC\tcovert listening device was installed on his business premises": [
-"a surveillance device was installed on his premises",
-"surveillance was carried out",
-"covert monitoring occurred"
+"a surveillance device was placed",
+"surveillance occurred"
 ],
 "MISC\tcriminal inquiry": [
 "a criminal investigation",
@@ -3017,191 +2626,231 @@
 "a legal violation"
 ],
 "MISC\tcustodial element of his sentence": [
-"a prison component of his sentence",
-"a punitive component of his sentence",
-"part of a sentence"
+"a prison term",
+"a penalty"
 ],
 "MISC\tcustodial element of the sentence": [
-"a prison component of the sentence",
-"a punitive component of the sentence",
-"part of a sentence"
+"a prison term",
+"a penalty"
 ],
 "MISC\tcustodial sanction": [
-"a prison sanction",
-"a punitive measure"
+"a prison sentence",
+"a penalty"
 ],
 "MISC\tcustodial sentence": [
-"a prison sentence",
-"a sentence involving detention",
-"a sentence"
+"a sentence involving imprisonment",
+"a criminal sanction",
+"a legal penalty"
 ],
 "MISC\tcustodial sentences together with a period of disqualification from certain public functions": [
-"criminal penalties including imprisonment and restrictions on public employment",
-"criminal sanctions"
+"imprisonment combined with a restriction on holding public office",
+"criminal sanctions including a ban on public employment",
+"a set of criminal penalties"
 ],
 "MISC\tdamage to her scalp": [
-"a head injury",
-"a physical injury"
+"an injury to the head",
+"a bodily injury",
+"physical harm"
 ],
 "MISC\tdebarment from civil service employment and placement under judicial guardianship": [
-"employment restrictions and legal guardianship measures",
-"restrictive legal measures"
+"a ban on public employment combined with a legal guardianship measure",
+"restrictions on employment and legal capacity",
+"a set of civil-law sanctions"
 ],
 "MISC\tdeclared insolvent": [
-"in a state of financial insolvency",
+"found to be unable to pay debts",
+"in a state of financial failure",
 "in a difficult financial situation"
 ],
 "MISC\tdelay report": [
-"a report about a delay",
-"a report"
+"a report concerning a delay",
+"an official report",
+"a document"
 ],
 "MISC\tdependency allowance": [
-"a social benefit for dependants",
-"a social benefit"
+"a benefit for a dependent person",
+"a social-security benefit",
+"a financial benefit"
 ],
 "MISC\tdischarged a weapon causing injury to a police officer": [
-"used a weapon and injured a law enforcement officer",
-"a violent incident involving a weapon"
+"fired a firearm and injured a law-enforcement officer",
+"used a weapon against an official",
+"committed a violent act"
 ],
 "MISC\tdisciplinary charge": [
-"a disciplinary allegation",
-"a formal allegation"
+"an allegation of misconduct",
+"a formal accusation",
+"a legal accusation"
 ],
 "MISC\tdisciplinary proceedings": [
-"disciplinary action",
-"formal proceedings"
+"proceedings concerning misconduct",
+"formal proceedings",
+"legal proceedings"
 ],
 "MISC\tdiscretionary life sentence": [
-"an indeterminate life sentence",
-"a life sentence"
+"an indeterminate sentence of imprisonment",
+"a long custodial sentence",
+"a criminal sentence"
 ],
 "MISC\tdishonesty-related offending": [
 "offending involving dishonesty",
-"criminal offending"
+"criminal conduct",
+"an offence"
 ],
 "MISC\tdismissal": [
 "termination of employment",
-"loss of employment"
+"an employment sanction",
+"an adverse employment measure"
 ],
 "MISC\tdismissal from the armed forces": [
 "termination of military service",
-"loss of military employment"
+"a military sanction",
+"an employment sanction"
 ],
 "MISC\tdisseminating propaganda in support of an armed illegal organisation": [
-"spreading propaganda for an illegal armed group",
-"political propaganda activity"
+"spreading material supporting an illegal armed group",
+"supporting an unlawful organisation",
+"an offence against public order"
 ],
 "MISC\tdistributing leaflets": [
-"handing out printed materials",
-"distributing materials"
+"handing out printed material",
+"an act of expression",
+"a communicative act"
 ],
 "MISC\tdistribution of controlled substances": [
-"supplying controlled substances",
-"drug-related offence"
+"supplying regulated drugs",
+"a drug-related offence",
+"a criminal offence"
 ],
 "MISC\tdistrict court martial": [
 "a military court",
-"a court"
+"a court",
+"a judicial body"
 ],
 "MISC\tdomestic human rights legislation": [
-"national human rights law",
-"human rights law"
+"national legislation on fundamental rights",
+"national law",
+"legislation"
 ],
 "MISC\temergency anti-terrorism legislation": [
-"emergency counter-terrorism law",
-"emergency legislation"
+"special legislation against terrorism",
+"security legislation",
+"legislation"
 ],
 "MISC\temergency provisions legislation": [
-"emergency legislation",
-"special legislation"
+"special emergency legislation",
+"exceptional legislation",
+"legislation"
 ],
 "MISC\texceeding his leave": [
-"overstaying his leave",
-"a leave-related violation"
+"overstaying authorised absence",
+"a breach of leave conditions",
+"a disciplinary matter"
 ],
 "MISC\texpert opinion": [
-"an expert assessment",
-"an opinion"
+"a specialist assessment",
+"an opinion",
+"evidence"
 ],
 "MISC\texportation": [
-"export of goods",
-"trade activity"
+"sending goods abroad",
+"a trade activity",
+"a commercial activity"
 ],
 "MISC\texpropriation act": [
-"an expropriation law",
-"a law"
+"a law on taking property",
+"a property law",
+"legislation"
 ],
 "MISC\tfall from scaffolding at a construction site": [
-"a fall at a construction site",
-"a workplace accident"
+"a fall from height at a workplace",
+"a workplace accident",
+"an accident"
 ],
 "MISC\tfalse accounting and conspiracy to defraud": [
-"financial fraud offences",
-"financial offences"
+"accounting irregularities combined with a fraud scheme",
+"financial offences",
+"criminal offences"
 ],
 "MISC\tferry": [
 "a passenger vessel",
+"a watercraft",
 "a means of transport"
 ],
 "MISC\tfinancial mismanagement": [
-"poor financial management",
-"financial irregularities"
+"poor handling of funds",
+"an administrative failing",
+"misconduct"
 ],
 "MISC\tfinancial penalty": [
 "a monetary sanction",
+"a sanction",
 "a penalty"
 ],
 "MISC\tfinancial-fraud investigation": [
-"an investigation into financial fraud",
-"a criminal investigation"
+"an inquiry into fraud",
+"a criminal investigation",
+"an investigation"
 ],
 "MISC\tfire at a public building": [
-"a fire in a public building",
-"a fire incident"
+"a blaze in a public facility",
+"a fire",
+"an incident"
 ],
 "MISC\tformal complaint": [
 "an official complaint",
-"a complaint"
+"a complaint",
+"a grievance"
 ],
 "MISC\tformal separation agreement": [
-"a legal separation agreement",
-"a separation agreement"
+"an official agreement on separation",
+"a family-law arrangement",
+"an agreement"
 ],
 "MISC\tfurther accredited programme": [
-"an additional accredited course",
-"an additional programme"
+"an additional recognised course",
+"a course",
+"a programme"
 ],
 "MISC\tfurther serious charges": [
-"additional serious charges",
-"additional charges"
+"additional grave accusations",
+"more accusations",
+"accusations"
 ],
 "MISC\tgeneral election": [
 "a national election",
-"an election"
+"an election",
+"a vote"
 ],
-"MISC\tgraffiti – lettering referring to an illegal organisation": [
-"graffiti referring to an illegal organisation",
-"graffiti"
+"MISC\tgraffiti - lettering referring to an illegal organisation": [
+"markings referring to an unlawful group",
+"graffiti",
+"an act of expression"
 ],
 "MISC\tgranted protection status": [
-"given protected status",
-"granted a status"
+"given a protective legal status",
+"granted a status",
+"given an official status"
 ],
 "MISC\tgross defamation": [
 "serious defamation",
-"defamation"
+"an attack on reputation",
+"a civil wrong"
 ],
 "MISC\thabeas corpus proceedings": [
-"proceedings concerning lawful detention",
-"legal proceedings"
+"proceedings challenging the lawfulness of detention",
+"legal proceedings concerning detention",
+"court proceedings"
 ],
 "MISC\thandling property obtained through crime": [
-"a property-related offence",
+"dealing with proceeds of crime",
+"an offence related to criminal property",
 "a criminal offence"
 ],
 "MISC\thealth insurance": [
+"medical insurance coverage",
 "insurance coverage",
-"financial protection"
+"financial protection arrangement"
 ],
 "MISC\theavy custodial sentence": [
 "a lengthy prison sentence",
@@ -3209,229 +2858,228 @@
 "a criminal sanction"
 ],
 "MISC\ther majesty's pleasure": [
-"an indefinite detention order",
-"a form of detention",
-"a legal status"
+"an indefinite detention at the discretion of the authorities",
+"a form of detention without a fixed term",
+"a detention measure"
 ],
 "MISC\thigh-security segregated": [
-"a restrictive detention regime",
-"a form of detention",
-"a custodial arrangement"
+"in a secure separated unit",
+"in a restricted detention setting",
+"in a detention facility"
 ],
 "MISC\thotel": [
 "a commercial accommodation establishment",
-"a place of lodging",
+"a place of accommodation",
 "a building"
 ],
 "MISC\thousing act 1996": [
 "a housing statute",
-"a domestic law",
-"a legal provision"
+"housing legislation",
+"domestic legislation"
 ],
 "MISC\thuman rights act 1998": [
 "a human rights statute",
-"a domestic law",
-"a legal instrument"
+"human rights legislation",
+"domestic legislation"
 ],
 "MISC\tillegal organisation": [
-"a prohibited group",
 "an unlawful association",
-"an entity"
+"a prohibited group",
+"an organisation"
 ],
 "MISC\tillegal possession of firearms and explosives": [
-"an offence involving prohibited weapons",
+"unlawful possession of weapons and explosive materials",
 "a weapons-related offence",
 "a criminal offence"
 ],
 "MISC\timmigration rules": [
-"rules governing entry and residence of foreign nationals",
-"rules regulating the movement of persons across borders",
-"legal rules"
+"rules governing immigration",
+"immigration regulations",
+"administrative rules"
 ],
 "MISC\timpugned statutory provision": [
-"the legal provision at issue",
-"a legal provision",
-"a legal rule"
+"the challenged legal provision",
+"a contested statutory rule",
+"a legal provision"
 ],
 "MISC\tindependent supervisory body": [
-"an oversight authority",
-"a public authority",
-"an organisation"
+"an independent oversight authority",
+"an oversight body",
+"an institution"
 ],
 "MISC\tindeterminate sentence for public protection": [
+"an indefinite sentence for the protection of the public",
 "an indefinite custodial sentence",
-"a custodial sentence",
-"a criminal sanction"
+"a custodial sentence"
 ],
 "MISC\tinformation sessions": [
-"educational meetings",
-"meetings",
-"events"
+"informational meetings",
+"meetings providing information",
+"gatherings"
 ],
 "MISC\tinsolvency proceedings": [
+"proceedings concerning financial insolvency",
 "debt-related legal proceedings",
-"legal proceedings",
-"legal action"
+"legal proceedings"
 ],
 "MISC\tinternal inspection concerning the handling of certain service contracts": [
 "an internal review of contract management",
-"an internal review",
-"an administrative review"
+"an internal review of administrative matters",
+"an internal review"
 ],
 "MISC\tinvestigation was opened concerning one former member of staff": [
 "an inquiry was opened regarding a former employee",
-"an inquiry was opened regarding a person",
+"an inquiry was opened regarding a staff member",
 "an inquiry was opened"
 ],
 "MISC\tinvestigative current-affairs programme": [
-"a television programme examining current affairs",
-"a media programme",
-"a broadcast"
+"a current-affairs investigative broadcast",
+"a television programme",
+"a media programme"
 ],
 "MISC\tinvoice": [
-"a bill for payment",
-"a payment document",
+"a billing document",
+"a financial document",
 "a document"
 ],
 "MISC\tinvoluntary manslaughter": [
+"an unintentional killing offence",
 "a homicide offence",
-"a serious criminal offence",
-"a criminal offence"
+"a serious criminal offence"
 ],
 "MISC\tinvolvement in a serious criminal offence": [
-"involvement in a criminal offence",
-"involvement in unlawful conduct",
-"involvement in wrongdoing"
+"participation in a grave crime",
+"participation in criminal conduct",
+"criminal involvement"
 ],
 "MISC\tland border crossing": [
-"a border crossing point",
-"a border area",
-"a location"
+"a terrestrial border point",
+"a border crossing",
+"a border location"
 ],
 "MISC\tlaw no. 3953": [
-"a piece of legislation",
-"a legal instrument",
-"a legal measure"
+"a numbered statute",
+"a domestic law",
+"legislation"
 ],
 "MISC\tlaw no. 466": [
-"a piece of legislation",
-"a legal instrument",
-"a legal measure"
+"a numbered statute",
+"a domestic law",
+"legislation"
 ],
 "MISC\tlaw on administrative procedure": [
-"a procedural law",
-"a piece of legislation",
-"a legal instrument"
+"a statute governing administrative procedure",
+"administrative procedure legislation",
+"domestic legislation"
 ],
 "MISC\tlaw on complaints about a breach of the right to a trial within a reasonable time": [
-"a law on complaints concerning trial duration",
-"a law on procedural complaints",
-"a piece of legislation"
+"a statute on complaints concerning trial duration",
+"legislation on fair-trial complaints",
+"domestic legislation"
 ],
 "MISC\tlaw on the trial of civil servants": [
-"a law on the prosecution of public officials",
-"a law concerning public officials",
-"a piece of legislation"
+"a statute on proceedings against civil servants",
+"legislation on civil servants' liability",
+"domestic legislation"
 ],
 "MISC\tlaw was amended": [
-"a legal provision was changed",
-"a legal framework was modified",
-"a legal situation changed"
+"the legislation was modified",
+"the legal rules were changed",
+"the law changed"
 ],
 "MISC\tleaflet": [
+"an informational pamphlet",
 "a printed document",
-"a document",
-"an item"
+"a document"
 ],
 "MISC\tleaflets": [
-"printed informational materials",
+"informational pamphlets",
+"printed documents",
 "documents"
 ],
 "MISC\tlegal-aid bodies": [
-"organisations providing legal assistance",
+"legal assistance organisations",
+"assistance-providing bodies",
 "organisations"
 ],
 "MISC\tlegislation governing the reduction for persons who had disassociated themselves": [
-"rules on sentence reduction for persons who had left an organisation",
-"rules on sentence reduction",
-"legal rules"
+"a statute on sentence reduction for persons who had left a group",
+"legislation on sentence reduction",
+"domestic legislation"
 ],
 "MISC\tlegislative amendments introducing a framework for the reconsideration of certain convictions": [
-"changes to the law establishing a review procedure for convictions",
-"changes to the law",
-"legal changes"
+"legal changes establishing a review scheme for convictions",
+"legal changes concerning conviction review",
+"legislative changes"
 ],
 "MISC\tlesser related offence": [
 "a less serious connected offence",
-"an offence"
+"a related criminal offence",
+"a criminal offence"
 ],
 "MISC\tlicence for regional passenger and goods transport on specified routes": [
 "a permit for regional transport services",
-"a transport permit",
-"an authorisation"
+"a transport licence",
+"a licence"
 ],
 "MISC\tlife annuity": [
-"a long-term periodic payment",
-"a financial arrangement",
-"a payment arrangement"
+"a lifelong periodic payment",
+"a recurring payment arrangement",
+"a financial arrangement"
 ],
 "MISC\tlife imprisonment": [
-"a very long custodial sentence",
-"a custodial sentence",
-"a penalty"
+"a life sentence",
+"a long-term custodial sentence",
+"a custodial sentence"
 ],
 "MISC\tlife sentence": [
-"a very long custodial sentence",
-"a custodial sentence",
-"a penalty"
+"a lifelong custodial sentence",
+"a long-term custodial sentence",
+"a custodial sentence"
 ],
 "MISC\tloan application": [
-"a request for credit",
 "a financial request",
-"an application"
+"a request"
 ],
 "MISC\tlocal grievance": [
-"a local complaint",
+"a complaint about a local matter",
 "a complaint"
 ],
 "MISC\tmaintenance fees for their apartment building": [
 "charges for upkeep of a residential building",
-"housing-related costs",
-"financial obligations"
+"housing-related charges",
+"payments"
 ],
 "MISC\tmatter in question": [
 "the issue at hand",
-"the subject under consideration",
-"a topic"
+"the subject"
 ],
 "MISC\tmatter of public controversy": [
 "a disputed public issue",
 "a public issue",
-"a matter of public interest"
+"a matter"
 ],
 "MISC\tmembership of an illegal armed organisation": [
 "belonging to a prohibited armed group",
-"involvement with an unlawful group",
-"association with an illegal organisation"
+"belonging to a prohibited group",
+"an association"
 ],
 "MISC\tmembership of an illegal armed organisation whose object was allegedly to undermine the constitutional order": [
-"belonging to a prohibited armed group allegedly aimed at subverting the constitutional order",
-"involvement with an unlawful group said to threaten the constitutional order",
-"association with an illegal organisation"
+"belonging to a prohibited armed group with an alleged subversive aim",
+"belonging to a prohibited group",
+"an association"
 ],
 "MISC\tmembership of an illegal organisation": [
 "belonging to a prohibited group",
-"involvement with an unlawful organisation",
-"association with an illegal entity"
+"an association"
 ],
 "MISC\tmembership of or assistance to an illegal organisation": [
 "belonging to or supporting a prohibited group",
-"involvement with or aid to an unlawful organisation",
-"association with an illegal entity"
+"involvement with a prohibited group",
+"an association"
 ],
 "MISC\tmichta v. poland": [
 "a case before the Court",
-"a court case",
 "a legal case"
 ],
 "MISC\tmilitary coup of 1980": [
@@ -3441,18 +3089,18 @@
 ],
 "MISC\tmilitary criminal code": [
 "military criminal legislation",
-"military law",
-"criminal legislation"
+"criminal legislation",
+"legislation"
 ],
 "MISC\tmilitary detention": [
-"detention in a military facility",
-"military custody",
-"detention"
+"detention in a military context",
+"detention",
+"deprivation of liberty"
 ],
 "MISC\tminimum tariff": [
-"a minimum sentencing term",
-"a minimum penalty",
-"a sentencing rule"
+"a minimum period of detention",
+"a minimum period",
+"a period"
 ],
 "MISC\tminor assault offence": [
 "a minor violent offence",
@@ -3460,308 +3108,339 @@
 "an offence"
 ],
 "MISC\tnational election law": [
-"domestic electoral legislation",
-"electoral law",
-"national legislation"
+"national electoral legislation",
+"electoral legislation",
+"legislation"
 ],
 "MISC\tnegligence proceedings": [
-"proceedings alleging negligence",
+"civil proceedings concerning negligence",
 "civil proceedings",
 "legal proceedings"
 ],
 "MISC\tnew scheme": [
-"a newly introduced arrangement",
 "a new arrangement",
 "an arrangement"
 ],
 "MISC\tnew sentencing legislation": [
-"newly enacted sentencing rules",
+"new legislation on sentencing",
 "sentencing legislation",
 "legislation"
 ],
 "MISC\tnon-governmental organisation supporting litigants": [
-"an advocacy organisation assisting parties",
-"a civil-society organisation",
+"an organisation assisting parties to proceedings",
+"an organisation assisting parties",
 "an organisation"
 ],
 "MISC\tnotice of decision to make a deportation order": [
-"notification of a deportation decision",
-"a deportation-related notice",
-"an official notice"
+"notification of a decision to deport",
+"notification of a decision",
+"a notification"
 ],
 "MISC\tnotice of temporary discontinuance": [
 "notification of a temporary suspension",
-"a notice of suspension",
-"an official notice"
+"notification of a suspension",
+"a notification"
 ],
 "MISC\tobtaining of services by deception": [
-"fraudulently acquiring services",
-"a fraud-related offence",
+"fraudulently obtaining services",
+"a fraudulent act",
 "an offence"
 ],
 "MISC\toffences against public order and against property": [
-"public-order and property offences",
-"criminal offences",
+"offences concerning public order and property",
+"offences concerning public order",
 "offences"
 ],
 "MISC\toffences against public order and the unlawful possession of documents": [
-"public-order offences and unlawful document possession",
-"criminal offences",
+"offences concerning public order and documents",
+"offences concerning public order",
 "offences"
 ],
 "MISC\toffences against the person act 1861": [
 "legislation on offences against the person",
-"criminal legislation",
+"legislation on offences",
 "legislation"
 ],
 "MISC\toffences against the public order and the territorial integrity of the state": [
-"public-order and state-integrity offences",
-"offences against the State",
-"criminal offences"
+"offences concerning public order and state integrity",
+"offences concerning public order",
+"offences"
 ],
 "MISC\toffences against the state": [
-"state-security offences",
-"serious criminal offences",
+"offences concerning the state",
 "offences"
 ],
 "MISC\topen arrest": [
-"a form of military custody",
-"military custody",
-"detention"
+"a form of detention",
+"detention",
+"deprivation of liberty"
 ],
 "MISC\torder under the insolvency legislation directing that for a defined and limited period postal items addressed to the applicant be diverted to the office-holder": [
-"an insolvency-related order redirecting the applicant's mail for a limited time",
-"an order redirecting mail under insolvency rules",
+"an order under insolvency legislation redirecting the applicant's post for a limited period",
+"an order redirecting post",
 "a court order"
 ],
 "MISC\torganised crime within the media and advertising sectors": [
-"organised criminal activity in the media and advertising industries",
 "organised crime in certain business sectors",
-"organised crime"
+"organised crime",
+"criminal activity"
 ],
 "MISC\tout-of-time proceedings to contest the daughter's paternity": [
-"late proceedings challenging paternity",
+"late proceedings concerning paternity",
 "proceedings concerning paternity",
 "legal proceedings"
 ],
 "MISC\toutline planning permission to an educational institution to build on the recreational field": [
-"outline planning permission for construction on a recreational field",
 "planning permission for a building project",
-"planning permission"
+"planning permission",
+"an administrative permission"
 ],
 "MISC\tparagraph 352a of the immigration rules": [
 "a provision of the immigration rules",
 "an immigration rule",
-"an immigration provision"
+"a rule"
 ],
 "MISC\tparent hotel group": [
-"a hotel holding company",
-"a hotel company",
+"a parent company in the hotel sector",
+"a parent company",
 "a company"
 ],
 "MISC\tpayment order": [
-"an order to pay a sum",
-"a financial order",
+"an order to pay",
 "a court order"
 ],
 "MISC\tphysical chastisement": [
 "physical discipline",
-"corporal punishment",
-"physical treatment"
+"physical treatment",
+"treatment"
 ],
 "MISC\tphysical punishment": [
-"corporal punishment",
 "physical discipline",
-"physical treatment"
+"physical treatment",
+"treatment"
 ],
 "MISC\tplanned vacation": [
-"a scheduled holiday",
-"a holiday",
+"a planned trip",
 "a trip"
 ],
 "MISC\tpleaded guilty to the charges": [
 "admitted the charges",
-"accepted guilt",
-"responded to the accusations"
+"admitted wrongdoing",
+"acknowledged the allegations"
 ],
 "MISC\tpolice and criminal evidence": [
-"criminal evidence and policing rules",
-"criminal procedure",
-"legal procedure"
+"criminal evidence rules",
+"criminal procedure rules",
+"legal rules"
 ],
 "MISC\tpossession and circulation of certain printed materials and documents": [
-"handling of certain written materials",
-"involvement with certain materials"
+"handling of printed materials",
+"handling of documents",
+"handling of items"
 ],
 "MISC\tpost-operative complication": [
-"a medical complication following surgery",
+"a complication after surgery",
+"a medical complication",
 "a health problem"
 ],
 "MISC\tpre-hearing assessment": [
 "an assessment before a hearing",
-"a procedural assessment"
+"a procedural assessment",
+"an assessment"
 ],
 "MISC\tpremature voluntary release": [
 "an early release",
-"a release from detention"
+"a release from detention",
+"a custodial measure"
 ],
 "MISC\tprevented from meeting in the town centre — a privately owned commercial premises — in order to impart information and ideas about proposed local development plans": [
-"prevented from gathering in a central location to share views on local planning matters",
-"prevented from assembling to express opinions on a matter of public interest",
-"restricted in exercising freedom of assembly and expression"
+"prevented from gathering in a public place to share ideas about local plans",
+"prevented from gathering to share information",
+"prevented from assembling"
 ],
 "MISC\tprevention of terrorism act": [
 "anti-terrorism legislation",
-"security legislation"
+"security legislation",
+"legislation"
 ],
 "MISC\tprivate commemorative gathering an evening of prayer and reflection": [
-"a private religious commemoration",
+"a private commemorative event",
 "a private gathering",
-"a private event"
+"a gathering"
 ],
 "MISC\tprivate communications": [
-"personal correspondence",
-"personal communications"
+"personal communications",
+"communications",
+"correspondence"
 ],
 "MISC\tproceeds-of-crime legislation": [
 "legislation on criminal proceeds",
-"criminal-law legislation"
+"criminal-law legislation",
+"legislation"
 ],
 "MISC\tprohibited association": [
 "a ban on association",
-"a restriction on association"
+"a restriction on association",
+"a restriction"
 ],
 "MISC\tprohibited political association": [
 "a ban on political association",
-"a restriction on political activity"
+"a restriction on political activity",
+"a restriction"
 ],
 "MISC\tproof of attachment": [
+"evidence of attachment",
 "evidence of a connection",
-"evidence of a link"
+"evidence"
 ],
 "MISC\tproperty damage and causing bodily injury": [
+"damage to property and physical harm",
 "offences against property and persons",
 "criminal offences"
 ],
 "MISC\tproperty-offence charge": [
-"a charge relating to property",
-"a criminal charge"
+"a charge concerning property",
+"a criminal charge",
+"a charge"
 ],
 "MISC\tprovincial congress of their party": [
 "a regional party meeting",
-"a political party event"
+"a party meeting",
+"a political meeting"
 ],
 "MISC\tprovision of domestic security legislation": [
-"a domestic security measure",
-"a security measure"
+"a domestic security rule",
+"a security rule",
+"a legal rule"
 ],
 "MISC\treasons for deportation": [
+"grounds for deportation",
 "grounds for removal",
-"grounds for an immigration measure"
+"grounds"
 ],
 "MISC\treconsideration of the earlier rejection": [
-"review of a prior refusal",
-"review of a prior decision"
+"review of an earlier refusal",
+"review of a decision",
+"a review"
 ],
 "MISC\treduction in rank": [
 "a demotion",
-"a change in professional status"
+"a change in status",
+"a disciplinary measure"
 ],
 "MISC\tregional regulation": [
 "a local regulation",
-"a regulation"
+"a regulation",
+"a rule"
 ],
 "MISC\tregistration requirement administered by a local authority": [
-"a registration obligation managed locally",
-"an administrative requirement"
+"a registration requirement",
+"an administrative requirement",
+"a requirement"
 ],
 "MISC\tregulatory offences and an offence against the person": [
-"various offences including offences against persons",
-"criminal offences"
+"regulatory and personal offences",
+"criminal offences",
+"offences"
 ],
 "MISC\trelevant cut-off date under the scheme": [
-"a relevant deadline under the scheme",
-"a relevant time limit"
+"a deadline under the scheme",
+"a time limit",
+"a date"
 ],
 "MISC\trelevant domestic act on complaints about a breach of the right to a trial within a reasonable time": [
-"domestic legislation on complaints about the length of proceedings",
-"domestic legislation on procedural complaints",
+"domestic legislation on trial-length complaints",
+"domestic legislation on fair-trial complaints",
 "domestic legislation"
 ],
 "MISC\trelevant domestic legislation": [
-"domestic law",
-"national legislation"
+"domestic legislation",
+"national law",
+"legislation"
 ],
 "MISC\trelevant provision of the code of civil procedure": [
-"a procedural provision",
-"a legal provision"
+"a civil-procedure rule",
+"a procedural rule",
+"a legal rule"
 ],
 "MISC\tremanded in custody on suspicion of handling such property": [
-"detained on suspicion of an offence relating to such property",
+"detained on suspicion of handling property",
 "detained on suspicion of an offence",
-"held in detention"
+"detained"
 ],
 "MISC\tremarks of a political and religious character": [
-"statements of a political and religious nature",
+"political and religious statements",
 "statements of a sensitive nature",
 "statements"
 ],
 "MISC\trenewed maintenance order": [
-"a further maintenance order",
+"a renewed maintenance order",
 "a maintenance order",
 "a court order"
 ],
 "MISC\treported in the press": [
 "covered by the media",
-"publicised"
+"publicised",
+"made public"
 ],
 "MISC\treserved decision": [
-"a decision given later",
+"a decision reserved for later",
+"a deferred decision",
 "a decision"
 ],
 "MISC\troad-traffic accident": [
 "a traffic accident",
-"an accident"
+"an accident",
+"an incident"
 ],
 "MISC\troadside stands on public footpaths and in an older part of the town centre": [
-"street stands in public areas of a town centre",
-"street trading in public areas",
-"commercial activity in public spaces"
+"street stands in a public area",
+"street stands",
+"stands"
 ],
 "MISC\trobbery": [
-"a violent property offence",
-"a criminal offence"
+"a theft offence",
+"a property offence",
+"an offence"
 ],
 "MISC\troutine compliance inspection": [
-"a standard inspection",
-"an inspection"
+"a compliance inspection",
+"an inspection",
+"a check"
 ],
 "MISC\trule 39": [
 "a procedural rule",
-"a rule"
+"a rule",
+"a provision"
 ],
 "MISC\tsanction restricting his liberty": [
-"a measure limiting his freedom",
-"a restrictive measure"
+"a measure restricting liberty",
+"a restrictive measure",
+"a sanction"
 ],
 "MISC\tsatellite dish": [
-"a receiving dish",
+"a dish antenna",
+"an antenna",
 "a device"
 ],
 "MISC\tsection 108 of the administration of courts act": [
 "a provision of courts legislation",
-"a statutory provision"
+"a statutory provision",
+"a legal provision"
 ],
 "MISC\tsection 16 of the 2004 act": [
-"a provision of a statute",
-"a statutory provision"
+"a section of a 2004 statute",
+"a statutory provision",
+"a legal provision"
 ],
 "MISC\tsection 33 1 b of the army act 1955": [
-"a provision of military legislation",
+"a subsection of a 1955 military statute",
+"a provision of military law",
 "a legal provision"
 ],
 "MISC\tsection 69 of the 1955 act": [
-"a provision of a statute",
+"a section of a 1955 statute",
+"a statutory provision",
 "a legal provision"
 ],
 "MISC\tsecure psychiatric facility": [
@@ -3775,154 +3454,154 @@
 "an operation"
 ],
 "MISC\tsecurity-related offence against the constitutional order": [
-"an offence against the State",
+"an offence against the constitutional order",
 "a political offence",
 "an offence"
 ],
 "MISC\tsensitive": [
-"confidential in nature",
+"confidential",
 "restricted",
-"of a protected character"
+"not public"
 ],
 "MISC\tsentenced to imprisonment": [
 "given a custodial sentence",
-"subjected to a criminal sanction",
-"penalised by a court"
+"convicted and punished",
+"subject to a criminal penalty"
 ],
 "MISC\tseparatist propaganda and incitement to hatred": [
-"political propaganda and incitement to hostility",
-"expression inciting hostility",
-"offensive expression"
+"propaganda and incitement to hatred",
+"incitement-related expression",
+"a speech-related offence"
 ],
 "MISC\tserious criminal offences": [
-"grave criminal offences",
+"serious offences",
 "criminal offences",
 "offences"
 ],
 "MISC\tserious drug-related offence": [
-"a grave narcotics offence",
 "a drug-related offence",
-"a criminal offence"
-],
-"MISC\tserious financial offences": [
-"grave economic offences",
-"financial offences",
-"criminal offences"
-],
-"MISC\tserious medical episode requiring surgical intervention": [
-"a grave medical condition requiring an operation",
-"a medical condition requiring treatment",
-"a health problem"
-],
-"MISC\tserious offence": [
-"a grave offence",
 "a criminal offence",
 "an offence"
 ],
+"MISC\tserious financial offences": [
+"financial offences",
+"economic offences",
+"offences"
+],
+"MISC\tserious medical episode requiring surgical intervention": [
+"a medical episode requiring surgery",
+"a serious medical condition",
+"a health problem"
+],
+"MISC\tserious offence": [
+"a criminal offence",
+"an offence",
+"a wrongful act"
+],
 "MISC\tserious offence connected with the death": [
-"a grave offence linked to a fatality",
-"an offence linked to a death",
-"a criminal offence"
+"an offence connected with a death",
+"a criminal offence",
+"an offence"
 ],
 "MISC\tserious offences against the person and against property": [
-"grave offences against persons and property",
-"offences against persons and property",
-"criminal offences"
+"offences against the person and property",
+"criminal offences",
+"offences"
 ],
 "MISC\tserious offences against the person including a homicide offence committed in the course of a burglary at a private residence": [
-"grave offences against the person including a killing during a break-in",
-"grave offences against the person",
+"offences against the person including a homicide",
+"violent offences",
 "criminal offences"
 ],
 "MISC\tserious sexual offence": [
-"a grave sexual offence",
 "a sexual offence",
-"a criminal offence"
+"a criminal offence",
+"an offence"
 ],
 "MISC\tset up two stands at the entrance to the commercial premises in order to display posters and collect signatures": [
-"installed stands outside a business to display posters and gather signatures",
-"carried out a publicity and petitioning activity at a business",
+"set up stands at a commercial premises to display posters and collect signatures",
+"carried out a publicity activity at a business premises",
 "engaged in a public expression activity"
 ],
 "MISC\tsexual offences act 1956": [
+"a 1956 statute on sexual offences",
 "a statute on sexual offences",
-"a criminal statute",
 "a legal provision"
 ],
 "MISC\tshort custodial sentence which was suspended": [
-"a brief suspended prison sentence",
 "a suspended custodial sentence",
-"a criminal sanction"
+"a suspended sentence",
+"a criminal penalty"
 ],
 "MISC\tsocial security benefit": [
-"a welfare payment",
+"a welfare benefit",
 "a state benefit",
-"financial assistance"
+"a benefit"
 ],
 "MISC\tsocial security benefits": [
-"welfare payments",
+"welfare benefits",
 "state benefits",
-"financial assistance"
+"benefits"
 ],
 "MISC\tsocial-assistance benefit": [
-"a welfare payment",
-"a state benefit",
-"financial assistance"
+"an assistance benefit",
+"a welfare benefit",
+"a benefit"
 ],
 "MISC\tsocial-security benefit payable on bereavement": [
-"a welfare payment on the death of a relative",
-"a state benefit",
-"financial assistance"
+"a bereavement benefit",
+"a welfare benefit",
+"a benefit"
 ],
 "MISC\tspecial defence": [
-"a particular legal defence",
+"a defence",
 "a legal defence",
 "a legal argument"
 ],
 "MISC\tspecial extraction permit": [
-"a particular removal authorisation",
-"an official authorisation",
-"an administrative permission"
+"an extraction permit",
+"a permit",
+"an authorisation"
 ],
 "MISC\tspecial type prison": [
-"a particular category of prison",
+"a prison of a particular category",
 "a prison",
 "a detention facility"
 ],
 "MISC\tspecialist tribunal": [
-"a particular court body",
-"a court body",
-"a judicial body"
+"a tribunal",
+"a judicial body",
+"a decision-making body"
 ],
 "MISC\tspeech expressing political views on an international political movement": [
-"expression of political opinion on a political movement",
+"speech expressing political views",
 "political expression",
 "expression"
 ],
 "MISC\tspeech-related offence concerning the incitement of hostility against a group of persons": [
-"an offence of inciting hostility against a group",
-"an expression-related offence",
-"an offence"
+"an offence concerning incitement of hostility against a group",
+"an incitement-related offence",
+"a speech-related offence"
 ],
 "MISC\tstate of emergency": [
-"an emergency regime",
+"an emergency situation",
 "an exceptional situation",
 "a special situation"
 ],
 "MISC\tstatutory consultation exercise": [
-"a formal consultation procedure",
-"a consultation procedure",
+"a consultation exercise",
+"a consultation",
 "an administrative procedure"
 ],
 "MISC\tstatutory provision disqualifying convicted persons from voting while serving a custodial sentence": [
-"a legal rule barring prisoners from voting",
-"a restriction on voting rights",
-"a legal restriction"
+"a provision disqualifying prisoners from voting",
+"a voting restriction for prisoners",
+"a legal restriction on voting"
 ],
 "MISC\tstatutory regulatory offence": [
-"a regulatory offence under statute",
 "a regulatory offence",
-"an offence"
+"an offence",
+"a legal violation"
 ],
 "MISC\tstatutory restriction": [
 "a legal restriction",
@@ -3930,223 +3609,262 @@
 "a limitation"
 ],
 "MISC\tstec and others v. the united kingdom": [
+"a case against the United Kingdom",
 "a case before the Court",
-"a court case",
-"a legal case"
+"a court case"
 ],
 "MISC\tsubject to immigration control": [
-"under immigration restrictions",
-"in a regulated immigration status",
-"of a particular immigration status"
+"subject to immigration rules",
+"an immigration status",
+"a legal status"
 ],
 "MISC\tsubmitted a substantial number of letters of representation": [
-"sent numerous written representations",
-"sent written representations",
+"submitted numerous letters of representation",
+"submitted written representations",
 "made written submissions"
 ],
 "MISC\tsubsidiary company": [
-"a dependent company",
+"a subordinate company",
 "a company",
 "a business entity"
 ],
 "MISC\tsupplementary allowance": [
-"an additional welfare payment",
-"a state benefit",
-"financial assistance"
+"a financial allowance",
+"a form of financial support",
+"a benefit"
 ],
 "MISC\tsupplementary decision concerning the lawyer's costs": [
 "a decision on legal costs",
-"a procedural decision"
+"a procedural decision",
+"a judicial decision"
 ],
 "MISC\tsupply contract": [
 "a commercial contract",
-"a contract"
+"a contract",
+"a legal agreement"
 ],
 "MISC\tsupport for a foreign political regime and for a system of government based on religious principles": [
-"support for a foreign political movement",
+"support for a political regime and a religious form of government",
+"support for political and governmental arrangements",
 "political support"
 ],
 "MISC\tsurviving parent's allowance": [
-"a bereavement allowance",
-"a social security benefit"
+"an allowance for a surviving relative",
+"a survivor's allowance",
+"a financial benefit"
 ],
 "MISC\tsurvivor's benefits": [
-"bereavement benefits",
-"social security benefits"
+"benefits for surviving relatives",
+"social security benefits",
+"financial benefits"
 ],
 "MISC\tsurvivors' benefits": [
-"bereavement benefits",
-"social security benefits"
+"benefits for surviving relatives",
+"social security benefits",
+"financial benefits"
 ],
 "MISC\tsuspended sentences combined with fines of varying amounts": [
 "suspended sentences and fines",
-"criminal penalties"
+"criminal penalties",
+"penal measures"
 ],
 "MISC\tsuspension": [
-"a disciplinary measure",
-"a sanction"
+"a suspension measure",
+"a temporary measure",
+"a measure"
 ],
 "MISC\tsystem of accumulated demerit marks": [
-"a points-based penalty system",
-"a disciplinary system"
+"a penalty points system",
+"a system of penalties",
+"an administrative scheme"
 ],
 "MISC\ttax asset stripping": [
 "a tax-related financial practice",
-"a financial practice"
+"a financial practice",
+"an economic matter"
 ],
 "MISC\ttax legislation": [
 "tax rules",
-"legislation"
+"legal rules",
+"a legal framework"
 ],
 "MISC\ttelephone line registered to a business associate of the applicant": [
 "a telephone line registered to another person",
-"a telephone line"
+"a telephone line",
+"a means of communication"
 ],
 "MISC\ttenancy agreement": [
 "a rental contract",
-"a contract"
+"a contract",
+"a legal document"
 ],
 "MISC\ttransfer of the asset abroad": [
-"movement of property to another country",
+"moving property to another country",
+"moving property",
 "a financial transaction"
 ],
 "MISC\ttwo charges of an offence against service discipline": [
-"charges of a disciplinary offence",
-"disciplinary charges"
+"two disciplinary charges",
+"two charges",
+"legal proceedings"
 ],
 "MISC\ttwo earlier disciplinary sanctions for unauthorised absence": [
-"earlier disciplinary sanctions",
-"disciplinary measures"
+"two prior disciplinary sanctions",
+"two prior sanctions",
+"prior disciplinary measures"
 ],
 "MISC\ttwo fellow detainees": [
-"other detainees",
-"detained persons"
+"two other detained persons",
+"two other persons",
+"other individuals"
 ],
 "MISC\ttwo statements of account and a promissory note": [
 "financial documents",
-"documents"
+"documents",
+"written materials"
 ],
 "MISC\tunauthorised street demonstration": [
-"an unauthorised demonstration",
-"a public gathering"
+"an unpermitted public gathering",
+"a public gathering",
+"a public event"
 ],
 "MISC\tuner v. the netherlands": [
-"a case before the Court",
-"a court case"
+"a court case",
+"a legal proceeding"
 ],
 "MISC\tunlawful association": [
-"a prohibited organisation",
-"an organisation"
+"a criminal association offence",
+"a criminal offence",
+"an offence"
 ],
 "MISC\tuse of a false instrument": [
-"use of a forged document",
-"a forgery-related offence"
+"a forgery-related offence",
+"a criminal offence",
+"an offence"
 ],
 "MISC\tviolent offence": [
 "an offence involving violence",
-"a criminal offence"
+"a criminal offence",
+"an offence"
 ],
 "MISC\tvocational reintegration scheme": [
-"an employment programme",
-"a social programme"
+"an employment reintegration programme",
+"a social reintegration measure",
+"a public programme"
 ],
 "MISC\twba": [
 "a social security benefit",
+"a welfare payment",
 "a benefit"
 ],
 "MISC\tweather records": [
 "meteorological data",
-"records"
+"recorded data",
+"information"
 ],
 "MISC\twhole life order": [
 "a life sentence without parole",
-"a life sentence"
+"a life sentence",
+"a custodial sentence"
 ],
 "MISC\twhole life term": [
 "a life sentence without parole",
-"a life sentence"
+"a life sentence",
+"a custodial sentence"
 ],
 "MISC\twidow's bereavement allowance": [
-"a bereavement allowance",
-"a social security benefit"
+"a bereavement benefit",
+"a social security benefit",
+"a benefit"
 ],
 "MISC\twidowed parent's allowance": [
-"a bereavement allowance",
-"a social security benefit"
+"a social security benefit for bereaved parents",
+"a welfare benefit",
+"financial support"
 ],
 "MISC\twidows' benefit": [
-"bereavement benefits",
-"social security benefits"
+"a social security benefit for widows",
+"a welfare benefit",
+"financial support"
 ],
 "MISC\twidows' benefits": [
-"bereavement benefits",
-"social security benefits"
+"social security benefits for widows",
+"welfare benefits",
+"financial support"
 ],
 "MISC\twill": [
 "a testamentary document",
-"a legal document"
+"a legal document",
+"a document"
 ],
 "MISC\twork injury insurance legislation": [
-"insurance legislation",
+"legislation on insurance for work injuries",
+"legislation on employment-related insurance",
 "legislation"
 ],
 "MISC\twrote to the premises manager requesting permission to set up a stand and canvass inside the premises or in the adjacent car parks": [
-"contacted the premises manager about holding an activity on the premises",
-"communicated with a manager about an activity"
+"contacted the premises manager to seek permission to campaign on the premises",
+"requested permission to carry out an activity at a location",
+"communicated a request to a person in charge"
 ],
 "ORG\t[chamber composition]": [
-"a judicial formation",
-"a court body"
+"the make-up of a judicial body",
+"the structure of a body",
+"an institutional arrangement"
 ],
 "ORG\ta civil-society group": [
-"an advocacy organisation",
-"an organisation"
+"a non-governmental organisation",
+"an organisation",
+"a group"
 ],
 "ORG\ta court": [
 "a judicial body",
-"an institution"
+"an institution",
+"a body"
 ],
 "ORG\ta firm based in a city in the north of england": [
-"a firm based in the north of England",
-"a firm"
+"a company based in the north of England",
+"a company based in England",
+"a business"
 ],
 "ORG\ta firm of solicitors based in london": [
-"a law firm based in London",
-"a law firm"
+"a firm of solicitors in a major city",
+"a legal practice",
+"a business"
 ],
 "ORG\ta firm of solicitors practising in the capital": [
-"a law firm in a major city",
+"a firm of solicitors in a major city",
 "a legal practice",
 "a business"
 ],
 "ORG\ta firm of solicitors practising in the north of england": [
-"a law firm in a region of the country",
+"a firm of solicitors in a region of the country",
 "a legal practice",
 "a business"
 ],
 "ORG\ta national oversight body": [
-"an oversight body",
-"a public institution",
+"a national supervisory body",
+"a public body",
 "an organisation"
 ],
 "ORG\ta privately owned logistics firm": [
 "a logistics company",
-"a commercial company",
+"a private company",
 "a business"
 ],
 "ORG\ta public authority": [
-"a public institution",
+"a public body",
 "a state body",
 "an organisation"
 ],
 "ORG\ta public body": [
-"a public institution",
 "a state body",
+"a public authority",
 "an organisation"
 ],
 "ORG\ta publicly funded law centre in the north of england": [
 "a publicly funded legal advice centre",
-"a legal advice service",
+"a legal advice organisation",
 "an organisation"
 ],
 "ORG\ta regional weekly magazine": [
@@ -4156,7 +3874,7 @@
 ],
 "ORG\ta supervisory body": [
 "an oversight body",
-"a public institution",
+"a public body",
 "an organisation"
 ],
 "ORG\tad hoc committee": [
@@ -4172,7 +3890,7 @@
 "ORG\tait": [
 "an immigration tribunal",
 "a tribunal",
-"a court"
+"a public body"
 ],
 "ORG\tan assize court": [
 "a court",
@@ -4207,7 +3925,7 @@
 "ORG\tcentral investigative bureau": [
 "an investigative bureau",
 "an investigative body",
-"a body"
+"a public body"
 ],
 "ORG\tchief constable": [
 "a senior police officer",
@@ -4215,13 +3933,13 @@
 "an official"
 ],
 "ORG\tchild poverty action group": [
-"a campaigning group",
-"an advocacy organisation",
+"a campaigning organisation",
+"an advocacy group",
 "an organisation"
 ],
 "ORG\tchild-protection body": [
-"a protection body",
-"a public institution",
+"a child welfare body",
+"a public body",
 "an organisation"
 ],
 "ORG\tcmac": [
@@ -4231,12 +3949,12 @@
 ],
 "ORG\tcompetent disciplinary body": [
 "a disciplinary body",
-"a body",
+"a professional body",
 "an organisation"
 ],
 "ORG\tcriminal division": [
 "a division of a court",
-"a court division",
+"a court",
 "a judicial body"
 ],
 "ORG\tcrown": [
@@ -4244,165 +3962,165 @@
 "a public authority",
 "an institution"
 ],
-"ORG\tdev-yol devrimci yol – the revolutionary way": [
+"ORG\tdev-yol devrimci yol - the revolutionary way": [
 "a political organisation",
-"a political group",
+"an activist group",
 "an organisation"
 ],
 "ORG\tdev-yol revolutionary way": [
 "a political organisation",
-"a political group",
+"an activist group",
 "an organisation"
 ],
 "ORG\tdifferent firm of advocates": [
-"a law firm",
+"a firm of advocates",
 "a legal practice",
 "a business"
 ],
 "ORG\tdiscretionary lifer panel of the parole board the dlp": [
 "a parole panel",
-"a review panel",
-"a body"
+"a public body",
+"an organisation"
 ],
 "ORG\tdlp": [
 "a parole panel",
-"a review panel",
-"a body"
+"a public body",
+"an organisation"
 ],
 "ORG\teuropean committee for the prevention of torture and inhuman or degrading treatment or punishment": [
-"a committee on the prevention of torture",
-"a human rights body",
-"an international organisation"
+"a European human rights committee",
+"an international monitoring body",
+"an organisation"
 ],
 "ORG\tfair employment act": [
 "an employment law",
-"a law",
+"a statute",
 "a legal instrument"
 ],
 "ORG\tfirm of advocates": [
-"a law firm",
 "a legal practice",
+"a law firm",
 "a business"
 ],
 "ORG\tfirm of solicitors based in london": [
-"a law firm in a major city",
+"a firm of solicitors in a major city",
 "a legal practice",
 "a business"
 ],
 "ORG\tformer state security archive": [
 "a state archive",
-"an archive",
+"a public archive",
 "an institution"
 ],
 "ORG\tgeneral directorate of national roads and highways the directorate": [
-"a roads directorate",
-"a government directorate",
-"a public body"
+"a national roads authority",
+"a public authority",
+"an organisation"
 ],
 "ORG\tgrand chamber": [
 "a chamber of a court",
-"a court chamber",
+"a court",
 "a judicial body"
 ],
 "ORG\tgrenadier guards": [
-"a regiment of guards",
+"a regiment of the army",
 "a military unit",
 "an armed force"
 ],
 "ORG\thouse of lords": [
 "a legislative chamber",
-"a parliament",
-"a state institution"
+"a public institution",
+"an organisation"
 ],
 "ORG\thousing co-operative": [
-"a co-operative",
 "a housing organisation",
+"a property organisation",
 "an organisation"
 ],
 "ORG\thuman rights foundation": [
-"a foundation",
+"a rights organisation",
 "a non-governmental organisation",
 "an organisation"
 ],
 "ORG\timmigration authorities": [
-"immigration officials",
 "a government department",
-"a public authority"
+"a public authority",
+"an organisation"
 ],
 "ORG\timmigration judge": [
-"a judge",
 "a judicial officer",
-"a public official"
+"a legal official",
+"a person"
 ],
 "ORG\tinland revenue": [
 "a tax authority",
 "a government department",
-"a public authority"
+"an organisation"
 ],
 "ORG\tinquiry panel": [
-"a panel",
 "an investigative body",
-"a body"
+"a public body",
+"an organisation"
 ],
 "ORG\tinstitution": [
-"an establishment",
+"a public body",
 "an organisation",
-"a body"
+"an entity"
 ],
 "ORG\tjoint committee": [
 "a committee",
-"a deliberative body",
-"a body"
+"a public body",
+"an organisation"
 ],
 "ORG\tjudge advocate general": [
 "a senior legal officer",
 "a legal official",
-"a public official"
+"a person"
 ],
 "ORG\tland registry of the republic of cyprus": [
-"a land registry",
+"a national land registry",
 "a government registry",
 "a public authority"
 ],
 "ORG\tleave to appeal board": [
-"an appeal board",
-"a review body",
-"a body"
+"an appellate review body",
+"a judicial review body",
+"a public authority"
 ],
 "ORG\tlegal aid board": [
-"a legal aid body",
-"a public authority",
-"an organisation"
+"a legal aid authority",
+"a public body providing legal assistance",
+"a public authority"
 ],
 "ORG\tlegal aid body": [
-"a public authority",
-"a government body",
-"an organisation"
+"a legal assistance organisation",
+"a public body providing legal assistance",
+"a public authority"
 ],
 "ORG\tliberty": [
-"an advocacy organisation",
-"a non-governmental organisation",
+"a commercial organisation",
+"a business",
 "an organisation"
 ],
 "ORG\tlocal judge for the execution of sentences": [
+"a sentencing enforcement judge",
 "a judge",
-"a judicial officer",
-"a public official"
+"a judicial officer"
 ],
 "ORG\tlocal public institution": [
 "a public institution",
 "a public body",
-"an organisation"
+"an institution"
 ],
 "ORG\tlondon": [
 "a major city",
-"an urban area",
+"a city",
 "a place"
 ],
 "ORG\tmagazine's publisher": [
-"a publisher",
-"a media company",
-"an organisation"
+"a media publisher",
+"a publishing company",
+"a company"
 ],
 "ORG\tmain political parties": [
 "political parties",
@@ -4410,117 +4128,115 @@
 "organisations"
 ],
 "ORG\tmarvonian state": [
-"a state",
-"a country",
-"a public authority"
+"a state authority",
+"a public body",
+"an institution"
 ],
 "ORG\tmilitary review board": [
-"a review board",
 "a military body",
-"a body"
+"a public authority",
+"an institution"
 ],
 "ORG\tnational assembly": [
-"a parliament",
 "a legislative body",
-"a public authority"
+"a state authority",
+"an institution"
 ],
 "ORG\tnational employment review board": [
-"an employment review board",
-"a review body",
-"a body"
+"an employment review body",
+"a public authority",
+"an institution"
 ],
 "ORG\tnational equality and human rights body": [
 "a human rights body",
-"a national body",
-"a public authority"
+"a public authority",
+"an institution"
 ],
 "ORG\tnational social insurance board": [
 "a social insurance body",
-"a government body",
-"a public authority"
+"a public authority",
+"an institution"
 ],
 "ORG\tnational tax board": [
 "a tax authority",
-"a government body",
-"a public authority"
+"a public authority",
+"an institution"
 ],
 "ORG\tombudsman": [
-"an ombudsman institution",
-"a complaints body",
-"a public authority"
+"an oversight official",
+"a public authority",
+"an institution"
 ],
 "ORG\tpanel of the grand chamber": [
 "a judicial panel",
-"a court formation",
-"a judicial body"
+"a court body",
+"an institution"
 ],
 "ORG\tparole board": [
-"a review board",
+"a release review body",
 "a public authority",
-"a body"
+"an institution"
 ],
 "ORG\tpaymaster general": [
-"a government minister",
-"a senior official",
-"a public official"
+"a government official",
+"a public authority"
 ],
 "ORG\tpolish human rights foundation": [
-"a human rights foundation",
+"a human rights organisation",
 "a non-governmental organisation",
 "an organisation"
 ],
 "ORG\tprobation service": [
-"a public service",
-"a government agency",
-"a public authority"
-],
-"ORG\tprofessional committee": [
-"a committee",
-"a professional body",
-"a body"
-],
-"ORG\tpublic body": [
-"a government body",
+"a criminal justice agency",
 "a public authority",
 "an organisation"
 ],
+"ORG\tprofessional committee": [
+"a professional body",
+"an organisation",
+"a body"
+],
+"ORG\tpublic body": [
+"a public authority",
+"an organisation",
+"an entity"
+],
 "ORG\tpublic pension fund": [
-"a pension fund",
+"a pension provider",
 "a financial institution",
 "an organisation"
 ],
 "ORG\tpublic-interest body": [
-"a public body",
 "a public authority",
-"an organisation"
+"an organisation",
+"an entity"
 ],
 "ORG\tpublic-sector employer": [
+"a public employer",
 "an employer",
-"a public body",
 "an organisation"
 ],
 "ORG\tpublicly owned undertaking active in the transport sector": [
-"a transport undertaking",
-"a publicly owned company",
-"an organisation"
+"a state-owned transport company",
+"a transport company",
+"a company"
 ],
 "ORG\tregional crime squad": [
-"a police unit",
-"a law-enforcement body",
-"a public authority"
+"a law enforcement unit",
+"a public authority",
+"an organisation"
 ],
 "ORG\tregional directorate of the capital": [
-"a regional directorate",
-"a government directorate",
+"a regional administrative authority",
 "a public authority"
 ],
 "ORG\tregional employment committee": [
-"an employment-related body",
+"a regional public committee",
 "a public body"
 ],
 "ORG\tregional legal advice centre": [
-"a legal advice body",
-"an advisory organisation",
+"a legal advice centre",
+"an advice organisation",
 "an organisation"
 ],
 "ORG\trelevant legal aid body": [
@@ -4529,28 +4245,29 @@
 "an organisation"
 ],
 "ORG\trelevant legal services ombudsman": [
-"a legal services oversight body",
-"an oversight body",
-"a public body"
+"a legal services ombudsman",
+"an ombudsman",
+"a public official"
 ],
 "ORG\trepublic of cyprus": [
-"a European state",
-"a state"
+"a Mediterranean state",
+"a state",
+"a country"
 ],
 "ORG\treserve branch of the armed forces": [
 "a branch of the armed forces",
 "a military body",
-"an official body"
+"an organisation"
 ],
 "ORG\tsenior judiciary": [
-"senior judges",
-"judicial office-holders",
-"public officials"
+"the judiciary",
+"a branch of the state",
+"a public authority"
 ],
 "ORG\tsmall manufacturing firm": [
 "a manufacturing firm",
 "a business",
-"an employer"
+"an organisation"
 ],
 "ORG\tsolicitors in london": [
 "solicitors",
@@ -4564,7 +4281,8 @@
 ],
 "ORG\tstate": [
 "a public authority",
-"a public body"
+"a governing body",
+"an entity"
 ],
 "ORG\tstatutory body with responsibility for promoting equality": [
 "an equality body",
@@ -4574,12 +4292,12 @@
 "ORG\tsub-committee": [
 "a committee",
 "a body",
-"an organisational unit"
+"an organisation"
 ],
 "ORG\ttax authorities": [
-"a tax body",
 "a public authority",
-"a public body"
+"a government body",
+"an authority"
 ],
 "ORG\ttheir professional bodies": [
 "professional bodies",
@@ -4587,14 +4305,14 @@
 "organisations"
 ],
 "ORG\ttransport appeal board": [
-"an appeal body",
+"an appeal board",
 "a public body",
 "an organisation"
 ],
 "ORG\tturkish military authorities": [
 "military authorities",
 "a military body",
-"an official body"
+"a public authority"
 ],
 "ORG\ttwo firms": [
 "firms",
@@ -4604,16 +4322,16 @@
 "PERSON\t[applicant's representatives]": [
 "the applicant's lawyers",
 "legal representatives",
-"representatives"
+"persons"
 ],
 "PERSON\t[government agent]": [
 "a government representative",
-"a representative",
-"an official"
+"an official",
+"a person"
 ],
 "PERSON\t[representative]": [
-"a legal representative",
 "a representative",
+"an official",
 "a person"
 ],
 "PERSON\ta": [
@@ -4623,29 +4341,29 @@
 "PERSON\ta lawyer practising in the capital": [
 "a lawyer",
 "a legal practitioner",
-"a professional"
+"a person"
 ],
 "PERSON\ta lawyer practising in the respondent state": [
 "a lawyer",
 "a legal practitioner",
-"a professional"
+"a person"
 ],
 "PERSON\ta lawyer practising in the same city": [
 "a lawyer",
 "a legal practitioner",
-"a professional"
+"a person"
 ],
 "PERSON\ta relative of the applicant": [
 "a family member",
 "a person"
 ],
 "PERSON\tagent c": [
-"a representative",
+"an agent",
 "an official",
 "a person"
 ],
 "PERSON\tan acquaintance of that relative": [
-"a person known to the relative",
+"an acquaintance",
 "a person"
 ],
 "PERSON\tanchor": [
@@ -4653,12 +4371,12 @@
 "an individual"
 ],
 "PERSON\tand mrs n": [
-"and another person",
-"and a person"
+"a person",
+"an individual"
 ],
 "PERSON\tangela eagle": [
+"a member of parliament",
 "a politician",
-"a public figure",
 "a person"
 ],
 "PERSON\tapplicant a": [
@@ -4672,9 +4390,9 @@
 "a person"
 ],
 "PERSON\tapplicant's member of parliament": [
-"a parliamentarian",
+"a member of parliament",
 "a politician",
-"a public figure"
+"a person"
 ],
 "PERSON\tb": [
 "a person",
@@ -4697,11 +4415,11 @@
 "an individual"
 ],
 "PERSON\tc. yucel": [
-"a person",
-"an individual"
+"a named individual",
+"a person"
 ],
 "PERSON\tc.d": [
-"a person identified by initials",
+"a named individual",
 "a person"
 ],
 "PERSON\tcaptain j": [
@@ -4715,8 +4433,8 @@
 "a person"
 ],
 "PERSON\tco-defendant": [
-"a defendant in the same proceedings",
-"a party to the proceedings",
+"a defendant in related proceedings",
+"a party to proceedings",
 "a person"
 ],
 "PERSON\tcorporal g": [
@@ -4735,17 +4453,17 @@
 "a person"
 ],
 "PERSON\tcounsel practising in a different part of the country": [
-"a lawyer practising elsewhere in the country",
+"a lawyer based elsewhere in the country",
 "a lawyer",
 "a person"
 ],
 "PERSON\tcounsel practising in london": [
-"a lawyer practising in a large city",
+"a lawyer based in a major city",
 "a lawyer",
 "a person"
 ],
 "PERSON\tcounsel practising in the respondent state": [
-"a lawyer practising in the respondent State",
+"a lawyer based in the respondent State",
 "a lawyer",
 "a person"
 ],
@@ -4755,15 +4473,15 @@
 "a person"
 ],
 "PERSON\td": [
-"a person identified by an initial",
+"a named individual",
 "a person"
 ],
 "PERSON\td. v": [
-"a person identified by initials",
+"a named individual",
 "a person"
 ],
 "PERSON\te.f": [
-"a person identified by initials",
+"a named individual",
 "a person"
 ],
 "PERSON\tfeyyaz golcuklu": [
@@ -4776,7 +4494,7 @@
 "a person"
 ],
 "PERSON\tg.h": [
-"a person identified by initials",
+"a named individual",
 "a person"
 ],
 "PERSON\th. kolderup": [
@@ -4794,12 +4512,12 @@
 "a person"
 ],
 "PERSON\this parents": [
-"his family members",
-"relatives",
+"his relatives",
+"family members",
 "persons"
 ],
 "PERSON\this partner": [
-"a person close to him",
+"his close companion",
 "a family member",
 "a person"
 ],
@@ -4809,7 +4527,7 @@
 "a person"
 ],
 "PERSON\tj": [
-"a person identified by an initial",
+"a named individual",
 "a person"
 ],
 "PERSON\tj. mackenzie": [
@@ -4832,7 +4550,7 @@
 "a person"
 ],
 "PERSON\tk": [
-"a person identified by an initial",
+"a named individual",
 "a person"
 ],
 "PERSON\tk.m. berg": [
@@ -4840,11 +4558,11 @@
 "a person"
 ],
 "PERSON\tl": [
-"a person identified by an initial",
+"a named individual",
 "a person"
 ],
 "PERSON\tl. t": [
-"a person identified by initials",
+"a named individual",
 "a person"
 ],
 "PERSON\tlawyer b": [
@@ -4853,22 +4571,22 @@
 "a person"
 ],
 "PERSON\tlawyer practising in the respondent state": [
-"a lawyer practising in the respondent State",
+"a lawyer based in the respondent State",
 "a lawyer",
 "a person"
 ],
 "PERSON\tlawyer practising in the same city": [
-"a lawyer practising locally",
+"a locally based lawyer",
 "a lawyer",
 "a person"
 ],
 "PERSON\tlawyer practising in the same region": [
-"a lawyer practising in the area",
+"a regionally based lawyer",
 "a lawyer",
 "a person"
 ],
 "PERSON\tlawyer who would represent him": [
-"a legal representative",
+"his prospective legal representative",
 "a lawyer",
 "a person"
 ],
@@ -4886,12 +4604,12 @@
 "a person"
 ],
 "PERSON\tm. emberland": [
-"a lawyer",
+"a named individual",
 "a person"
 ],
 "PERSON\tm.n": [
-"a person",
-"an individual"
+"an unidentified individual",
+"a person"
 ],
 "PERSON\tmother": [
 "a parent",
@@ -4899,46 +4617,46 @@
 "a person"
 ],
 "PERSON\tmuharrem and fatma goktas": [
-"two individuals",
-"two persons",
+"two named individuals",
+"two people",
 "persons"
 ],
 "PERSON\tpartner": [
-"a spouse or companion",
+"a spouse or cohabitant",
 "a family member",
 "a person"
 ],
 "PERSON\tr. t": [
-"a person",
-"an individual"
+"an unidentified individual",
+"a person"
 ],
 "PERSON\trepresentative b": [
-"a representative",
-"a person acting on behalf of another",
+"a legal representative",
+"a professional acting for a party",
 "a person"
 ],
 "PERSON\ts. right": [
-"a person",
-"an individual"
+"a named individual",
+"a person"
 ],
 "PERSON\tsecretary of state": [
-"a government minister",
 "a senior government official",
-"a public official"
+"a government official",
+"a public authority representative"
 ],
 "PERSON\tsergeant h": [
-"a police officer",
-"a law-enforcement official",
-"a public official"
+"a non-commissioned officer",
+"a member of the armed forces",
+"a person"
 ],
 "PERSON\tsolicitor": [
-"a lawyer",
 "a legal professional",
+"a professional",
 "a person"
 ],
 "PERSON\tsolicitor attached to a national advice organisation": [
-"a lawyer at an advice organisation",
-"a legal professional at an organisation",
+"a lawyer working for an advisory body",
+"a legal professional",
 "a person"
 ],
 "PERSON\tsolicitor with a practice in london": [
@@ -4947,16 +4665,17 @@
 "a person"
 ],
 "PERSON\tterzi": [
-"a person",
-"an individual"
+"a professional",
+"a worker",
+"a person"
 ],
 "PERSON\ttheir agent a lawyer of the ministry of foreign affairs": [
-"a lawyer representing the ministry",
-"a legal representative of a government body",
+"a government legal representative",
+"a legal professional",
 "a person"
 ],
 "QUANTITY\t150 new turkish liras ytl": [
-"over 100 units of national currency",
+"over 100 liras",
 "a sum of money"
 ],
 "QUANTITY\t722": [
@@ -4964,372 +4683,436 @@
 "a number"
 ],
 "QUANTITY\ta considerable number of persons": [
-"a large number of persons",
-"many persons",
-"persons"
+"a large group of people",
+"a group of people",
+"people"
 ],
 "QUANTITY\ta few hundred euros": [
-"over 100 euros",
-"a sum of money"
+"a sum of money",
+"money"
 ],
 "QUANTITY\ta few hundred pounds": [
-"over 100 pounds",
+"a few hundred units of currency",
 "a sum of money"
 ],
 "QUANTITY\ta mandatory charge": [
 "a required payment",
-"a financial obligation",
-"a sum of money"
+"a financial obligation"
 ],
 "QUANTITY\ta moderate amount": [
-"a sum of money",
-"an amount"
+"a limited quantity",
+"an unspecified quantity"
 ],
 "QUANTITY\ta modest contribution towards the litigation costs": [
-"a contribution towards legal costs",
-"a payment towards costs",
+"a partial payment towards legal expenses",
+"a payment towards legal costs",
 "a sum of money"
 ],
 "QUANTITY\ta modest sum": [
-"a sum of money",
-"an amount"
+"a limited amount of money",
+"a sum of money"
 ],
 "QUANTITY\ta monthly child benefit payment": [
-"a periodic benefit payment",
-"a social benefit payment",
+"a recurring welfare payment",
+"a social security payment",
 "a payment"
 ],
 "QUANTITY\ta small number of scheduled journeys per week": [
-"a few journeys per week",
-"a limited number of journeys",
-"journeys"
+"a limited number of regular trips",
+"regular travel arrangements",
+"travel arrangements"
 ],
 "QUANTITY\ta smaller sum": [
-"a sum of money",
-"an amount"
+"a reduced amount of money",
+"a sum of money"
 ],
 "QUANTITY\ta substantial six-figure sum in the national currency": [
-"a large sum in the national currency",
+"a large sum of money in the national currency",
 "a large sum of money",
 "a sum of money"
 ],
 "QUANTITY\ta substantial sum in the national currency": [
-"a large sum in the national currency",
+"a large sum of money in the national currency",
 "a large sum of money",
 "a sum of money"
 ],
 "QUANTITY\ta substantial term of imprisonment": [
-"a long term of imprisonment",
-"a term of imprisonment",
+"a lengthy prison sentence",
+"a custodial sentence",
 "a penalty"
 ],
 "QUANTITY\ta substantially larger amount": [
-"a larger amount",
-"a sum of money",
-"an amount"
+"a considerably greater sum",
+"a greater sum of money",
+"a sum of money"
 ],
 "QUANTITY\ta sum in the national currency": [
-"a sum of money",
-"an amount"
+"an amount in domestic currency",
+"an amount of money",
+"a monetary amount"
 ],
 "QUANTITY\tage of 60": [
-"an age in the sixties",
+"around 60 years old",
 "an older age",
-"an age"
+"an adult age"
 ],
 "QUANTITY\tage of 65": [
-"an age in the sixties",
+"around 65 years old",
 "an older age",
-"an age"
+"an adult age"
 ],
 "QUANTITY\tage of sixty": [
-"an age in the sixties",
+"around 60 years old",
 "an older age",
-"an age"
+"an adult age"
 ],
 "QUANTITY\tapproximately 3 200 square metres": [
-"over 3 000 square metres",
-"a large area",
-"an area"
+"several thousand square metres",
+"a large surface area",
+"an area of land"
 ],
 "QUANTITY\tapproximately 400 sq. m": [
-"over 300 square metres",
-"a moderate area",
-"an area"
+"several hundred square metres",
+"a moderate surface area",
+"an area of land"
 ],
 "QUANTITY\tapproximately 80 pages": [
-"over 50 pages",
-"a number of pages",
-"pages"
+"several dozen pages",
+"a lengthy document",
+"a document"
 ],
 "QUANTITY\tapproximately gbp 15 per week": [
-"over 10 pounds per week",
-"a weekly sum of money",
+"a small weekly sum",
+"a modest amount of money",
 "a sum of money"
 ],
 "QUANTITY\tapproximately gbp 25 per week": [
-"over 20 pounds per week",
-"a weekly sum of money",
+"a modest weekly amount of money",
+"a small regular sum",
 "a sum of money"
 ],
 "QUANTITY\tapproximately gbp 80 per week": [
-"a modest weekly amount of money",
-"a regular sum of money"
+"a moderate weekly amount of money",
+"a regular sum of money",
+"a sum of money"
 ],
 "QUANTITY\tapproximately one third": [
-"a substantial minority share",
-"a fraction of a whole"
+"a substantial proportion",
+"a proportion",
+"a share"
 ],
 "QUANTITY\tapproximately one thousand euros": [
 "a four-figure sum of money",
-"a sum of money"
+"a sum of money",
+"a monetary amount"
 ],
 "QUANTITY\tcharge": [
-"a criminal accusation",
-"a legal allegation"
+"a financial obligation",
+"a payment",
+"a cost"
 ],
 "QUANTITY\tcustodial sentence": [
 "a sentence involving imprisonment",
-"a criminal sentence"
+"a criminal sentence",
+"a penalty"
 ],
 "QUANTITY\teight-figure sum in danish kroner": [
 "a very large sum of money",
-"a substantial amount of money"
-],
-"QUANTITY\teur 1 200–1 700": [
-"a four-figure sum of money",
+"a large sum of money",
 "a sum of money"
+],
+"QUANTITY\teur 1 200-1 700": [
+"a four-figure sum of money",
+"a sum of money",
+"a monetary amount"
 ],
 "QUANTITY\tfinancial penalty": [
 "a monetary sanction",
-"a penalty"
+"a penalty",
+"a sanction"
 ],
 "QUANTITY\tfive-figure sum": [
 "a large sum of money",
-"a substantial amount of money"
+"a substantial sum of money",
+"a sum of money"
 ],
 "QUANTITY\tfull charge": [
-"the entire amount charged",
-"a complete fee"
+"the entire financial obligation",
+"a complete payment",
+"a cost"
 ],
 "QUANTITY\tfull municipal tax": [
 "the entire local tax amount",
-"a local tax amount"
+"a local tax amount",
+"a tax amount"
 ],
 "QUANTITY\tgbp 10 000": [
 "a five-figure sum of money",
+"a large sum of money",
 "a sum of money"
 ],
 "QUANTITY\tgbp 100 000": [
 "a six-figure sum of money",
-"a large sum of money"
+"a large sum of money",
+"a sum of money"
 ],
 "QUANTITY\tgbp 150 000": [
 "a six-figure sum of money",
-"a large sum of money"
-],
-"QUANTITY\tgbp 3 000–8 000": [
-"a four-figure sum of money",
+"a large sum of money",
 "a sum of money"
+],
+"QUANTITY\tgbp 3 000-8 000": [
+"a four-figure sum of money",
+"a sum of money",
+"a monetary amount"
 ],
 "QUANTITY\tgbp 400 000 to 450 000": [
 "a six-figure sum of money",
-"a large sum of money"
+"a large sum of money",
+"a sum of money"
 ],
 "QUANTITY\tlarge number of leaflets": [
-"many leaflets",
-"a quantity of leaflets"
+"a substantial quantity of printed material",
+"a quantity of printed material",
+"a quantity of items"
 ],
 "QUANTITY\tlow hundreds of thousands": [
-"a large number",
-"a substantial quantity"
+"a six-figure amount",
+"a large amount",
+"an amount"
 ],
 "QUANTITY\tlow millions": [
-"a very large number",
-"a substantial quantity"
+"a seven-figure amount",
+"a very large amount",
+"an amount"
 ],
 "QUANTITY\tlow six figures in polish currency": [
+"a six-figure sum of money",
 "a large sum of money",
-"a substantial amount of money"
+"a sum of money"
 ],
 "QUANTITY\tlow tens of millions of turkish lira": [
 "a very large sum of money",
-"a substantial amount of money"
+"a large sum of money",
+"a sum of money"
 ],
 "QUANTITY\tlow tens of thousands of pounds": [
+"a five-figure sum of money",
 "a large sum of money",
-"a substantial amount of money"
+"a sum of money"
 ],
 "QUANTITY\tmid five figures": [
+"a five-figure sum of money",
 "a large sum of money",
-"a substantial amount of money"
+"a sum of money"
 ],
 "QUANTITY\tmid hundreds of thousands of danish kroner": [
+"a six-figure sum of money",
 "a large sum of money",
-"a substantial amount of money"
+"a sum of money"
 ],
 "QUANTITY\tmodest amount of compensation in the national currency": [
-"a small compensation payment",
-"a compensation payment"
+"a small compensation amount",
+"a compensation amount",
+"a monetary amount"
 ],
 "QUANTITY\tmodest costs order": [
 "a small costs order",
-"a costs order"
+"a costs order",
+"a legal costs decision"
 ],
 "QUANTITY\tmodest sum": [
 "a small amount of money",
-"an amount of money"
+"a sum of money",
+"an amount"
 ],
 "QUANTITY\tmodest sum of money in the low hundreds of units of the national currency": [
-"a small amount of money",
-"an amount of money"
+"a small sum of money",
+"a sum of money",
+"a monetary amount"
 ],
 "QUANTITY\tmulti-million-unit amount": [
 "a very large sum of money",
-"a substantial amount of money"
+"a large sum of money",
+"a sum of money"
 ],
 "QUANTITY\tnok 60 000": [
 "a five-figure sum of money",
+"a large sum of money",
 "a sum of money"
 ],
 "QUANTITY\tnumber of penalty points": [
 "a count of penalty points",
-"penalty points"
+"a penalty points total",
+"a penalty measure"
 ],
 "QUANTITY\treduced municipal tax": [
-"a lower local tax amount",
-"a local tax amount"
+"a lowered local tax amount",
+"a local tax amount",
+"a tax amount"
 ],
 "QUANTITY\troughly 60% of the maximum rate": [
 "a majority of the maximum rate",
+"a substantial proportion of the maximum rate",
 "a proportion of the maximum rate"
 ],
 "QUANTITY\troughly gbp 40 per week": [
-"a small weekly amount of money",
-"a regular sum of money"
+"a modest weekly amount of money",
+"a regular sum of money",
+"a sum of money"
 ],
 "QUANTITY\troughly two-fifths": [
-"a substantial minority share",
-"a fraction of a whole"
+"a substantial proportion",
+"a proportion",
+"a share"
 ],
 "QUANTITY\tseveral billion to several tens of billions of turkish lira": [
 "a very large sum of money",
-"a substantial amount of money"
+"a large sum of money",
+"a sum of money"
 ],
 "QUANTITY\tseveral hundred pages": [
-"many pages",
-"a quantity of pages"
+"a large number of pages",
+"a quantity of pages",
+"a quantity of documents"
 ],
 "QUANTITY\tseveral hundred thousand pounds": [
+"a six-figure sum of money",
 "a large sum of money",
-"a substantial amount of money"
+"a sum of money"
 ],
 "QUANTITY\tseveral million euros": [
+"a seven-figure sum of money",
 "a very large sum of money",
-"a substantial amount of money"
+"a sum of money"
 ],
 "QUANTITY\tseveral months": [
-"a period of some length",
+"a number of months",
 "a period of time"
 ],
 "QUANTITY\tseveral tens of millions of turkish lira": [
-"a sum in the tens of millions of Turkish lira",
-"a very large sum of money"
+"millions of turkish lira",
+"a large sum of turkish lira",
+"a sum of money"
 ],
 "QUANTITY\tseveral tens of thousands of danish kroner": [
-"a sum in the tens of thousands of Danish kroner",
-"a large sum of money"
+"tens of thousands of danish kroner",
+"a large sum of danish kroner",
+"a sum of money"
 ],
 "QUANTITY\tseveral tens of thousands of euros": [
-"a sum in the tens of thousands of euros",
-"a large sum of money"
+"tens of thousands of euros",
+"a large sum of euros",
+"a sum of money"
 ],
 "QUANTITY\tseveral tens of thousands of pounds sterling": [
-"a sum in the tens of thousands of pounds sterling",
-"a large sum of money"
+"tens of thousands of pounds sterling",
+"a large sum of pounds sterling",
+"a sum of money"
 ],
 "QUANTITY\tsmall percentage fee": [
-"a modest percentage-based charge",
-"a fee"
+"a percentage fee",
+"a fee",
+"a payment"
 ],
 "QUANTITY\tsmall statutory amount": [
-"a modest amount set by law",
-"an amount of money"
+"a statutory amount",
+"an amount set by law",
+"a sum of money"
 ],
 "QUANTITY\tsomewhat above twenty years": [
+"over twenty years",
 "more than two decades",
 "a long period of time"
 ],
 "QUANTITY\tsubstantial seven-figure sum": [
-"a large sum in the millions",
-"a large sum of money"
+"a seven-figure sum",
+"a large sum of money",
+"a sum of money"
 ],
 "QUANTITY\tsubstantial sum in additional compensation": [
-"a large amount of additional compensation",
-"a large sum of money"
+"a large sum in additional compensation",
+"additional compensation",
+"a payment"
 ],
 "QUANTITY\tsubstantial sum in damages": [
-"a large amount of damages",
-"a large sum of money"
+"a large sum in damages",
+"damages",
+"a payment"
 ],
 "QUANTITY\tsufficient funds": [
-"adequate financial resources",
+"adequate funds",
+"funds",
 "money"
 ],
 "QUANTITY\tsum in the millions of turkish liras": [
-"a sum in the millions of Turkish lira",
-"a very large sum of money"
+"millions of turkish liras",
+"a large sum of turkish liras",
+"a sum of money"
 ],
 "QUANTITY\ttens of billions of old turkish lira": [
-"a sum in the tens of billions of old Turkish lira",
-"a very large sum of money"
+"billions of old turkish lira",
+"a very large sum of old turkish lira",
+"a sum of money"
 ],
 "QUANTITY\tthirty days": [
 "about a month",
+"a period of weeks",
 "a period of time"
 ],
 "QUANTITY\tthree children": [
 "a few children",
-"several children"
+"several children",
+"children"
 ],
 "QUANTITY\tthree experts": [
 "a few experts",
-"several experts"
+"several experts",
+"experts"
 ],
 "QUANTITY\ttrl 150 000 000": [
-"a sum in the hundreds of millions of Turkish lira",
-"a very large sum of money"
+"a nine-figure sum of turkish lira",
+"a large sum of turkish lira",
+"a sum of money"
 ],
 "QUANTITY\ttrl 59 925 000": [
-"a sum in the tens of millions of Turkish lira",
-"a very large sum of money"
+"a sum in the tens of millions of turkish lira",
+"a large sum of turkish lira",
+"a sum of money"
 ],
 "QUANTITY\ttry 11 000 to 13 000": [
-"a sum in the low tens of thousands of Turkish lira",
+"a sum in the low tens of thousands of turkish lira",
+"a sum of turkish lira",
 "a sum of money"
 ],
 "QUANTITY\ttry 14 000 to 19 000": [
-"a sum in the mid tens of thousands of Turkish lira",
+"a sum in the mid tens of thousands of turkish lira",
+"a sum of turkish lira",
 "a sum of money"
 ],
 "QUANTITY\ttwo children": [
 "a couple of children",
-"a few children"
+"a few children",
+"children"
 ],
 "QUANTITY\ttwo dependent children": [
 "a couple of dependent children",
-"a few dependent children"
+"dependent children",
+"children"
 ],
 "QUANTITY\twell over a hundred hours": [
-"more than a hundred hours",
-"a large number of hours"
+"over a hundred hours",
+"many hours",
+"a substantial amount of time"
 ],
 "QUANTITY\twell over a thousand companies": [
-"more than a thousand companies",
-"a very large number of companies"
+"over a thousand companies",
+"many companies",
+"a large number of companies"
 ],
 "QUANTITY\twell over a thousand pages": [
-"more than a thousand pages",
-"a very large number of pages"
+"over a thousand pages",
+"many pages",
+"a large number of pages"
 ]
 }

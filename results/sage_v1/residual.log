@@ -1,0 +1,73 @@
+  [residual ours_o2_k5] 25/254  usage={'calls': 25, 'cached': 0, 'prompt_tokens': 29519, 'completion_tokens': 3609, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 50/254  usage={'calls': 50, 'cached': 0, 'prompt_tokens': 58285, 'completion_tokens': 7010, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 75/254  usage={'calls': 75, 'cached': 0, 'prompt_tokens': 90297, 'completion_tokens': 11775, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 100/254  usage={'calls': 100, 'cached': 0, 'prompt_tokens': 124274, 'completion_tokens': 17044, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 125/254  usage={'calls': 125, 'cached': 0, 'prompt_tokens': 161567, 'completion_tokens': 22745, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 150/254  usage={'calls': 150, 'cached': 0, 'prompt_tokens': 193182, 'completion_tokens': 27212, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 175/254  usage={'calls': 175, 'cached': 0, 'prompt_tokens': 223929, 'completion_tokens': 31041, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 200/254  usage={'calls': 200, 'cached': 0, 'prompt_tokens': 254825, 'completion_tokens': 35490, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 225/254  usage={'calls': 225, 'cached': 0, 'prompt_tokens': 286043, 'completion_tokens': 39955, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 250/254  usage={'calls': 250, 'cached': 0, 'prompt_tokens': 319440, 'completion_tokens': 44878, 'cache_hit_tokens': 0}
+  [residual ours_o2_k5] 254/254  usage={'calls': 254, 'cached': 0, 'prompt_tokens': 325450, 'completion_tokens': 45888, 'cache_hit_tokens': 0}
+{'corpus': 'ours_o2_k5', 'docs': 254, 'original_quasi': 8131, 'residual_rate_%': 0.7256180051654163, 'docs_with_any_residual_%': 12.992125984251969, 'residual_CODE_%': 0.0, 'residual_DATETIME_%': 0.06520321669202347, 'residual_DEM_%': 7.958477508650519, 'residual_LOC_%': 1.187648456057007, 'residual_MISC_%': 9.803921568627452, 'residual_ORG_%': 1.3513513513513513, 'residual_PERSON_%': 0.0, 'residual_QUANTITY_%': 1.4534883720930232}
+  [residual ours_o3_k5] 25/254  usage={'calls': 271, 'cached': 8, 'prompt_tokens': 345898, 'completion_tokens': 48219, 'cache_hit_tokens': 1024}
+  [residual ours_o3_k5] 50/254  usage={'calls': 293, 'cached': 11, 'prompt_tokens': 371004, 'completion_tokens': 51631, 'cache_hit_tokens': 3072}
+  [residual ours_o3_k5] 75/254  usage={'calls': 316, 'cached': 13, 'prompt_tokens': 397822, 'completion_tokens': 55708, 'cache_hit_tokens': 5504}
+  [residual ours_o3_k5] 100/254  usage={'calls': 337, 'cached': 17, 'prompt_tokens': 425693, 'completion_tokens': 60167, 'cache_hit_tokens': 7552}
+  [residual ours_o3_k5] 125/254  usage={'calls': 356, 'cached': 23, 'prompt_tokens': 456913, 'completion_tokens': 65064, 'cache_hit_tokens': 10368}
+  [residual ours_o3_k5] 150/254  usage={'calls': 375, 'cached': 29, 'prompt_tokens': 482604, 'completion_tokens': 68911, 'cache_hit_tokens': 13056}
+  [residual ours_o3_k5] 175/254  usage={'calls': 392, 'cached': 37, 'prompt_tokens': 502518, 'completion_tokens': 71388, 'cache_hit_tokens': 14336}
+  [residual ours_o3_k5] 200/254  usage={'calls': 408, 'cached': 46, 'prompt_tokens': 522220, 'completion_tokens': 74214, 'cache_hit_tokens': 16512}
+  [residual ours_o3_k5] 225/254  usage={'calls': 428, 'cached': 51, 'prompt_tokens': 546974, 'completion_tokens': 77896, 'cache_hit_tokens': 18560}
+  [residual ours_o3_k5] 250/254  usage={'calls': 452, 'cached': 52, 'prompt_tokens': 581236, 'completion_tokens': 83104, 'cache_hit_tokens': 21888}
+  [residual ours_o3_k5] 254/254  usage={'calls': 456, 'cached': 52, 'prompt_tokens': 587449, 'completion_tokens': 84174, 'cache_hit_tokens': 22784}
+{'corpus': 'ours_o3_k5', 'docs': 254, 'original_quasi': 8131, 'residual_rate_%': 0.6887221743942934, 'docs_with_any_residual_%': 11.417322834645669, 'residual_CODE_%': 0.0, 'residual_DATETIME_%': 0.06520321669202347, 'residual_DEM_%': 7.612456747404845, 'residual_LOC_%': 0.7125890736342043, 'residual_MISC_%': 9.803921568627452, 'residual_ORG_%': 1.3513513513513513, 'residual_PERSON_%': 0.0, 'residual_QUANTITY_%': 1.4534883720930232}
+  [residual random_budget_o2_k5] 25/254  usage={'calls': 481, 'cached': 52, 'prompt_tokens': 617381, 'completion_tokens': 88033, 'cache_hit_tokens': 23296}
+  [residual random_budget_o2_k5] 50/254  usage={'calls': 506, 'cached': 52, 'prompt_tokens': 647259, 'completion_tokens': 91896, 'cache_hit_tokens': 24448}
+  [residual random_budget_o2_k5] 75/254  usage={'calls': 529, 'cached': 54, 'prompt_tokens': 675098, 'completion_tokens': 95525, 'cache_hit_tokens': 25344}
+  [residual random_budget_o2_k5] 100/254  usage={'calls': 554, 'cached': 54, 'prompt_tokens': 709447, 'completion_tokens': 100892, 'cache_hit_tokens': 27136}
+  [residual random_budget_o2_k5] 125/254  usage={'calls': 578, 'cached': 55, 'prompt_tokens': 744422, 'completion_tokens': 106064, 'cache_hit_tokens': 28416}
+  [residual random_budget_o2_k5] 150/254  usage={'calls': 603, 'cached': 55, 'prompt_tokens': 777413, 'completion_tokens': 110613, 'cache_hit_tokens': 29824}
+  [residual random_budget_o2_k5] 175/254  usage={'calls': 627, 'cached': 56, 'prompt_tokens': 806152, 'completion_tokens': 114379, 'cache_hit_tokens': 30336}
+  [residual random_budget_o2_k5] 200/254  usage={'calls': 649, 'cached': 59, 'prompt_tokens': 832965, 'completion_tokens': 118087, 'cache_hit_tokens': 31872}
+  [residual random_budget_o2_k5] 225/254  usage={'calls': 673, 'cached': 60, 'prompt_tokens': 862956, 'completion_tokens': 122581, 'cache_hit_tokens': 32896}
+  [residual random_budget_o2_k5] 250/254  usage={'calls': 698, 'cached': 60, 'prompt_tokens': 898994, 'completion_tokens': 127922, 'cache_hit_tokens': 33792}
+  [residual random_budget_o2_k5] 254/254  usage={'calls': 702, 'cached': 60, 'prompt_tokens': 904549, 'completion_tokens': 128752, 'cache_hit_tokens': 34048}
+{'corpus': 'random_budget_o2_k5', 'docs': 254, 'original_quasi': 8131, 'residual_rate_%': 0.7871110564506211, 'docs_with_any_residual_%': 14.960629921259843, 'residual_CODE_%': 0.0, 'residual_DATETIME_%': 0.2825472723321017, 'residual_DEM_%': 8.996539792387543, 'residual_LOC_%': 0.2375296912114014, 'residual_MISC_%': 7.189542483660131, 'residual_ORG_%': 1.3513513513513513, 'residual_PERSON_%': 0.0, 'residual_QUANTITY_%': 1.4534883720930232}
+  [residual rarity_k5] 25/254  usage={'calls': 727, 'cached': 60, 'prompt_tokens': 934601, 'completion_tokens': 132749, 'cache_hit_tokens': 34944}
+  [residual rarity_k5] 50/254  usage={'calls': 752, 'cached': 60, 'prompt_tokens': 962921, 'completion_tokens': 136536, 'cache_hit_tokens': 36224}
+  [residual rarity_k5] 75/254  usage={'calls': 775, 'cached': 62, 'prompt_tokens': 989841, 'completion_tokens': 140243, 'cache_hit_tokens': 36864}
+  [residual rarity_k5] 100/254  usage={'calls': 800, 'cached': 62, 'prompt_tokens': 1026205, 'completion_tokens': 145994, 'cache_hit_tokens': 38016}
+  [residual rarity_k5] 125/254  usage={'calls': 824, 'cached': 63, 'prompt_tokens': 1061367, 'completion_tokens': 151370, 'cache_hit_tokens': 39808}
+  [residual rarity_k5] 150/254  usage={'calls': 849, 'cached': 63, 'prompt_tokens': 1095465, 'completion_tokens': 156253, 'cache_hit_tokens': 41344}
+  [residual rarity_k5] 175/254  usage={'calls': 873, 'cached': 64, 'prompt_tokens': 1123010, 'completion_tokens': 159511, 'cache_hit_tokens': 42240}
+  [residual rarity_k5] 200/254  usage={'calls': 896, 'cached': 66, 'prompt_tokens': 1149589, 'completion_tokens': 162912, 'cache_hit_tokens': 43264}
+  [residual rarity_k5] 225/254  usage={'calls': 920, 'cached': 67, 'prompt_tokens': 1180747, 'completion_tokens': 167672, 'cache_hit_tokens': 44416}
+  [residual rarity_k5] 250/254  usage={'calls': 945, 'cached': 67, 'prompt_tokens': 1216232, 'completion_tokens': 172885, 'cache_hit_tokens': 46208}
+  [residual rarity_k5] 254/254  usage={'calls': 949, 'cached': 67, 'prompt_tokens': 1221943, 'completion_tokens': 173739, 'cache_hit_tokens': 46336}
+{'corpus': 'rarity_k5', 'docs': 254, 'original_quasi': 8131, 'residual_rate_%': 0.9469929897921535, 'docs_with_any_residual_%': 14.960629921259843, 'residual_CODE_%': 0.0, 'residual_DATETIME_%': 0.21734405564007825, 'residual_DEM_%': 9.342560553633218, 'residual_LOC_%': 0.7125890736342043, 'residual_MISC_%': 10.457516339869281, 'residual_ORG_%': 2.5337837837837838, 'residual_PERSON_%': 0.0, 'residual_QUANTITY_%': 1.744186046511628}
+  [residual sage_k5] 25/254  usage={'calls': 969, 'cached': 72, 'prompt_tokens': 1244882, 'completion_tokens': 176515, 'cache_hit_tokens': 47488}
+  [residual sage_k5] 50/254  usage={'calls': 994, 'cached': 72, 'prompt_tokens': 1276486, 'completion_tokens': 180808, 'cache_hit_tokens': 49408}
+  [residual sage_k5] 75/254  usage={'calls': 1017, 'cached': 74, 'prompt_tokens': 1305259, 'completion_tokens': 184815, 'cache_hit_tokens': 50816}
+  [residual sage_k5] 100/254  usage={'calls': 1042, 'cached': 74, 'prompt_tokens': 1338689, 'completion_tokens': 189996, 'cache_hit_tokens': 52224}
+  [residual sage_k5] 125/254  usage={'calls': 1066, 'cached': 75, 'prompt_tokens': 1376217, 'completion_tokens': 195838, 'cache_hit_tokens': 55936}
+  [residual sage_k5] 150/254  usage={'calls': 1091, 'cached': 75, 'prompt_tokens': 1407898, 'completion_tokens': 200065, 'cache_hit_tokens': 57344}
+  [residual sage_k5] 175/254  usage={'calls': 1115, 'cached': 76, 'prompt_tokens': 1437671, 'completion_tokens': 203469, 'cache_hit_tokens': 58624}
+  [residual sage_k5] 200/254  usage={'calls': 1138, 'cached': 78, 'prompt_tokens': 1466237, 'completion_tokens': 207630, 'cache_hit_tokens': 60544}
+  [residual sage_k5] 225/254  usage={'calls': 1162, 'cached': 79, 'prompt_tokens': 1496576, 'completion_tokens': 211836, 'cache_hit_tokens': 61312}
+  [residual sage_k5] 250/254  usage={'calls': 1187, 'cached': 79, 'prompt_tokens': 1532730, 'completion_tokens': 217167, 'cache_hit_tokens': 63744}
+  [residual sage_k5] 254/254  usage={'calls': 1191, 'cached': 79, 'prompt_tokens': 1538074, 'completion_tokens': 217979, 'cache_hit_tokens': 64128}
+{'corpus': 'sage_k5', 'docs': 254, 'original_quasi': 8131, 'residual_rate_%': 4.2922149797072935, 'docs_with_any_residual_%': 33.07086614173228, 'residual_CODE_%': 3.9832285115303985, 'residual_DATETIME_%': 3.347098456857205, 'residual_DEM_%': 17.993079584775085, 'residual_LOC_%': 3.32541567695962, 'residual_MISC_%': 20.915032679738562, 'residual_ORG_%': 7.601351351351352, 'residual_PERSON_%': 1.2759170653907497, 'residual_QUANTITY_%': 4.941860465116279}
+  [residual suppress_k5] 25/254  usage={'calls': 1209, 'cached': 86, 'prompt_tokens': 1559811, 'completion_tokens': 220517, 'cache_hit_tokens': 65664}
+  [residual suppress_k5] 50/254  usage={'calls': 1232, 'cached': 88, 'prompt_tokens': 1587150, 'completion_tokens': 224428, 'cache_hit_tokens': 68608}
+  [residual suppress_k5] 75/254  usage={'calls': 1255, 'cached': 90, 'prompt_tokens': 1615424, 'completion_tokens': 228597, 'cache_hit_tokens': 71424}
+  [residual suppress_k5] 100/254  usage={'calls': 1277, 'cached': 93, 'prompt_tokens': 1644957, 'completion_tokens': 232801, 'cache_hit_tokens': 73600}
+  [residual suppress_k5] 125/254  usage={'calls': 1301, 'cached': 94, 'prompt_tokens': 1682443, 'completion_tokens': 239067, 'cache_hit_tokens': 78080}
+  [residual suppress_k5] 150/254  usage={'calls': 1326, 'cached': 94, 'prompt_tokens': 1715064, 'completion_tokens': 243878, 'cache_hit_tokens': 81792}
+  [residual suppress_k5] 175/254  usage={'calls': 1350, 'cached': 95, 'prompt_tokens': 1743433, 'completion_tokens': 247320, 'cache_hit_tokens': 84736}
+  [residual suppress_k5] 200/254  usage={'calls': 1371, 'cached': 99, 'prompt_tokens': 1768204, 'completion_tokens': 250703, 'cache_hit_tokens': 87936}
+  [residual suppress_k5] 225/254  usage={'calls': 1395, 'cached': 100, 'prompt_tokens': 1800556, 'completion_tokens': 255571, 'cache_hit_tokens': 91392}
+  [residual suppress_k5] 250/254  usage={'calls': 1420, 'cached': 100, 'prompt_tokens': 1835730, 'completion_tokens': 260852, 'cache_hit_tokens': 95744}
+  [residual suppress_k5] 254/254  usage={'calls': 1424, 'cached': 100, 'prompt_tokens': 1841386, 'completion_tokens': 261748, 'cache_hit_tokens': 96256}
+{'corpus': 'suppress_k5', 'docs': 254, 'original_quasi': 8131, 'residual_rate_%': 0.6641249538802115, 'docs_with_any_residual_%': 11.417322834645669, 'residual_CODE_%': 0.0, 'residual_DATETIME_%': 0.06520321669202347, 'residual_DEM_%': 8.304498269896193, 'residual_LOC_%': 0.0, 'residual_MISC_%': 7.8431372549019605, 'residual_ORG_%': 1.6891891891891893, 'residual_PERSON_%': 0.0, 'residual_QUANTITY_%': 1.4534883720930232}
+usage {'calls': 1424, 'cached': 100, 'prompt_tokens': 1841386, 'completion_tokens': 261748, 'cache_hit_tokens': 96256} $0.77
