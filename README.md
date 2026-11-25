@@ -1,6 +1,7 @@
 # qi_gen: risk-graph-guided generalisation of hidden quasi-identifiers
 
-Pilot code for the ICDF2C 2027 paper. Project context: see `CLAUDE.md`.
+Code for the ICDF2C 2027 paper. Project context: see `CLAUDE.md`.
+**Framework, flowchart and current progress: [`docs/framework.md`](docs/framework.md).**
 
 ## Install
 ```
