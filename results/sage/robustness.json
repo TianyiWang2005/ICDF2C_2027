@@ -1,0 +1,110 @@
+{
+ "subgroups_full_corpus": {
+  "docs": {
+   "safe": 222,
+   "not_safe": 32
+  },
+  "pair_risk_k5_%": {
+   "sage": {
+    "safe": 97.74774774774775,
+    "not_safe": 93.75
+   },
+   "ours_o2": {
+    "safe": 0.0,
+    "not_safe": 0.0
+   },
+   "ours_o3": {
+    "safe": 0.0,
+    "not_safe": 0.0
+   }
+  },
+  "residual_rate_%": {
+   "sage_k5": {
+    "safe": 4.835535563677256,
+    "not_safe": 0.4916420845624385
+   },
+   "ours_o3_k5": {
+    "safe": 0.7731234186111892,
+    "not_safe": 0.39331366764995085
+   }
+  }
+ },
+ "safe_only_corpus": {
+  "sage": {
+   "pair_%": 97.74774774774775,
+   "triple_%": 97.74774774774775,
+   "info_loss_%": 0.0
+  },
+  "ours_o2": {
+   "pair_%": 0.0,
+   "triple_%": 34.234234234234236,
+   "info_loss_%": 69.49742132407114
+  },
+  "ours_o3": {
+   "pair_%": 0.0,
+   "triple_%": 0.0,
+   "info_loss_%": 73.9627407641301
+  }
+ },
+ "extractor_recall_on_sage_text": {
+  "residual_items": 349,
+  "tagged": 299,
+  "recall_%": 85.67335243553009,
+  "by_type": {
+   "CODE": {
+    "n": 19,
+    "tagged": 19
+   },
+   "DATETIME": {
+    "n": 154,
+    "tagged": 151
+   },
+   "DEM": {
+    "n": 52,
+    "tagged": 32
+   },
+   "LOC": {
+    "n": 14,
+    "tagged": 14
+   },
+   "MISC": {
+    "n": 32,
+    "tagged": 20
+   },
+   "ORG": {
+    "n": 45,
+    "tagged": 35
+   },
+   "PERSON": {
+    "n": 16,
+    "tagged": 16
+   },
+   "QUANTITY": {
+    "n": 17,
+    "tagged": 12
+   }
+  },
+  "missed_examples": [
+   "001-86867: [QUANTITY] 343 persons",
+   "001-86867: [ORG] Dev-Yol (Devrimci Yol - the Revolutionary Way)",
+   "001-86867: [QUANTITY] life imprisonment",
+   "001-59864: [ORG] Dev-Yol (Revolutionary Way)",
+   "001-59864: [DEM] Marxist-Leninist",
+   "001-59864: [MISC] death penalty",
+   "001-91094: [DEM] dependent",
+   "001-102115: [MISC] carried animal carcasses and heavy pieces of meat",
+   "001-58039: [QUANTITY] eight",
+   "001-89321: [DEM] lawyer",
+   "001-60886: [ORG] United Kingdom of Great Britain and Northern Ireland",
+   "001-70364: [MISC] false accounting",
+   "001-67243: [DEM] a prisoner",
+   "001-60596: [DEM] transsexual",
+   "001-159211: [MISC] arms behind the neck support",
+   "001-89821: [DEM] earned his living by cultivating this land",
+   "001-61454: [DEM] under the influence of drugs",
+   "001-61454: [DEM] drug taking",
+   "001-61454: [DEM] intoxicated",
+   "001-61454: [DEM] drugs"
+  ]
+ }
+}
