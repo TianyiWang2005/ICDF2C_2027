@@ -1,0 +1,49 @@
+  [qa-gen] 126/1266  usage={'calls': 109, 'cached': 17, 'prompt_tokens': 227123, 'completion_tokens': 21255, 'cache_hit_tokens': 0}
+  [qa-gen] 252/1266  usage={'calls': 221, 'cached': 31, 'prompt_tokens': 537356, 'completion_tokens': 43804, 'cache_hit_tokens': 0}
+  [qa-gen] 378/1266  usage={'calls': 316, 'cached': 62, 'prompt_tokens': 860342, 'completion_tokens': 63024, 'cache_hit_tokens': 0}
+  [qa-gen] 504/1266  usage={'calls': 410, 'cached': 94, 'prompt_tokens': 1063474, 'completion_tokens': 81488, 'cache_hit_tokens': 256}
+  [qa-gen] 630/1266  usage={'calls': 508, 'cached': 122, 'prompt_tokens': 1215679, 'completion_tokens': 99626, 'cache_hit_tokens': 256}
+  [qa-gen] 756/1266  usage={'calls': 620, 'cached': 136, 'prompt_tokens': 1363453, 'completion_tokens': 120552, 'cache_hit_tokens': 256}
+  [qa-gen] 882/1266  usage={'calls': 711, 'cached': 171, 'prompt_tokens': 1495738, 'completion_tokens': 138054, 'cache_hit_tokens': 256}
+  [qa-gen] 1008/1266  usage={'calls': 800, 'cached': 208, 'prompt_tokens': 1630847, 'completion_tokens': 155177, 'cache_hit_tokens': 384}
+  [qa-gen] 1134/1266  usage={'calls': 895, 'cached': 239, 'prompt_tokens': 1769997, 'completion_tokens': 173453, 'cache_hit_tokens': 384}
+  [qa-gen] 1260/1266  usage={'calls': 1006, 'cached': 254, 'prompt_tokens': 1913420, 'completion_tokens': 195523, 'cache_hit_tokens': 384}
+  [qa-gen] 1266/1266  usage={'calls': 1012, 'cached': 254, 'prompt_tokens': 1927886, 'completion_tokens': 196689, 'cache_hit_tokens': 384}
+  [utility original] 253/2530  usage={'calls': 1526, 'cached': 267, 'prompt_tokens': 3506711, 'completion_tokens': 213959, 'cache_hit_tokens': 292224}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/user/icdf2c_2027/pipeline/evaluate.py", line 175, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/icdf2c_2027/pipeline/evaluate.py", line 171, in main
+    cmd_residual(a) if a.cmd == "residual" else cmd_utility(a)
+                                                ~~~~~~~~~~~^^^
+  File "/home/user/icdf2c_2027/pipeline/evaluate.py", line 150, in cmd_utility
+    res = llm.pmap(one, qa, workers=a.workers, desc=f"utility {name}")
+  File "/home/user/icdf2c_2027/pipeline/llm.py", line 122, in pmap
+    list(ex.map(run, range(len(items))))
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 625, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 318, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 460, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 402, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/user/icdf2c_2027/pipeline/llm.py", line 115, in run
+    out[i] = fn(items[i])
+             ~~^^^^^^^^^^
+  File "/home/user/icdf2c_2027/pipeline/evaluate.py", line 141, in one
+    j = llm.chat([{"role": "user", "content": P.QA_JUDGE_PROMPT.format(ref=q["answer"], cand=ans,
+                                                                     question=q["question"])}],
+                 tag="qa_judge", temperature=0.0, max_tokens=64, json_mode=True)
+  File "/home/user/icdf2c_2027/pipeline/llm.py", line 77, in chat
+    raise RuntimeError(f"LLM call failed after retries: {err}")
+RuntimeError: LLM call failed after retries: Error code: 402 - Insufficient Balance (request_id: f8d71413-89f4-4903-b866-7db3f01ffc53)
