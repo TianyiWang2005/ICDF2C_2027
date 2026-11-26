@@ -1,0 +1,9 @@
+{
+ "docs": 1266,
+ "safe": 1081,
+ "not_safe_after_max_rounds": 185,
+ "mean_rounds": 3.3088467614533967,
+ "mean_chars_original": 7567.415481832543,
+ "mean_chars_sage": 3694.847551342812,
+ "docs_longer_after_sage": 94
+}

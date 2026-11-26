@@ -8,3 +8,4 @@ data/graphs/*.json
 results/sage/utility_answers.json
 results/sage_v1/utility_answers.json
 data/graphs_full/*.json
+results/full/residual_per_doc.json
