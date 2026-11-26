@@ -19,10 +19,12 @@ MAX_ROUNDS = 5
 TEMP = 0.6  # official setting
 
 
-def load_tab_split(tab_dir, splits=("dev", "test")):
+def load_tab_split(tab_dir, splits=("dev", "test"), exclude=()):
     docs = []
     for s in splits:
         for d in json.load(open(os.path.join(tab_dir, f"echr_{s}.json"), encoding="utf-8")):
+            if d["doc_id"] in exclude:
+                continue
             docs.append({"doc_id": d["doc_id"], "split": s, "text": d["text"],
                          "respondent": d["meta"]["countries"].split(";")[0]})
     return docs
@@ -67,8 +69,12 @@ def main():
     ap.add_argument("--out", default="data/sage/sage_echr.jsonl")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--workers", type=int, default=16)
+    ap.add_argument("--splits", nargs="+", default=["dev", "test"])
     a = ap.parse_args()
-    docs = load_tab_split(a.tab_dir)[: a.limit]
+    from pipeline.qi_extract import few_shot  # the few-shot examples of the QI extractor are never rewritten
+    _, shot_ids = few_shot(a.tab_dir)
+    docs = load_tab_split(a.tab_dir, a.splits, exclude=set(shot_ids))[: a.limit]
+    print(f"{len(docs)} documents (excluded few-shot examples {shot_ids})")
     res = llm.pmap(run_doc, docs, workers=a.workers, desc="sage")
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as f:

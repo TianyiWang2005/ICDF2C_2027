@@ -23,15 +23,17 @@ import pandas as pd
 from rank_bm25 import BM25Okapi
 
 from pipeline import llm
+from pipeline import paths as PT
 from pipeline import prompts as P
 from pipeline.qi_extract import gold_entities
 
 TAB_DIR = "../qi_gen_proj/tab"
 
 
-def tab_docs(tab_dir=TAB_DIR):
+def tab_docs(tab_dir=TAB_DIR, splits=None):
+    splits = splits or PT.SPLITS
     out = {}
-    for s in ("dev", "test"):
+    for s in splits:
         for d in json.load(open(os.path.join(tab_dir, f"echr_{s}.json"), encoding="utf-8")):
             out[d["doc_id"]] = d
     return out
@@ -64,7 +66,8 @@ def residual_doc(args):
 def cmd_residual(a):
     tab = tab_docs()
     cs = corpora(a.corpora, a.only)
-    cs = {"original": {i: d["text"] for i, d in tab.items()}, **cs} if a.with_original else cs
+    ids = set().union(*[set(t) for t in cs.values()]) if cs else set(tab)
+    cs = {"original": {i: tab[i]["text"] for i in ids}, **cs} if a.with_original else cs
     gold = {}
     for i, d in tab.items():
         ents = [e for e in gold_entities(d) if e["identifier"] == "QUASI"]
@@ -98,7 +101,8 @@ def toks(s):
     return _tok.findall(s.lower())
 
 
-def gen_qa(tab, n=2, path="data/utility/qa.json"):
+def gen_qa(tab, n=2, path=None, ids=None):
+    path = path or PT.QA
     if os.path.exists(path):
         return json.load(open(path, encoding="utf-8"))
 
@@ -110,7 +114,7 @@ def gen_qa(tab, n=2, path="data/utility/qa.json"):
         except Exception:
             return []
 
-    qa = [q for r in llm.pmap(one, sorted(tab), workers=16, desc="qa-gen") for q in r]
+    qa = [q for r in llm.pmap(one, sorted(ids or tab), workers=16, desc="qa-gen") for q in r]
     os.makedirs(os.path.dirname(path), exist_ok=True)
     json.dump(qa, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return qa
@@ -118,8 +122,10 @@ def gen_qa(tab, n=2, path="data/utility/qa.json"):
 
 def cmd_utility(a):
     tab = tab_docs()
-    qa = gen_qa(tab)
-    cs = {"original": {i: d["text"] for i, d in tab.items()}, **corpora(a.corpora, a.only)}
+    cs = corpora(a.corpora, a.only)
+    ids = sorted(set().union(*[set(t) for t in cs.values()])) if cs else sorted(tab)
+    qa = gen_qa(tab, ids=ids)
+    cs = {"original": {i: tab[i]["text"] for i in ids}, **cs}
     rows, details = [], {}
     for name, texts in cs.items():
         ids = sorted(texts)
@@ -155,7 +161,7 @@ def cmd_utility(a):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["residual", "utility"])
-    ap.add_argument("--corpora", default="data/corpora")
+    ap.add_argument("--corpora", default=PT.CORPORA)
     ap.add_argument("--only", nargs="*", help="regexes on corpus names, e.g. 'sage_k5' 'ours_o.*'")
     ap.add_argument("--out", required=True)
     ap.add_argument("--with_original", action="store_true")

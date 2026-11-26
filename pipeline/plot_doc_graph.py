@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 
 from pipeline import ladders as L
+from pipeline import paths as PT
 from qi_gen.core import build_docs, doc_frequency, pair_frequency, risk_graph
 from qi_gen.io import load_jsonl
 
@@ -82,21 +83,21 @@ def main():
     ap.add_argument("--doc", default="001-83927")
     ap.add_argument("--k0", type=int, default=5)
     ap.add_argument("--method", default="ours_o2")
-    ap.add_argument("--inp", default="data/qi/sage_qi.jsonl")
-    ap.add_argument("--ladders", default="data/generalisation/llm_ladders.json")
+    ap.add_argument("--inp", default=PT.QI)
+    ap.add_argument("--ladders", default=PT.LADDERS)
     a = ap.parse_args()
     L.load(a.ladders)
     docs = build_docs(load_jsonl(a.inp))
     doc = next(d for d in docs if d.doc_id == a.doc)
     fig, axes = plt.subplots(1, 2, figsize=(16, 8))
-    set_levels(docs, f"data/corpora/sage_k{a.k0}.jsonl")
+    set_levels(docs, f"{PT.CORPORA}/sage_k{a.k0}.jsonl")
     panel(axes[0], docs, doc, a.k0, "SAGE output (before)")
-    set_levels(docs, f"data/corpora/{a.method}_k{a.k0}.jsonl")
+    set_levels(docs, f"{PT.CORPORA}/{a.method}_k{a.k0}.jsonl")
     panel(axes[1], docs, doc, a.k0, f"after {a.method} (k0={a.k0})")
     fig.suptitle("Risk graph: node = QI value (colour/size = risk-weighted degree), red edge = QI pair shared by "
                  f"fewer than k0={a.k0} documents of the corpus", fontsize=10)
     fig.tight_layout()
-    out = f"results/figures/risk_graph_{a.doc}_{a.method}_k{a.k0}.png"
+    out = f"{PT.FIGURES}/risk_graph_{a.doc}_{a.method}_k{a.k0}.png"
     fig.savefig(out, dpi=170)
     print(out)
 

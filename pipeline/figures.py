@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
 
-OUT = "results/figures"
+from pipeline import paths as PT
+
+OUT = PT.FIGURES
 COL = {"ours_o2": "#1f6feb", "ours_o3": "#0b3d91", "rg_degree_o2": "#d97706", "rg_degree_o3": "#92400e",
        "rg_cost_o2": "#f59e0b", "rg_cost_o3": "#b45309", "rg_lookahead_o2": "#eab308",
        "rg_random_o2": "#6b7280", "rg_betweenness_o2": "#7c3aed", "rarity": "#16a34a",
@@ -83,7 +85,7 @@ def utility_plot(util):
 
 
 def risk_graph_example(k0=5):
-    p = f"data/graphs/risk_graphs_k{k0}.json"
+    p = f"{PT.GRAPHS}/risk_graphs_k{k0}.json"
     if not os.path.exists(p):
         return
     g_all = json.load(open(p, encoding="utf-8"))
@@ -112,7 +114,7 @@ def risk_graph_example(k0=5):
 
 
 def sage_stats():
-    p = "data/sage/sage_echr.jsonl"
+    p = PT.SAGE
     if not os.path.exists(p):
         return
     rs = [json.loads(l) for l in open(p, encoding="utf-8")]
@@ -122,7 +124,7 @@ def sage_stats():
          "mean_chars_original": sum(len(r["original_text"]) for r in rs) / len(rs),
          "mean_chars_sage": sum(len(r["text"]) for r in rs) / len(rs),
          "docs_longer_after_sage": sum(len(r["text"]) > len(r["original_text"]) for r in rs)}
-    json.dump(s, open("results/sage/sage_stats.json", "w"), indent=1)
+    json.dump(s, open(f"{PT.RESULTS}/sage_stats.json", "w"), indent=1)
     fig, ax = plt.subplots(figsize=(4.5, 4))
     ax.scatter([len(r["original_text"]) for r in rs], [len(r["text"]) for r in rs], s=8,
                c=["#16a34a" if r["safe"] else "#dc2626" for r in rs])
@@ -139,10 +141,10 @@ def sage_stats():
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    res = pd.read_csv("results/sage/results.csv")
+    res = pd.read_csv(f"{PT.RESULTS}/results.csv")
     tradeoff(res)
-    util = pd.read_csv("results/sage/utility.csv") if os.path.exists("results/sage/utility.csv") else None
-    res_ = pd.read_csv("results/sage/residual.csv") if os.path.exists("results/sage/residual.csv") else None
+    util = pd.read_csv(f"{PT.RESULTS}/utility.csv") if os.path.exists(f"{PT.RESULTS}/utility.csv") else None
+    res_ = pd.read_csv(f"{PT.RESULTS}/residual.csv") if os.path.exists(f"{PT.RESULTS}/residual.csv") else None
     utility_plot(util)
     risk_graph_example()
     if util is not None and res_ is not None:

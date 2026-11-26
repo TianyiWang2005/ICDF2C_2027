@@ -8,18 +8,19 @@ from collections import Counter, defaultdict
 
 from pipeline.qi_extract import gold_entities
 from pipeline.evaluate import tab_docs
+from pipeline import paths as PT
 
 K0 = 5
 
 
 def load(name):
-    return {r["doc_id"]: r for r in map(json.loads, open(f"data/corpora/{name}.jsonl", encoding="utf-8"))}
+    return {r["doc_id"]: r for r in map(json.loads, open(f"{PT.CORPORA}/{name}.jsonl", encoding="utf-8"))}
 
 
 def main():
     out = {}
-    tab = tab_docs()
-    sage = {r["doc_id"]: r for r in map(json.loads, open("data/sage/sage_echr.jsonl", encoding="utf-8"))}
+    tab = tab_docs(splits=PT.SPLITS)
+    sage = {r["doc_id"]: r for r in map(json.loads, open(PT.SAGE, encoding="utf-8"))}
     base, ours2, ours3 = load(f"sage_k{K0}"), load(f"ours_o2_k{K0}"), load(f"ours_o3_k{K0}")
 
     # 1. QIs before / after SAGE
@@ -55,8 +56,8 @@ def main():
                                            "suppressed_%": 100 * s / n} for t, (n, l, u, s) in sorted(by_t.items())}
 
     # 4. SAGE safe vs not safe
-    res = json.load(open("results/sage/residual_per_doc.json")) if __import__("os").path.exists(
-        "results/sage/residual_per_doc.json") else {}
+    res = json.load(open(f"{PT.RESULTS}/residual_per_doc.json")) if __import__("os").path.exists(
+        f"{PT.RESULTS}/residual_per_doc.json") else {}
     r5 = res.get(f"sage_k{K0}", {})
     grp = defaultdict(list)
     for i, r in sage.items():
@@ -78,7 +79,7 @@ def main():
         if len(ex) == 3:
             break
     out["examples"] = ex
-    json.dump(out, open("results/sage/analysis.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(out, open(f"{PT.RESULTS}/analysis.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(json.dumps({k: v for k, v in out.items() if k != "examples"}, ensure_ascii=False, indent=1)[:6000])
 
 

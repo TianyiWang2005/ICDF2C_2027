@@ -14,6 +14,7 @@ from collections import Counter
 import qi_gen.core as C
 from pipeline import ladders as L
 from pipeline.evaluate import tab_docs
+from pipeline import paths as PT
 from pipeline.qi_extract import gold_entities
 from qi_gen.io import load_jsonl
 from run_experiments import measure
@@ -37,13 +38,13 @@ def pair_risk_subset(docs, ids, k0=K0):
 
 def main():
     out = {}
-    sage = {r["doc_id"]: r for r in map(json.loads, open("data/sage/sage_echr.jsonl", encoding="utf-8"))}
+    sage = {r["doc_id"]: r for r in map(json.loads, open(PT.SAGE, encoding="utf-8"))}
     safe = {i for i, r in sage.items() if r["safe"]}
     notsafe = set(sage) - safe
-    L.load("data/generalisation/llm_ladders.json")
-    recs = load_jsonl("data/qi/sage_qi.jsonl")
-    tab = tab_docs()
-    res = json.load(open("results/sage/residual_per_doc.json"))
+    L.load(PT.LADDERS)
+    recs = load_jsonl(PT.QI)
+    tab = tab_docs(splits=PT.SPLITS)
+    res = json.load(open(f"{PT.RESULTS}/residual_per_doc.json"))
 
     # 1. subgroups within the full corpus
     docs = C.build_docs(recs)
@@ -91,7 +92,7 @@ def main():
     out["extractor_recall_on_sage_text"] = {
         "residual_items": n, "tagged": caught, "recall_%": 100 * caught / n,
         "by_type": {t: {"n": by[t], "tagged": byc[t]} for t in sorted(by)}, "missed_examples": missed[:20]}
-    json.dump(out, open("results/sage/robustness.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(out, open(f"{PT.RESULTS}/robustness.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(json.dumps({k: v for k, v in out.items()}, ensure_ascii=False, indent=1)[:3000])
 
 
