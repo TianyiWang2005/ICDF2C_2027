@@ -1,0 +1,12 @@
+  [qi-tag] 126/1266  usage={'calls': 126, 'cached': 0, 'prompt_tokens': 358752, 'completion_tokens': 47135, 'cache_hit_tokens': 258048}
+  [qi-tag] 252/1266  usage={'calls': 252, 'cached': 0, 'prompt_tokens': 733321, 'completion_tokens': 104788, 'cache_hit_tokens': 516096}
+  [qi-tag] 378/1266  usage={'calls': 378, 'cached': 0, 'prompt_tokens': 1090937, 'completion_tokens': 155307, 'cache_hit_tokens': 774144}
+  [qi-tag] 504/1266  usage={'calls': 504, 'cached': 0, 'prompt_tokens': 1460005, 'completion_tokens': 210148, 'cache_hit_tokens': 1032192}
+  [qi-tag] 630/1266  usage={'calls': 630, 'cached': 0, 'prompt_tokens': 1846001, 'completion_tokens': 266158, 'cache_hit_tokens': 1290240}
+  [qi-tag] 756/1266  usage={'calls': 756, 'cached': 0, 'prompt_tokens': 2206217, 'completion_tokens': 320193, 'cache_hit_tokens': 1548288}
+  [qi-tag] 882/1266  usage={'calls': 882, 'cached': 0, 'prompt_tokens': 2569181, 'completion_tokens': 371071, 'cache_hit_tokens': 1806336}
+  [qi-tag] 1008/1266  usage={'calls': 965, 'cached': 43, 'prompt_tokens': 2831122, 'completion_tokens': 413442, 'cache_hit_tokens': 1976320}
+  [qi-tag] 1134/1266  usage={'calls': 966, 'cached': 169, 'prompt_tokens': 2834128, 'completion_tokens': 413691, 'cache_hit_tokens': 1978368}
+  [qi-tag] 1260/1266  usage={'calls': 1006, 'cached': 254, 'prompt_tokens': 2960852, 'completion_tokens': 432624, 'cache_hit_tokens': 2060288}
+  [qi-tag] 1266/1266  usage={'calls': 1012, 'cached': 254, 'prompt_tokens': 2981883, 'completion_tokens': 452393, 'cache_hit_tokens': 2072576}
+tagged 1266 docs, 19755 entities; usage {'calls': 1012, 'cached': 254, 'prompt_tokens': 2981883, 'completion_tokens': 452393, 'cache_hit_tokens': 2072576}

@@ -1,1 +1,14 @@
 1266 documents (excluded few-shot examples ['001-111840', '001-95909'])
+  [sage] 126/1266  usage={'calls': 1071, 'cached': 0, 'prompt_tokens': 2615386, 'completion_tokens': 772900, 'cache_hit_tokens': 1196288}
+  [sage] 252/1266  usage={'calls': 2052, 'cached': 0, 'prompt_tokens': 5745603, 'completion_tokens': 1524993, 'cache_hit_tokens': 2893056}
+  [sage] 378/1266  usage={'calls': 3005, 'cached': 0, 'prompt_tokens': 8084192, 'completion_tokens': 2175654, 'cache_hit_tokens': 4077568}
+  [sage] 504/1266  usage={'calls': 3997, 'cached': 0, 'prompt_tokens': 11232456, 'completion_tokens': 2951521, 'cache_hit_tokens': 5661440}
+  [sage] 630/1266  usage={'calls': 5047, 'cached': 0, 'prompt_tokens': 15117915, 'completion_tokens': 3823952, 'cache_hit_tokens': 7720704}
+  [sage] 756/1266  usage={'calls': 5971, 'cached': 0, 'prompt_tokens': 17479988, 'completion_tokens': 4451322, 'cache_hit_tokens': 8998912}
+  [sage] 882/1266  usage={'calls': 6979, 'cached': 0, 'prompt_tokens': 20571462, 'completion_tokens': 5200447, 'cache_hit_tokens': 10547200}
+  [sage] 1008/1266  usage={'calls': 7673, 'cached': 354, 'prompt_tokens': 23574957, 'completion_tokens': 5816621, 'cache_hit_tokens': 12139904}
+  [sage] 1134/1266  usage={'calls': 7673, 'cached': 1296, 'prompt_tokens': 23574957, 'completion_tokens': 5816621, 'cache_hit_tokens': 12139904}
+  [sage] 1260/1266  usage={'calls': 7874, 'cached': 1940, 'prompt_tokens': 24616510, 'completion_tokens': 5995032, 'cache_hit_tokens': 12824064}
+  [sage] 1266/1266  usage={'calls': 7889, 'cached': 1940, 'prompt_tokens': 24739409, 'completion_tokens': 6009761, 'cache_hit_tokens': 12921984}
+1266 docs, safe=1081, mean rounds=3.31, len orig->syn 7567 -> 3694
+usage {'calls': 7889, 'cached': 1940, 'prompt_tokens': 24739409, 'completion_tokens': 6009761, 'cache_hit_tokens': 12921984} est. cost $10.706
