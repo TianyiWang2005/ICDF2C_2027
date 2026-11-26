@@ -137,7 +137,7 @@ def validate_doc(doc, pred):
 
 
 def cmd_validate(a):
-    examples, shot_ids = few_shot(a.tab_dir)
+    examples, shot_ids = few_shot(a.tab_dir, a.shots)
     test = json.load(open(os.path.join(a.tab_dir, "echr_test.json"), encoding="utf-8"))[: a.limit]
     outs = llm.pmap(lambda d: tag(d["text"], examples), test, workers=a.workers, desc="qi-validate")
     os.makedirs(a.out, exist_ok=True)
@@ -170,7 +170,7 @@ def cmd_validate(a):
 
 
 def cmd_tag(a):
-    examples, _ = few_shot(a.tab_dir)
+    examples, _ = few_shot(a.tab_dir, a.shots)
     recs = [json.loads(l) for l in open(a.inp, encoding="utf-8")]
     outs = llm.pmap(lambda r: tag(r["text"], examples), recs, workers=a.workers, desc="qi-tag")
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
@@ -189,6 +189,7 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--limit", type=int)
     ap.add_argument("--workers", type=int, default=16)
+    ap.add_argument("--shots", type=int, default=N_SHOT, help="number of few-shot examples from TAB train")
     a = ap.parse_args()
     cmd_validate(a) if a.cmd == "validate" else cmd_tag(a)
 

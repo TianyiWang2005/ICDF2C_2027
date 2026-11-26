@@ -1,0 +1,54 @@
+{
+ "few_shot_train_docs": [],
+ "test_docs": 127,
+ "doc_annotator_pairs": 555,
+ "DIRECT_entity_recall": 0.9948320413436692,
+ "QUASI_entity_recall": 0.7652729170504083,
+ "DIRECT_mention_recall": 0.9963325183374083,
+ "QUASI_mention_recall": 0.7773391438092797,
+ "char_precision": 0.5279332538271496,
+ "char_recall": 0.7811804189747569,
+ "QUASI_entity_recall_by_type": {
+  "CODE": {
+   "n": 1011,
+   "recall": 0.12265084075173097
+  },
+  "DATETIME": {
+   "n": 9083,
+   "recall": 0.895519101618408
+  },
+  "DEM": {
+   "n": 701,
+   "recall": 0.6148359486447932
+  },
+  "LOC": {
+   "n": 1000,
+   "recall": 0.915
+  },
+  "MISC": {
+   "n": 374,
+   "recall": 0.3716577540106952
+  },
+  "ORG": {
+   "n": 1057,
+   "recall": 0.7975402081362346
+  },
+  "PERSON": {
+   "n": 2432,
+   "recall": 0.5682565789473685
+  },
+  "QUANTITY": {
+   "n": 629,
+   "recall": 0.7885532591414944
+  }
+ },
+ "llm_usage": {
+  "calls": 127,
+  "cached": 0,
+  "prompt_tokens": 205559,
+  "completion_tokens": 120803,
+  "cache_hit_tokens": 47360
+ },
+ "est_cost_usd": 0.17891223,
+ "char_f1": 0.6300615889721976
+}
