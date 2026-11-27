@@ -74,7 +74,8 @@ Tianyi 自己的 EMNLP 2027 论文做的是：对合成 RAG 数据的推断攻�
 3. 写论文初稿（LNICST 模板）。
 
 ## 当前状态（2026-11-25 更新，以本节为准）
-- 仓库每个目录和文件的说明见 `DIRECTORY.md`。全数据集（1266 篇）主结果在 `results/full/`，旧结果在 `results/archive/`。
+- 仓库每个目录和文件的说明见 `DIRECTORY.md`。全数据集（1266 篇）主结果在 `results/full/`，分析见 `docs/results_full.md`；旧结果在 `results/archive/`。
+- **2026-11-27 重要发现**：在 TAB-200 题库上 ours 比 SAGE 低 7–10 分（显著），原因是 QI 抽取把公共机构、法律程序等非识别性案情内容当成 QI 泛化掉。下一步是提高 QI 抽取精确率（见 `docs/results_full.md` 第 7 节）。
 - 已在 254 篇（TAB dev+test）上完成可行性验证，整条流程由本仓库实现：SAGE（ECHR 版，DeepSeek）→ LLM QI 抽取 → 风险图迭代泛化 → 评估。框架见 `docs/framework.md`，结果见 `docs/results_analysis.md`。
 - 方法定义调整：主方法 = 风险图 + 迭代贪心覆盖 + 最稀有优先（`choice="rarest"`）；风险加权度 / 考虑代价 / 前瞻 / 介数中心性为消融。QI 识别改为 LLM few-shot（不微调）。泛化层级 = 规则 + LLM 离线生成。占位符不计入组合；值做规范化。
 - 关键数字（k₀=5）：SAGE 两两风险 97.2% → ours 0%（order 3 三元组也 0%）；信息损失 ours o2 68.2% / o3 73.6%；原文 QI 残留 SAGE 4.29% → ours 0.73%；RAG 问答相对 SAGE 无显著下降。

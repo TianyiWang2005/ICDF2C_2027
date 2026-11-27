@@ -5,8 +5,9 @@
 
 **第一次阅读建议的顺序**
 1. [`docs/framework.md`](docs/framework.md)：方法框架、流程图、当前进度
-2. [`docs/results_analysis.md`](docs/results_analysis.md)：实验结果与分析
-3. 本文件：需要找某个具体文件时查阅
+2. [`docs/results_full.md`](docs/results_full.md)：**全数据集主结果**（1,266 篇）
+3. [`docs/results_analysis.md`](docs/results_analysis.md)：254 篇可行性验证的结果与各指标的详细解释
+4. 本文件：需要找某个具体文件时查阅
 
 ---
 
@@ -19,7 +20,7 @@ icdf2c_2027/
 ├── CLAUDE.md             项目背景与当前状态（给 Claude 会话读的项目说明）
 ├── run_all.sh            一键复现全部实验
 │
-├── docs/                 文档：框架说明、结果分析
+├── docs/                 文档：框架说明（framework）、主结果（results_full）、可行性验证（results_analysis）
 ├── qi_gen/               核心算法：风险图 + 迭代泛化（只用 CPU）
 ├── pipeline/             完整流水线：SAGE 复现、QI 抽取、评估、画图（会调用 LLM）
 ├── prompts/              所有 LLM prompt 的原文（论文附录用）
@@ -58,6 +59,7 @@ icdf2c_2027/
 | `run_main.py` | 第 2–4 步：在 SAGE 输出上跑所有方法和 k₀，输出结果表、各版本语料、风险图 | 否 |
 | `evaluate.py` | 评估：原文 QI 残留率、RAG 问答效用 | 是 |
 | `robustness.py` | 分组与稳健性分析：SAGE safe 与不 safe 对比、只用 safe 文档重跑、QI 抽取在 SAGE 文本上的召回 | 否 |
+| `utility_diagnostics.py` | 效用评估的诊断分析（不调用 LLM） |
 | `analysis.py` | 描述性统计：QI 类型分布、各类型泛化程度、文本示例 | 否 |
 | `figures.py`、`plot_doc_graph.py` | 画图：隐私-效用曲线、单篇文档泛化前后的风险图等 | 否 |
 | `prompts.py`、`export_prompts.py` | 所有 prompt 的定义；导出到 `prompts/` | 否 |
@@ -105,6 +107,7 @@ icdf2c_2027/
 | `utility_tab200.csv`（full）、`utility.csv`（sage） | RAG 问答效用：得分、检索命中率；`tab200` 版本还按"依赖 / 不依赖 QI"分组 |
 | `utility_*_answers.json(.gz)` | 每道题、每个版本的检索结果、回答和得分 |
 | `utility_bootstrap.json`（sage） | 效用差异的配对 bootstrap 置信区间 |
+| `utility_tab200_diagnostics.json`（full） | 效用损失的诊断：bootstrap、检索与回答拆分、按题型、按是否依赖 QI、被泛化的相关 QI |
 | `robustness.json` | SAGE safe 与不 safe 分组、只用 safe 文档重跑、QI 抽取在 SAGE 文本上的召回 |
 | `analysis.json`（sage） | QI 类型分布、各类型泛化程度、泛化前后文本示例 |
 | `sage_stats.json` | SAGE 改写统计：safe 数量、平均轮数、长度变化 |

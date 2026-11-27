@@ -1,0 +1,228 @@
+{
+ "quasi_entities_original_gold": {
+  "total": 47659,
+  "per_doc": 37.58596214511041,
+  "by_type": {
+   "DATETIME": 28748,
+   "PERSON": 6096,
+   "ORG": 4491,
+   "LOC": 2561,
+   "QUANTITY": 2080,
+   "DEM": 1343,
+   "MISC": 1290,
+   "CODE": 1050
+  }
+ },
+ "quasi_entities_sage_llm": {
+  "total": 19107,
+  "per_doc": 15.092417061611375,
+  "by_type": {
+   "DATETIME": 8204,
+   "ORG": 4036,
+   "DEM": 2518,
+   "MISC": 1885,
+   "LOC": 1473,
+   "PERSON": 520,
+   "QUANTITY": 455,
+   "CODE": 16
+  }
+ },
+ "sage_qi_values_distinct": 8176,
+ "sage_qi_values_df1_%": 81.73923679060665,
+ "sage_qi_values_most_common": [
+  "DATETIME: early 2000s (258)",
+  "DATETIME: late 1990s (233)",
+  "DATETIME: mid-2000s (226)",
+  "DATETIME: mid-1990s (214)",
+  "DEM: lawyer (212)",
+  "DEM: national of the respondent state (206)",
+  "DATETIME: early 1990s (199)",
+  "ORG: regional court (185)",
+  "DEM: national of that state (182)",
+  "ORG: court of appeal (166)",
+  "ORG: ministry of foreign affairs (153)",
+  "ORG: court of cassation (148)",
+  "ORG: district court (132)",
+  "ORG: supreme court (122)",
+  "DATETIME: following year (118)",
+  "DATETIME: 1990s (114)",
+  "DATETIME: late 2000s (99)",
+  "DATETIME: some months later (88)",
+  "DEM: polish national (87)",
+  "DATETIME: early 1980s (86)",
+  "DATETIME: late 1980s (82)",
+  "ORG: appellate court (78)",
+  "DATETIME: some weeks later (74)",
+  "DEM: national of a contracting state (72)",
+  "DATETIME: early 1970s (71)"
+ ],
+ "ours_o2_k5_by_type": {
+  "CODE": {
+   "n": 16,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "DATETIME": {
+   "n": 8204,
+   "info_loss_%": 44.69953681131198,
+   "unchanged_%": 19.137006338371528,
+   "suppressed_%": 17.34519746465139
+  },
+  "DEM": {
+   "n": 2518,
+   "info_loss_%": 67.32856764628015,
+   "unchanged_%": 23.828435266084195,
+   "suppressed_%": 47.1803018268467
+  },
+  "LOC": {
+   "n": 1473,
+   "info_loss_%": 62.016293279022406,
+   "unchanged_%": 0.0,
+   "suppressed_%": 24.032586558044805
+  },
+  "MISC": {
+   "n": 1885,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "ORG": {
+   "n": 4036,
+   "info_loss_%": 47.708126858275534,
+   "unchanged_%": 22.249752229930625,
+   "suppressed_%": 15.460852329038651
+  },
+  "PERSON": {
+   "n": 520,
+   "info_loss_%": 74.8076923076924,
+   "unchanged_%": 0.0,
+   "suppressed_%": 20.76923076923077
+  },
+  "QUANTITY": {
+   "n": 455,
+   "info_loss_%": 92.56410256410264,
+   "unchanged_%": 0.0,
+   "suppressed_%": 76.26373626373626
+  }
+ },
+ "ours_o3_k5_by_type": {
+  "CODE": {
+   "n": 16,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "DATETIME": {
+   "n": 8204,
+   "info_loss_%": 58.255728912725715,
+   "unchanged_%": 14.84641638225256,
+   "suppressed_%": 25.646026328620184
+  },
+  "DEM": {
+   "n": 2518,
+   "info_loss_%": 79.77561556791106,
+   "unchanged_%": 6.98967434471803,
+   "suppressed_%": 49.80142970611597
+  },
+  "LOC": {
+   "n": 1473,
+   "info_loss_%": 72.87847929395791,
+   "unchanged_%": 0.0,
+   "suppressed_%": 45.75695858791582
+  },
+  "MISC": {
+   "n": 1885,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  },
+  "ORG": {
+   "n": 4036,
+   "info_loss_%": 65.22753551370995,
+   "unchanged_%": 0.0,
+   "suppressed_%": 30.153617443012884
+  },
+  "PERSON": {
+   "n": 520,
+   "info_loss_%": 74.8076923076924,
+   "unchanged_%": 0.0,
+   "suppressed_%": 20.76923076923077
+  },
+  "QUANTITY": {
+   "n": 455,
+   "info_loss_%": 100.0,
+   "unchanged_%": 0.0,
+   "suppressed_%": 100.0
+  }
+ },
+ "sage_safe_vs_not": {
+  "safe": {
+   "docs": 1081,
+   "mean_rounds": 3.0194264569842737,
+   "mean_quasi_sage": 15.26086956521739,
+   "residual_rate_%": 3.4989468467352247
+  },
+  "not_safe": {
+   "docs": 185,
+   "mean_rounds": 5.0,
+   "mean_quasi_sage": 14.108108108108109,
+   "residual_rate_%": 0.6873797085510036
+  }
+ },
+ "examples": [
+  {
+   "doc_id": "001-100018",
+   "sage_excerpt": "**PROCEDURE**\n\n1. The application (no. [CODE]) was lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a group of Turkish nationals, referred to below as Applicants A to D (\"the applicants\"), at some point during the second half of 2003.\n\n2. The applicants were assisted by a lawyer with a practice in Türkiye.\n\n3. At a point in the course of 2009 the President of the relevant Section decided that the respondent Government should be given notice of the application. It was further decided that the admissibility and merits of the application would be examined together (Article 29 § 3).\n\n**THE FACTS**\n\n**I. THE",
+   "ours_o3_excerpt": "**PROCEDURE**\n\n1. The application (no. [CODE]) was lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a group of [DEM], referred to below as [PERSON] (\"the applicants\"), at some point during the 2000s.\n\n2. The applicants were assisted by a lawyer with a practice in [LOC].\n\n3. At a point in the course of 2000s the President of the relevant Section decided that the respondent Government should be given notice of the application. It was further decided that the admissibility and merits of the application would be examined together (Article 29 § 3).\n\n**THE FACTS**\n\n**I. THE CIRCUMSTANCES OF THE CASE**\n\n4. The",
+   "changes": [
+    "DEM: turkish nationals -> [DEM]",
+    "PERSON: applicants a to d -> [PERSON]",
+    "DATETIME: second half of 2003 -> 2000s",
+    "LOC: turkey -> [LOC]",
+    "DATETIME: 2009 -> 2000s",
+    "DATETIME: 1940s -> 20th century",
+    "DATETIME: 1950s -> 20th century",
+    "LOC: province in the northern part of turkiye -> a place in Turkey",
+    "DATETIME: early 1970s -> 20th century",
+    "ORG: treasury -> a public authority",
+    "ORG: local village administration -> [ORG]",
+    "DATETIME: 1970s -> 20th century"
+   ]
+  },
+  {
+   "doc_id": "001-100188",
+   "sage_excerpt": "**PROCEDURE**\n\n1. The application was lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a national of the respondent State (\"the applicant\"). It was introduced in the first decade of the 2000s.\n\n2. The applicant was granted legal aid and was represented by counsel practising in the respondent State. The Government of the respondent State (\"the Government\") were represented by their Agent before the Court.\n\n3. At a subsequent stage of the proceedings, the President of the competent Section decided to give notice of the application to the Government and to invite their written observations. It was further ",
+   "ours_o3_excerpt": "**PROCEDURE**\n\n1. The application was lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a national of a state (\"the applicant\"). It was introduced in the 2000s.\n\n2. The applicant was granted legal aid and was represented by counsel practising in the respondent State. The Government of the respondent State (\"the Government\") were represented by their Agent before the Court.\n\n3. At a subsequent stage of the proceedings, the President of the competent Section decided to give notice of the application to the Government and to invite their written observations. It was further decided, pursuant to Article 29 §",
+   "changes": [
+    "DEM: national of the respondent state -> national of a state",
+    "DATETIME: first decade of the 2000s -> 2000s",
+    "DEM: adult man -> a person",
+    "DEM: employed by a state agency responsible for the oversight and inspection of certain licensed activities -> [DEM]",
+    "DEM: administrative support capacity -> [DEM]",
+    "ORG: external supervisory authority -> a public authority",
+    "ORG: agency's disciplinary body -> a public authority",
+    "ORG: administrative tribunal with jurisdiction over public-employment matters -> a court",
+    "ORG: public prosecution service -> [ORG]",
+    "DATETIME: late 2000s -> 2000s"
+   ]
+  },
+  {
+   "doc_id": "001-100393",
+   "sage_excerpt": "**PROCEDURE**\n\n1. The case originated in an application (no. [APPLICATION NO.]) against a Contracting State lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a national of that State (\"the applicant\"), on a date in 2005.\n\n2. The applicant was represented by a lawyer practising in the respondent State. The Government were represented by their Agent, of the Ministry of Justice.\n\n3. On a date in 2007 the President of the relevant Section decided to give notice of the application to the Government. It was also decided to rule on the admissibility and merits of the application at the same time (Article 29 § 3",
+   "ours_o3_excerpt": "**PROCEDURE**\n\n1. The case originated in an application (no. [APPLICATION NO.]) against a Contracting State lodged with the Court under Article 34 of the Convention for the Protection of Human Rights and Fundamental Freedoms (\"the Convention\") by a national of that State (\"the applicant\"), on a date in 2000s.\n\n2. The applicant was represented by a lawyer practising in the respondent State. The Government were represented by their Agent, of the Ministry of Justice.\n\n3. On a date in 2000s the President of the relevant Section decided to give notice of the application to the Government. It was also decided to rule on the admissibility and merits of the application at the same time (Article 29 §",
+   "changes": [
+    "DATETIME: 2005 -> 2000s",
+    "DATETIME: 2007 -> 2000s",
+    "DATETIME: 1930s -> 20th century",
+    "DEM: technical and administrative capacity -> [DEM]",
+    "ORG: state-owned enterprise -> [ORG]",
+    "MISC: supplementary occupational pension scheme -> [MISC]",
+    "DATETIME: 1998 -> 1990s",
+    "DATETIME: 1999 -> 1990s",
+    "DATETIME: 2000 -> 2000s",
+    "DATETIME: 2006 -> 2000s"
+   ]
+  }
+ ]
+}
