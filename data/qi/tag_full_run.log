@@ -1,0 +1,12 @@
+  [qi-tag] 126/1266  usage={'calls': 0, 'cached': 127, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 252/1266  usage={'calls': 0, 'cached': 269, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 378/1266  usage={'calls': 0, 'cached': 403, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 504/1266  usage={'calls': 0, 'cached': 529, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 630/1266  usage={'calls': 0, 'cached': 652, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 756/1266  usage={'calls': 0, 'cached': 784, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 882/1266  usage={'calls': 0, 'cached': 901, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 1008/1266  usage={'calls': 0, 'cached': 1030, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 1134/1266  usage={'calls': 0, 'cached': 1160, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 1260/1266  usage={'calls': 0, 'cached': 1266, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [qi-tag] 1266/1266  usage={'calls': 0, 'cached': 1266, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+tagged 1266 docs, 19788 entities; usage {'calls': 0, 'cached': 1266, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}

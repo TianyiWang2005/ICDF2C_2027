@@ -1,40 +1,34 @@
-# qi_gen: risk-graph-guided generalisation of hidden quasi-identifiers
+# Hidden quasi-identifiers in SAGE synthetic RAG data
 
-Code for the ICDF2C 2027 paper. Project context: see `CLAUDE.md`.
-**Framework, flowchart and current progress: [`docs/framework.md`](docs/framework.md).**
+Code and data for the ICDF2C 2027 paper. SAGE (Zeng et al., EMNLP 2025) rewrites a RAG retrieval corpus into
+synthetic text. We show that the rewritten corpus still contains **hidden quasi-identifiers (QIs)**: values that
+are harmless alone but unique in combination, and we remove them with an iterative, risk-graph-guided
+generalisation.
 
-## Install
-```
-pip install networkx pandas
-git clone https://github.com/NorskRegnesentral/text-anonymization-benchmark.git tab
+| Where | What |
+|---|---|
+| [`DIRECTORY.md`](DIRECTORY.md) | what every directory and file in this repository is |
+| [`docs/framework.md`](docs/framework.md) | method, flowchart, progress |
+| [`docs/results_analysis.md`](docs/results_analysis.md) | results and analysis |
+| `results/full/` | main results (1,266 TAB documents) |
+| `run_all.sh` | reproduce everything |
+
+## Pipeline
+
+1. **SAGE rewriting** of TAB (ECHR judgments), re-implemented after the official code, LLM = DeepSeek (`pipeline/sage.py`).
+2. **QI extraction** with a 2-shot LLM tagger, validated against the TAB gold annotations (`pipeline/qi_extract.py`).
+3. **Risk graph**: per document, nodes = QI values, edges = value pairs shared by fewer than k₀ documents of the corpus (`qi_gen/core.py`).
+4. **Iterative generalisation**: greedily cover every unsafe pair (and triple, order 3), raise the chosen values one level on a rule- or LLM-built generalisation ladder, recount, repeat until nothing is unsafe (`qi_gen/core.py`, `pipeline/ladders.py`, `pipeline/run_main.py`).
+5. **Evaluation**: pair/triple k-anonymity, information loss, residual original QIs (LLM judge), RAG QA utility (`pipeline/evaluate.py`).
+
+## Reproduce
+
+```bash
+pip install networkx pandas openai rank_bm25 matplotlib
+git clone https://github.com/NorskRegnesentral/text-anonymization-benchmark.git ../tab
+gunzip -k data/llm_cache/*.gz           # cached LLM outputs: reruns make no API calls
+bash run_all.sh                         # 254-document feasibility run
+QI_RUN=full bash run_all.sh             # full run, 1,266 documents
 ```
 
-## Run
-```
-python run_experiments.py --tab_dir tab --out results_tab --k0 2 5 10
-python run_experiments.py --jsonl sage_with_qi.jsonl --out results_sage --k0 2 5 10
-```
-Outputs: `results.csv` (one row per method and k0), `generalised_k{k0}.jsonl` (rewritten texts and the level of
-every QI), `round_logs.json` (values raised per round).
-
-## Input format for SAGE outputs (one JSON object per line)
-```json
-{"doc_id": "001-100188",
- "text": "<SAGE final_context>",
- "respondent": "TUR",
- "entities": [
-   {"entity_id": "e1", "entity_type": "DATETIME", "identifier_type": "QUASI",
-    "mentions": [{"start": 120, "end": 134, "text": "6 February 1993"}]}
- ]}
-```
-`entity_type` follows TAB (PERSON, CODE, LOC, ORG, DEM, DATETIME, QUANTITY, MISC); `identifier_type` is DIRECT,
-QUASI or NO_MASK; offsets are character offsets into `text`; mentions of the same entity share one `entity_id`.
-`respondent` (ISO3 code of the respondent state) is optional and only used to generalise locations.
-
-## Method (qi_gen/core.py: run_riskgraph)
-Each round: count, over the whole corpus, how many documents contain each current QI value (df) and each pair of
-values (pair df). In every document, a value with df < k0 or a pair with pair df < k0 is unsafe. Unsafe pairs form
-the document's risk graph (edge weight 1/k). Values are picked greedily by risk-weighted degree until every unsafe
-unit is covered, and each picked value is raised one level in its generalisation ladder. Rounds repeat until no
-document has an unsafe value or pair. `order=3` adds triples after the pairwise stage (not yet validated).
-`choice` = degree (ours) | rarest | random | betweenness, for ablations.
+The TAB-gold pilot alone (CPU only): `python run_experiments.py --tab_dir ../tab --out results/tab_gold --k0 2 5 10`.

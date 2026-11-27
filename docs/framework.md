@@ -74,7 +74,7 @@ flowchart TD
 | 4′ 泛化层级 | 规则覆盖不了的 QI 取值 | `data/generalisation/llm_ladders.json` | `pipeline/ladders.py`，规则部分见 `qi_gen/core.py` 的 `ladder()` |
 | 2–4 迭代循环 | QI 标注 + 泛化层级 | `results/sage/results.csv`、`data/corpora/`、`data/graphs/` | `pipeline/run_main.py`，核心算法见 `qi_gen/core.py` 的 `run_riskgraph()` |
 | 评估 | 各版本语料 | `results/sage/residual.csv`、`results/sage/utility.csv` | `pipeline/evaluate.py` |
-| 图表 | 上述结果 | `results/figures/` | `pipeline/figures.py` |
+| 图表 | 上述结果 | `results/sage/figures/` | `pipeline/figures.py` |
 | 全部 prompt | — | `prompts/*.txt` | `pipeline/prompts.py` |
 
 一键运行：`run_all.sh`。所有 LLM 调用都缓存在 `data/llm_cache/`，重跑可以零成本得到相同结果。
@@ -98,7 +98,7 @@ flowchart TD
 | 0 SAGE 改写 | ✅（254 篇） | 222 篇判为 safe，平均 3.26 轮，平均长度 5182 → 3467 字符，费用约 2.3 美元 |
 | 1 QI 识别 | ✅ | test 验证：DIRECT 实体召回 97.8%，QUASI 87.8%（MISC 22%、DEM 43% 较弱）；SAGE 文本上抽出 3564 个 QUASI、123 个 DIRECT 实体 |
 | 4′ 泛化层级 | ✅ | 规范化之后，1066 个取值由 LLM 生成层级，其余用规则层级 |
-| 2–4 迭代循环 | ✅ | SAGE 输出上 k₀=2/5/10、全部基线和消融已跑完；TAB 原标注上的 pilot 也用最终代码重跑（`results_tab_v3/`） |
+| 2–4 迭代循环 | ✅ | SAGE 输出上 k₀=2/5/10、全部基线和消融已跑完；TAB 原标注上的 pilot 也用最终代码重跑（`results/tab_gold/`） |
 | 评估：k-匿名 | ✅ | ours 两两风险 0%，order 3 三元组风险也是 0%；SAGE 为 97.2% |
 | 评估：原文 QI 残留率 | ✅ | SAGE 4.29% → ours 0.73%（下限 0.66% 来自 QI 抽取的漏标） |
 | 评估：RAG 效用 | ✅ | ours 相对 SAGE −0.2 到 −1.2 分，95% 置信区间都包含 0 |

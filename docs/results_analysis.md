@@ -37,7 +37,7 @@
 
 被判为 safe 的文档反而残留更多。原因是不 safe 的文档被多改写了几轮，改得更彻底。这说明 SAGE 用 LLM 自我评估隐私是不够的，正好支撑本文的动机。
 
-图：`results/figures/sage_lengths.png`
+图：`results/sage/figures/sage_lengths.png`
 
 ## 2. QI 识别（第 1 步）：LLM few-shot 抽取
 
@@ -107,7 +107,7 @@ few-shot 示例都取自 TAB train（按长度从短到长、每篇至少 8 个 
 
 "信息损失"是每个 QI 在其泛化层级上升的比例的平均值：0 = 原值，100 = 抹成占位符。
 
-图：`results/figures/privacy_utility_tradeoff.png`
+图：`results/sage/figures/privacy_utility_tradeoff.png`
 
 ### 3.2 结论
 
@@ -127,7 +127,7 @@ few-shot 示例都取自 TAB train（按长度从短到长、每篇至少 8 个 
 
 ### 3.3 风险图示例
 
-`results/figures/risk_graph_001-83927_ours_o3_k5.png`（001-83927，就是学弟原型图里那篇）：
+`results/sage/figures/risk_graph_001-83927_ours_o3_k5.png`（001-83927，就是学弟原型图里那篇）：
 
 - **泛化前**：11 个 QI 值之间有 44 条不安全边，文档 1/k_min = 1.00，即在语料中唯一。
 - **泛化后（order 3）**：没有不安全边，1/k_min = 0.01，文档至少和约 100 篇文档无法区分。保留下来的信息有 "1990s"、"2000s"、"20th century"、"a higher court"、"a person"；地点、机构、人口属性各有一个被抹成占位符。order 2 版本（`risk_graph_001-83927_ours_o2_k5.png`）的 1/k_min 为 0.03。
@@ -186,7 +186,7 @@ k₀ = 2 和 10 的结果几乎相同，ours 是 0.70–0.81%。完整表见 `re
 
 **需要注意**："全部 QUASI 抹掉"的效用也只降了 1 分，说明这套问答主要考察案情实质，对 QI 本身不敏感。所以**它能证明"我们的方法不损害 RAG 效用"，但区分不出各泛化方法**。各方法之间的效用差异要用信息损失来体现。如果审稿人要求更细的效用指标，可以加一组依赖时间和地点的问题，比如"申请人被拘留是在哪个年代？"。
 
-图：`results/figures/utility_qa.png`、`results/figures/utility_vs_loss.png`
+图：`results/sage/figures/utility_qa.png`、`results/sage/figures/utility_vs_loss.png`
 
 ## 6. TAB 原始标注上的 pilot（1,268 篇，最终代码）
 
@@ -206,7 +206,7 @@ order 3 时加权度的信息损失：k₀=2 为 62.2（最稀有优先 64.8）�
 
 和 CLAUDE.md 里旧 pilot（k₀=5 时信息损失 67.6–68.3%）相比，同样达到两两风险 0% 时，信息损失降到 61.3%。改进来自值的规范化和去掉占位符组合。
 
-结果文件：`results_tab_v3/`
+结果文件：`results/tab_gold/`
 
 ## 7. SAGE 的 safe 标签与稳健性检验
 

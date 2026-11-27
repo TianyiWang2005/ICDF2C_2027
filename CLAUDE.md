@@ -66,7 +66,7 @@ Tianyi 自己的 EMNLP 2027 论文做的是：对合成 RAG 数据的推断攻�
 - `qi_gen/io.py`：TAB 加载器，以及通用 JSONL 加载器（读 SAGE 改写 + QI 抽取结果）。
 - `qi_gen/core.py`：归一化、泛化层级、风险图、贪心覆盖、迭代循环、评估、文本重写。
 - `run_experiments.py`：所有基线、消融和 k₀ 扫描，输出 `results.csv`、泛化后的文本以及每轮日志。
-- 运行：`python run_experiments.py --tab_dir <TAB 仓库路径> --out results_tab`。只需要 CPU，k₀=5 一组约 2 分钟。
+- 运行：`python run_experiments.py --tab_dir <TAB 仓库路径> --out results/tab_gold`。只需要 CPU，k₀=5 一组约 2 分钟。
 
 ## 下一步
 1. 用最新代码重跑全部结果，跑 order=3 和 betweenness，做 k₀ 扫描。
@@ -74,6 +74,7 @@ Tianyi 自己的 EMNLP 2027 论文做的是：对合成 RAG 数据的推断攻�
 3. 写论文初稿（LNICST 模板）。
 
 ## 当前状态（2026-11-25 更新，以本节为准）
+- 仓库每个目录和文件的说明见 `DIRECTORY.md`。全数据集（1266 篇）主结果在 `results/full/`，旧结果在 `results/archive/`。
 - 已在 254 篇（TAB dev+test）上完成可行性验证，整条流程由本仓库实现：SAGE（ECHR 版，DeepSeek）→ LLM QI 抽取 → 风险图迭代泛化 → 评估。框架见 `docs/framework.md`，结果见 `docs/results_analysis.md`。
 - 方法定义调整：主方法 = 风险图 + 迭代贪心覆盖 + 最稀有优先（`choice="rarest"`）；风险加权度 / 考虑代价 / 前瞻 / 介数中心性为消融。QI 识别改为 LLM few-shot（不微调）。泛化层级 = 规则 + LLM 离线生成。占位符不计入组合；值做规范化。
 - 关键数字（k₀=5）：SAGE 两两风险 97.2% → ours 0%（order 3 三元组也 0%）；信息损失 ours o2 68.2% / o3 73.6%；原文 QI 残留 SAGE 4.29% → ours 0.73%；RAG 问答相对 SAGE 无显著下降。

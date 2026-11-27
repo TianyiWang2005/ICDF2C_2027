@@ -5,7 +5,7 @@ import os
 RUN = os.environ.get("QI_RUN", "")
 SUF = f"_{RUN}" if RUN else ""
 RESULTS = f"results/{RUN}" if RUN else "results/sage"
-FIGURES = f"{RESULTS}/figures" if RUN else "results/figures"
+FIGURES = f"{RESULTS}/figures" if RUN else "results/sage/figures"
 SAGE = f"data/sage/sage_echr{SUF}.jsonl"
 QI = f"data/qi/sage_qi{SUF}.jsonl"
 LADDERS = f"data/generalisation/llm_ladders{SUF}.json"

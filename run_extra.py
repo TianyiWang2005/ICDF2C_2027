@@ -1,6 +1,6 @@
 """Extra runs not covered by run_experiments.py: betweenness choice and order=3 (pairs then triples).
 
-usage: python run_extra.py --tab_dir ../tab --out results_tab_v2 --k0 5
+usage: python run_extra.py --tab_dir ../tab --out results/archive/tab_gold_v2 --k0 5
 """
 import argparse
 import glob
@@ -17,7 +17,7 @@ from run_experiments import measure
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tab_dir", required=True)
-    ap.add_argument("--out", default="results_tab_v2")
+    ap.add_argument("--out", default="results/archive/tab_gold_v2")
     ap.add_argument("--k0", type=int, nargs="+", default=[5])
     ap.add_argument("--configs", nargs="+", default=["betweenness:2", "lookahead:2", "rarest:3", "degree:3", "cost:3"])
     a = ap.parse_args()
