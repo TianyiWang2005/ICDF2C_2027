@@ -59,6 +59,7 @@ icdf2c_2027/
 | `run_main.py` | 第 2–4 步：在 SAGE 输出上跑所有方法和 k₀，输出结果表、各版本语料、风险图 | 否 |
 | `evaluate.py` | 评估：原文 QI 残留率、RAG 问答效用 | 是 |
 | `robustness.py` | 分组与稳健性分析：SAGE safe 与不 safe 对比、只用 safe 文档重跑、QI 抽取在 SAGE 文本上的召回 | 否 |
+| `higher_order.py` | 检查 4、5 个值的组合风险（"0%"只在所检查的阶数内成立） |
 | `utility_diagnostics.py` | 效用评估的诊断分析（不调用 LLM） |
 | `analysis.py` | 描述性统计：QI 类型分布、各类型泛化程度、文本示例 | 否 |
 | `figures.py`、`plot_doc_graph.py` | 画图：隐私-效用曲线、单篇文档泛化前后的风险图等 | 否 |
@@ -108,6 +109,7 @@ icdf2c_2027/
 | `utility_*_answers.json(.gz)` | 每道题、每个版本的检索结果、回答和得分 |
 | `utility_bootstrap.json`（sage） | 效用差异的配对 bootstrap 置信区间 |
 | `utility_tab200_diagnostics.json`（full） | 效用损失的诊断：bootstrap、检索与回答拆分、按题型、按是否依赖 QI、被泛化的相关 QI |
+| `higher_order_risk.json`（full） | 2–5 个值组合的风险，抽样检查 |
 | `robustness.json` | SAGE safe 与不 safe 分组、只用 safe 文档重跑、QI 抽取在 SAGE 文本上的召回 |
 | `analysis.json`（sage） | QI 类型分布、各类型泛化程度、泛化前后文本示例 |
 | `sage_stats.json` | SAGE 改写统计：safe 数量、平均轮数、长度变化 |
