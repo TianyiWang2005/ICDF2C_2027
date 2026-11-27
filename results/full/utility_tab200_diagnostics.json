@@ -1,0 +1,295 @@
+{
+ "vs_sage_all": {
+  "original": {
+   "diff": 30.2,
+   "ci95": [
+    26.950000000000003,
+    33.7
+   ],
+   "n": 1000
+  },
+  "ours_o2_k5": {
+   "diff": -7.2,
+   "ci95": [
+    -9.700000000000001,
+    -4.8
+   ],
+   "n": 1000
+  },
+  "ours_o3_k5": {
+   "diff": -9.65,
+   "ci95": [
+    -12.15,
+    -7.199999999999999
+   ],
+   "n": 1000
+  },
+  "suppress_k5": {
+   "diff": -6.85,
+   "ci95": [
+    -9.2,
+    -4.3
+   ],
+   "n": 1000
+  }
+ },
+ "ours_o3_vs_suppress": {
+  "diff": -2.8,
+  "ci95": [
+   -4.3999999999999995,
+   -1.3
+  ],
+  "n": 1000
+ },
+ "retrieval_vs_answering": {
+  "original": {
+   "hit_%": 68.4,
+   "score_when_hit_%": 98.09941520467837,
+   "score_when_missed_%": 39.08227848101266
+  },
+  "sage_k5": {
+   "hit_%": 54.7,
+   "score_when_hit_%": 65.72212065813528,
+   "score_when_missed_%": 29.3598233995585
+  },
+  "ours_o2_k5": {
+   "hit_%": 49.8,
+   "score_when_hit_%": 60.6425702811245,
+   "score_when_missed_%": 23.605577689243027
+  },
+  "ours_o3_k5": {
+   "hit_%": 48.9,
+   "score_when_hit_%": 57.77096114519427,
+   "score_when_missed_%": 22.211350293542075
+  },
+  "suppress_k5": {
+   "hit_%": 48.5,
+   "score_when_hit_%": 61.34020618556701,
+   "score_when_missed_%": 24.563106796116504
+  }
+ },
+ "by_task_type": {
+  "actor_or_attribution": {
+   "original": 88.02816901408451,
+   "sage_k5": 56.33802816901409,
+   "ours_o2_k5": 50.0,
+   "ours_o3_k5": 45.42253521126761,
+   "suppress_k5": 49.647887323943664,
+   "n": 142
+  },
+  "decision_or_remedy": {
+   "original": 77.70780856423174,
+   "sage_k5": 49.24433249370277,
+   "ours_o2_k5": 39.42065491183879,
+   "ours_o3_k5": 35.768261964735515,
+   "suppress_k5": 40.050377833753146,
+   "n": 397
+  },
+  "event_order": {
+   "original": 82.09876543209876,
+   "sage_k5": 40.123456790123456,
+   "ours_o2_k5": 28.395061728395063,
+   "ours_o3_k5": 32.71604938271605,
+   "suppress_k5": 33.333333333333336,
+   "n": 81
+  },
+  "legal_basis": {
+   "original": 78.8659793814433,
+   "sage_k5": 47.93814432989691,
+   "ours_o2_k5": 44.329896907216494,
+   "ours_o3_k5": 45.876288659793815,
+   "suppress_k5": 46.391752577319586,
+   "n": 97
+  },
+  "material_fact": {
+   "original": 82.95454545454545,
+   "sage_k5": 48.29545454545455,
+   "ours_o2_k5": 42.04545454545455,
+   "ours_o3_k5": 46.02272727272727,
+   "suppress_k5": 42.61363636363637,
+   "n": 88
+  },
+  "procedural_condition": {
+   "original": 74.35897435897436,
+   "sage_k5": 48.97435897435897,
+   "ours_o2_k5": 46.15384615384615,
+   "ours_o3_k5": 40.0,
+   "suppress_k5": 43.58974358974359,
+   "n": 195
+  }
+ },
+ "gold_qi_dependence": {
+  "qi_free": {
+   "n": 608,
+   "score_%": {
+    "original": 78.94736842105263,
+    "sage_k5": 57.1546052631579,
+    "ours_o2_k5": 50.411184210526315,
+    "ours_o3_k5": 48.108552631578945,
+    "suppress_k5": 50.328947368421055
+   },
+   "vs_sage": {
+    "original": {
+     "diff": 21.792763157894736,
+     "ci95": [
+      17.763157894736842,
+      26.23355263157895
+     ],
+     "n": 608
+    },
+    "ours_o2_k5": {
+     "diff": -6.743421052631579,
+     "ci95": [
+      -9.950657894736842,
+      -3.453947368421053
+     ],
+     "n": 608
+    },
+    "ours_o3_k5": {
+     "diff": -9.046052631578947,
+     "ci95": [
+      -12.25328947368421,
+      -5.838815789473684
+     ],
+     "n": 608
+    },
+    "suppress_k5": {
+     "diff": -6.8256578947368425,
+     "ci95": [
+      -9.950657894736842,
+      -3.618421052631579
+     ],
+     "n": 608
+    }
+   }
+  },
+  "qi_dependent": {
+   "n": 392,
+   "score_%": {
+    "original": 80.2295918367347,
+    "sage_k5": 36.98979591836735,
+    "ours_o2_k5": 29.081632653061224,
+    "ours_o3_k5": 26.403061224489797,
+    "suppress_k5": 30.102040816326532
+   },
+   "vs_sage": {
+    "original": {
+     "diff": 43.23979591836735,
+     "ci95": [
+      37.755102040816325,
+      48.34183673469388
+     ],
+     "n": 392
+    },
+    "ours_o2_k5": {
+     "diff": -7.908163265306122,
+     "ci95": [
+      -11.862244897959185,
+      -3.826530612244898
+     ],
+     "n": 392
+    },
+    "ours_o3_k5": {
+     "diff": -10.58673469387755,
+     "ci95": [
+      -14.285714285714285,
+      -6.887755102040815
+     ],
+     "n": 392
+    },
+    "suppress_k5": {
+     "diff": -6.887755102040816,
+     "ci95": [
+      -10.714285714285714,
+      -2.933673469387755
+     ],
+     "n": 392
+    }
+   }
+  }
+ },
+ "lost_answers": {
+  "questions_sage_right_ours_wrong": 155,
+  "related_generalised_qi_by_type": {
+   "ORG": 200,
+   "MISC": 97,
+   "DEM": 53,
+   "DATETIME": 50,
+   "LOC": 11,
+   "PERSON": 9,
+   "QUANTITY": 8
+  },
+  "examples": {
+   "DEM": [
+    "widowed parent -> a person",
+    "employer -> [DEM]",
+    "marked myopic degeneration in the applicant's left eye -> [DEM]",
+    "mandatory life prisoner -> [DEM]",
+    "legal representative practising in a regional bar -> a person",
+    "national of the respondent state -> national of a state",
+    "primary-school years -> [DEM]",
+    "young child -> [DEM]"
+   ],
+   "MISC": [
+    "survivors' benefits -> [MISC]",
+    "membership of an illegal armed organisation whose object was allegedly to undermine the constitutional order -> [MISC]",
+    "negligence proceedings -> [MISC]",
+    "negligence proceedings -> [MISC]",
+    "claim for legal costs -> [MISC]",
+    "supplementary decision concerning the lawyer's costs -> [MISC]",
+    "claim for legal costs -> [MISC]",
+    "supplementary decision concerning the lawyer's costs -> [MISC]"
+   ],
+   "ORG": [
+    "competent benefits authority -> a public authority",
+    "inland revenue -> a public authority",
+    "inland revenue -> a public authority",
+    "labour court -> a court",
+    "criminal court -> a court",
+    "labour court -> a court",
+    "labour court -> a court",
+    "court of cassation -> a higher court"
+   ],
+   "QUANTITY": [
+    "modest amount of compensation in the national currency -> [QUANTITY]",
+    "custodial term -> [QUANTITY]",
+    "a monthly child benefit payment -> [QUANTITY]",
+    "three experts -> [QUANTITY]",
+    "reduced municipal tax -> [QUANTITY]",
+    "full municipal tax -> [QUANTITY]",
+    "full municipal tax -> [QUANTITY]",
+    "full charge -> [QUANTITY]"
+   ],
+   "LOC": [
+    "prison establishment operating under high-security conditions -> [LOC]",
+    "specialist unit within a prison establishment -> [LOC]",
+    "public park -> a place in Turkey",
+    "major polish city -> a place in Poland",
+    "northern part of the island -> a place in Turkey",
+    "northern part of the island -> a place in Turkey",
+    "prison in the respondent state -> [LOC]",
+    "prison in the respondent state -> [LOC]"
+   ],
+   "DATETIME": [
+    "three months -> a period of time",
+    "first term -> a period of time",
+    "end of term -> [DATETIME]",
+    "spring of the year after the exhibition opened -> [DATETIME]",
+    "two months -> a period of time",
+    "late 1980s -> 20th century",
+    "late 1940s -> 20th century",
+    "first half of 2002 -> 2000s"
+   ],
+   "PERSON": [
+    "his parents -> [PERSON]",
+    "lord chief justice -> a person",
+    "secretary of state -> [PERSON]",
+    "lord chief justice -> a person",
+    "secretary of state -> [PERSON]",
+    "applicant's member of parliament -> a person",
+    "sergeant h -> a person",
+    "corporal g -> a person"
+   ]
+  }
+ }
+}
