@@ -193,9 +193,35 @@ def cmd_utility(a):
     print("usage", llm.USAGE, f"${llm.cost_usd():.2f}")
 
 
+def cmd_retrieval(a):
+    """Free utility proxy (no LLM calls): BM25 hit@k of the TAB-200 questions on each corpus version."""
+    tab = tab_docs()
+    cs = {}
+    for d in a.corpora_list or [a.corpora]:
+        for name, texts in corpora(d, a.only).items():
+            cs[f"{os.path.basename(d)}/{name}"] = texts
+    ids = sorted(set().union(*[set(t) for t in cs.values()]))
+    cs = {"original": {i: tab[i]["text"] for i in ids}, **cs}
+    qa = load_tab200()
+    rows = []
+    for name, texts in cs.items():
+        keys = sorted(texts)
+        bm = BM25Okapi([toks(texts[i]) for i in keys])
+        hits = {1: 0, 2: 0, 5: 0}
+        for q in qa:
+            sc = bm.get_scores(toks(q["question"]))
+            order = sorted(range(len(keys)), key=lambda j: -sc[j])[:5]
+            for k in hits:
+                hits[k] += q["doc_id"] in {keys[j] for j in order[:k]}
+        rows.append({"corpus": name, **{f"hit@{k}_%": 100 * v / len(qa) for k, v in hits.items()}})
+        print(rows[-1], flush=True)
+    pd.DataFrame(rows).to_csv(a.out, index=False)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["residual", "utility"])
+    ap.add_argument("cmd", choices=["residual", "utility", "retrieval"])
+    ap.add_argument("--corpora_list", nargs="*", help="retrieval: several corpus directories to compare")
     ap.add_argument("--corpora", default=PT.CORPORA)
     ap.add_argument("--only", nargs="*", help="regexes on corpus names, e.g. 'sage_k5' 'ours_o.*'")
     ap.add_argument("--out", required=True)
@@ -205,7 +231,7 @@ def main():
     ap.add_argument("--workers", type=int, default=24)
     a = ap.parse_args()
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
-    cmd_residual(a) if a.cmd == "residual" else cmd_utility(a)
+    {"residual": cmd_residual, "utility": cmd_utility, "retrieval": cmd_retrieval}[a.cmd](a)
 
 
 if __name__ == "__main__":

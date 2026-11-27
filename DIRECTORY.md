@@ -59,6 +59,7 @@ icdf2c_2027/
 | `run_main.py` | 第 2–4 步：在 SAGE 输出上跑所有方法和 k₀，输出结果表、各版本语料、风险图 | 否 |
 | `evaluate.py` | 评估：原文 QI 残留率、RAG 问答效用 | 是 |
 | `robustness.py` | 分组与稳健性分析：SAGE safe 与不 safe 对比、只用 safe 文档重跑、QI 抽取在 SAGE 文本上的召回 | 否 |
+| `qi_filter.py` | 按 TAB 标注指南过滤通用的机构名、法律程序、公职角色（不调用 LLM）；含证据统计和验证 |
 | `higher_order.py` | 检查 4、5 个值的组合风险（"0%"只在所检查的阶数内成立） |
 | `utility_diagnostics.py` | 效用评估的诊断分析（不调用 LLM） |
 | `analysis.py` | 描述性统计：QI 类型分布、各类型泛化程度、文本示例 | 否 |
@@ -79,6 +80,7 @@ icdf2c_2027/
 | `qi/` | SAGE 文本上抽出的 QI（类型、DIRECT/QUASI、字符位置） | `sage_qi.jsonl.gz` | `sage_qi_full.jsonl.gz` |
 | `qi/validation*/` | QI 抽取在 TAB test 原文上的验证；`validation` 用 2 个示例（最终采用），`validation_shots{0,4,8}` 是示例数量对比 | 共用 | 共用 |
 | `generalisation/` | LLM 生成的泛化层级 | `llm_ladders.json` | `llm_ladders_full.json` |
+| `corpora_full_filtered/`、`graphs_full_filtered/`、`qi/sage_qi_full_filtered.jsonl.gz` | QI 过滤后的语料、风险图和 QI 标注 | — | ✓ |
 | `corpora/`、`corpora_full/` | **各方法处理后的语料**，每种方法、每个 k₀ 一个文件（命名规则见第 5 节） | `corpora/` | `corpora_full/` |
 | `corpora_common10/` | 敏感性分析的语料（出现在 ≥10% 文档中的值视为不可识别） | ✓ | — |
 | `graphs/`、`graphs_full/` | **风险图**：`risk_graphs_k{2,5,10}` 是每篇文档泛化前的风险图（节点、不安全边、k 值）；`cooccurrence_graphs` 是 QI 共现图 | `graphs/` | `graphs_full/` |
@@ -95,6 +97,8 @@ icdf2c_2027/
 | 目录 | 内容 |
 |---|---|
 | **`full/`** | **全数据集（1,266 篇）主结果** |
+| `full_filtered/` | 全数据集，QI 经规则过滤后的结果（阶段 A） |
+| `qi_filter/` | 过滤规则的依据（TAB 标注统计）、验证、免费检索指标对比 |
 | `sage/` | 254 篇可行性验证的结果，图在 `sage/figures/` |
 | `sage_common10/` | 254 篇的敏感性分析（ρ = 10%） |
 | `tab_gold/` | 直接在 TAB 人工标注（原文，1,268 篇）上的 pilot 结果，最终代码版本 |

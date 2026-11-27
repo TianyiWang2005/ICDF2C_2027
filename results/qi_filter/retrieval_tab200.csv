@@ -1,0 +1,12 @@
+corpus,hit@1_%,hit@2_%,hit@5_%
+original,59.3,68.4,78.4
+corpora_full/ours_o2_k5,40.1,49.8,60.4
+corpora_full/ours_o3_k5,38.8,48.9,59.9
+corpora_full/rg_degree_o3_k5,39.3,49.1,60.3
+corpora_full/sage_k5,45.2,54.7,66.1
+corpora_full/suppress_k5,39.2,48.5,60.2
+corpora_full_filtered/ours_o2_k5,41.2,51.3,63.1
+corpora_full_filtered/ours_o3_k5,41.3,51.0,62.5
+corpora_full_filtered/rg_degree_o3_k5,41.8,51.2,62.5
+corpora_full_filtered/sage_k5,45.2,54.7,66.1
+corpora_full_filtered/suppress_k5,40.9,50.8,62.4

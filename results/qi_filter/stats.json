@@ -1,0 +1,40 @@
+{
+ "MISC/generic": {
+  "n": 211,
+  "masked_%": 19.90521327014218,
+  "NO_MASK": 169,
+  "QUASI": 42
+ },
+ "MISC/specific": {
+  "n": 484,
+  "masked_%": 32.85123966942149,
+  "NO_MASK": 325,
+  "QUASI": 158,
+  "DIRECT": 1
+ },
+ "ORG/generic": {
+  "n": 8578,
+  "masked_%": 4.499883422709257,
+  "NO_MASK": 8192,
+  "QUASI": 386
+ },
+ "ORG/specific": {
+  "n": 10929,
+  "masked_%": 48.10138164516424,
+  "NO_MASK": 5672,
+  "QUASI": 5254,
+  "DIRECT": 3
+ },
+ "PERSON/generic": {
+  "n": 81,
+  "masked_%": 8.641975308641975,
+  "NO_MASK": 74,
+  "QUASI": 7
+ },
+ "PERSON/specific": {
+  "n": 97,
+  "masked_%": 68.04123711340206,
+  "NO_MASK": 31,
+  "QUASI": 66
+ }
+}
