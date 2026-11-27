@@ -120,11 +120,36 @@ def gen_qa(tab, n=2, path=None, ids=None):
     return qa
 
 
+_QI_PAT = re.compile(r"\b(1[89]\d\d|20\d\d)\b|\b(January|February|March|April|May|June|July|August|September|October|"
+                     r"November|December)\b|\b(Mr|Mrs|Ms|Dr)\.?\s+[A-Z]|\b\d{3,6}/\d{2}\b")
+
+
+def load_tab200(path="data/utility/tab200"):
+    """External QA set: 200 TAB cases x 5 questions, generated from the original text with ChatGPT (by the
+    co-author), every reference answer backed by verbatim evidence spans. The answering model only sees
+    case_context + question (+ retrieved documents); reference answers are used for scoring only.
+    Each question is flagged qi_dependent if its question, context or reference answer contains a year, month,
+    person title or application number, i.e. it needs details that anonymisation is meant to remove."""
+    ans = {r["question_id"]: r for r in map(json.loads, open(f"{path}/answer_key.jsonl", encoding="utf-8"))}
+    qs = [json.loads(l) for l in open(f"{path}/questions.jsonl", encoding="utf-8")]
+    seen = defaultdict(int)
+    for q in qs:
+        seen[(q["question"], q["case_context"])] += 1
+    out = []
+    for q in qs:
+        ref = ans[q["question_id"]]["reference_answer"]
+        out.append({"doc_id": q["doc_id"], "question_id": q["question_id"], "task_type": q["task_type"],
+                    "question": f'{q["case_context"]} {q["question"]}', "answer": ref,
+                    "qi_dependent": bool(_QI_PAT.search(q["question"] + " " + q["case_context"] + " " + ref)),
+                    "duplicate": seen[(q["question"], q["case_context"])] > 1})
+    return out
+
+
 def cmd_utility(a):
     tab = tab_docs()
     cs = corpora(a.corpora, a.only)
     ids = sorted(set().union(*[set(t) for t in cs.values()])) if cs else sorted(tab)
-    qa = gen_qa(tab, ids=ids)
+    qa = load_tab200() if a.qa == "tab200" else gen_qa(tab, ids=ids)
     cs = {"original": {i: tab[i]["text"] for i in ids}, **cs}
     rows, details = [], {}
     for name, texts in cs.items():
@@ -145,13 +170,23 @@ def cmd_utility(a):
                 s = float(llm.parse_json(j).get("score", 0))
             except Exception:
                 s = 0.0
-            return {"hit": q["doc_id"] in {ids[k] for k in top}, "score": s, "answer": ans}
+            return {"hit": q["doc_id"] in {ids[k] for k in top}, "score": s, "answer": ans,
+                    "question_id": q.get("question_id"), "qi_dependent": q.get("qi_dependent"),
+                    "duplicate": q.get("duplicate", False)}
 
         res = llm.pmap(one, qa, workers=a.workers, desc=f"utility {name}")
         details[name] = res
-        rows.append({"corpus": name, "questions": len(res),
-                     "qa_score_%": 100 * sum(r["score"] for r in res) / len(res),
-                     "retrieval_hit@2_%": 100 * sum(r["hit"] for r in res) / len(res)})
+        row = {"corpus": name, "questions": len(res),
+               "qa_score_%": 100 * sum(r["score"] for r in res) / len(res),
+               "retrieval_hit@2_%": 100 * sum(r["hit"] for r in res) / len(res)}
+        if a.qa == "tab200":
+            nd = [r for r in res if not r["duplicate"]]
+            row["retrieval_hit@2_nodup_%"] = 100 * sum(r["hit"] for r in nd) / len(nd)
+            for flag, lab in ((False, "qi_free"), (True, "qi_dependent")):
+                sub = [r for r in res if r["qi_dependent"] == flag]
+                row[f"n_{lab}"] = len(sub)
+                row[f"qa_score_{lab}_%"] = 100 * sum(r["score"] for r in sub) / len(sub)
+        rows.append(row)
         print(rows[-1], flush=True)
         pd.DataFrame(rows).to_csv(a.out, index=False)
     json.dump(details, open(a.out.replace(".csv", "_answers.json"), "w", encoding="utf-8"), ensure_ascii=False)
@@ -165,6 +200,8 @@ def main():
     ap.add_argument("--only", nargs="*", help="regexes on corpus names, e.g. 'sage_k5' 'ours_o.*'")
     ap.add_argument("--out", required=True)
     ap.add_argument("--with_original", action="store_true")
+    ap.add_argument("--qa", choices=["generated", "tab200"], default="generated",
+                    help="generated = our 2 questions per document; tab200 = external 200x5 question set")
     ap.add_argument("--workers", type=int, default=24)
     a = ap.parse_args()
     os.makedirs(os.path.dirname(a.out), exist_ok=True)

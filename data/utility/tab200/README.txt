@@ -1,0 +1,1 @@
+200 matched cases: 40 prior development, 127 official test and 33 stratified training cases. New questions use original text only. Only send case_context and question to answer models. Gold answers and evidence remain local until blind scoring.
