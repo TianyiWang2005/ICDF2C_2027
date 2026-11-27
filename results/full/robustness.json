@@ -1,0 +1,110 @@
+{
+ "subgroups_full_corpus": {
+  "docs": {
+   "safe": 1081,
+   "not_safe": 185
+  },
+  "pair_risk_k5_%": {
+   "sage": {
+    "safe": 97.59481961147085,
+    "not_safe": 96.21621621621621
+   },
+   "ours_o2": {
+    "safe": 0.0,
+    "not_safe": 0.0
+   },
+   "ours_o3": {
+    "safe": 0.0,
+    "not_safe": 0.0
+   }
+  },
+  "residual_rate_%": {
+   "sage_k5": {
+    "safe": 3.4989468467352247,
+    "not_safe": 0.6873797085510036
+   },
+   "ours_o3_k5": {
+    "safe": 0.5649857514558295,
+    "not_safe": 0.2612042892493814
+   }
+  }
+ },
+ "safe_only_corpus": {
+  "sage": {
+   "pair_%": 97.59481961147085,
+   "triple_%": 97.87234042553192,
+   "info_loss_%": 0.0
+  },
+  "ours_o2": {
+   "pair_%": 0.0,
+   "triple_%": 72.7104532839963,
+   "info_loss_%": 56.429394637874566
+  },
+  "ours_o3": {
+   "pair_%": 0.0,
+   "triple_%": 0.0,
+   "info_loss_%": 68.66331028347284
+  }
+ },
+ "extractor_recall_on_sage_text": {
+  "residual_items": 1462,
+  "tagged": 1275,
+  "recall_%": 87.20930232558139,
+  "by_type": {
+   "CODE": {
+    "n": 28,
+    "tagged": 28
+   },
+   "DATETIME": {
+    "n": 601,
+    "tagged": 596
+   },
+   "DEM": {
+    "n": 248,
+    "tagged": 182
+   },
+   "LOC": {
+    "n": 74,
+    "tagged": 69
+   },
+   "MISC": {
+    "n": 174,
+    "tagged": 99
+   },
+   "ORG": {
+    "n": 189,
+    "tagged": 167
+   },
+   "PERSON": {
+    "n": 77,
+    "tagged": 76
+   },
+   "QUANTITY": {
+    "n": 71,
+    "tagged": 58
+   }
+  },
+  "missed_examples": [
+   "001-59518: [DEM] doctor of medicine",
+   "001-59518: [DEM] doctor",
+   "001-60940: [DEM] journalists",
+   "001-60940: [MISC] newspaper",
+   "001-60940: [LOC] eastern Turkey",
+   "001-60940: [DEM] a journalist",
+   "001-60940: [MISC] state of emergency",
+   "001-60940: [MISC] its publication and distribution",
+   "001-60940: [MISC] State of Emergency",
+   "001-82319: [DEM] 17 years old",
+   "001-146408: [QUANTITY] two eyewitnesses",
+   "001-59097: [QUANTITY] approximately four miles",
+   "001-122497: [MISC] vocational high school specialised in communication",
+   "001-122497: [MISC] communication science",
+   "001-93951: [ORG] Republic of Poland",
+   "001-78304: [DEM] daughter",
+   "001-58909: [DEM] municipal guards",
+   "001-58909: [DEM] street vendors",
+   "001-58909: [DEM] vendors",
+   "001-99932: [MISC] solid object"
+  ]
+ }
+}
