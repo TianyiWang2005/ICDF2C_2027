@@ -1,37 +1,31 @@
-4652 distinct values need an LLM ladder
-  [ladders] 11/117  usage={'calls': 11, 'cached': 0, 'prompt_tokens': 7625, 'completion_tokens': 8719, 'cache_hit_tokens': 1408}
-  [ladders] 22/117  usage={'calls': 22, 'cached': 0, 'prompt_tokens': 15138, 'completion_tokens': 18494, 'cache_hit_tokens': 2816}
-  [ladders] 33/117  usage={'calls': 33, 'cached': 0, 'prompt_tokens': 22657, 'completion_tokens': 28995, 'cache_hit_tokens': 4224}
-  [ladders] 44/117  usage={'calls': 44, 'cached': 0, 'prompt_tokens': 29948, 'completion_tokens': 38355, 'cache_hit_tokens': 5632}
-  [ladders] 55/117  usage={'calls': 55, 'cached': 0, 'prompt_tokens': 37842, 'completion_tokens': 48228, 'cache_hit_tokens': 7040}
-  [ladders] 66/117  usage={'calls': 66, 'cached': 0, 'prompt_tokens': 45948, 'completion_tokens': 59012, 'cache_hit_tokens': 8448}
-  [ladders] 77/117  usage={'calls': 77, 'cached': 0, 'prompt_tokens': 53801, 'completion_tokens': 68725, 'cache_hit_tokens': 9856}
-  [ladders] 88/117  usage={'calls': 88, 'cached': 0, 'prompt_tokens': 61506, 'completion_tokens': 78072, 'cache_hit_tokens': 11264}
-  [ladders] 99/117  usage={'calls': 99, 'cached': 0, 'prompt_tokens': 68864, 'completion_tokens': 87117, 'cache_hit_tokens': 12672}
-  [ladders] 110/117  usage={'calls': 110, 'cached': 0, 'prompt_tokens': 76017, 'completion_tokens': 95517, 'cache_hit_tokens': 14080}
-  [ladders] 117/117  usage={'calls': 117, 'cached': 0, 'prompt_tokens': 81376, 'completion_tokens': 102382, 'cache_hit_tokens': 14976}
-retry 1: 840 values
-  [ladders] 8/84  usage={'calls': 125, 'cached': 0, 'prompt_tokens': 84474, 'completion_tokens': 103986, 'cache_hit_tokens': 16000}
-  [ladders] 16/84  usage={'calls': 133, 'cached': 0, 'prompt_tokens': 87594, 'completion_tokens': 105569, 'cache_hit_tokens': 17152}
-  [ladders] 24/84  usage={'calls': 141, 'cached': 0, 'prompt_tokens': 90686, 'completion_tokens': 107398, 'cache_hit_tokens': 18560}
-  [ladders] 32/84  usage={'calls': 149, 'cached': 0, 'prompt_tokens': 93831, 'completion_tokens': 109360, 'cache_hit_tokens': 20224}
-  [ladders] 40/84  usage={'calls': 157, 'cached': 0, 'prompt_tokens': 97005, 'completion_tokens': 111162, 'cache_hit_tokens': 21888}
-  [ladders] 48/84  usage={'calls': 165, 'cached': 0, 'prompt_tokens': 100276, 'completion_tokens': 113238, 'cache_hit_tokens': 23936}
-  [ladders] 56/84  usage={'calls': 173, 'cached': 0, 'prompt_tokens': 103548, 'completion_tokens': 115124, 'cache_hit_tokens': 25856}
-  [ladders] 64/84  usage={'calls': 181, 'cached': 0, 'prompt_tokens': 106867, 'completion_tokens': 117335, 'cache_hit_tokens': 27904}
-  [ladders] 72/84  usage={'calls': 189, 'cached': 0, 'prompt_tokens': 110018, 'completion_tokens': 118928, 'cache_hit_tokens': 29440}
-  [ladders] 80/84  usage={'calls': 197, 'cached': 0, 'prompt_tokens': 113191, 'completion_tokens': 120422, 'cache_hit_tokens': 31232}
-  [ladders] 84/84  usage={'calls': 201, 'cached': 0, 'prompt_tokens': 114851, 'completion_tokens': 121470, 'cache_hit_tokens': 32256}
-retry 2: 60 values
-  [ladders] 1/6  usage={'calls': 202, 'cached': 0, 'prompt_tokens': 115229, 'completion_tokens': 121696, 'cache_hit_tokens': 32384}
-  [ladders] 2/6  usage={'calls': 203, 'cached': 0, 'prompt_tokens': 115613, 'completion_tokens': 121937, 'cache_hit_tokens': 32512}
-  [ladders] 3/6  usage={'calls': 204, 'cached': 0, 'prompt_tokens': 115993, 'completion_tokens': 122155, 'cache_hit_tokens': 32640}
-  [ladders] 4/6  usage={'calls': 205, 'cached': 0, 'prompt_tokens': 116389, 'completion_tokens': 122404, 'cache_hit_tokens': 32896}
-  [ladders] 5/6  usage={'calls': 206, 'cached': 0, 'prompt_tokens': 116830, 'completion_tokens': 122722, 'cache_hit_tokens': 33152}
-  [ladders] 6/6  usage={'calls': 207, 'cached': 0, 'prompt_tokens': 117264, 'completion_tokens': 123031, 'cache_hit_tokens': 33408}
-retry 3: 40 values
-  [ladders] 1/4  usage={'calls': 208, 'cached': 0, 'prompt_tokens': 117698, 'completion_tokens': 123348, 'cache_hit_tokens': 33664}
-  [ladders] 2/4  usage={'calls': 209, 'cached': 0, 'prompt_tokens': 118078, 'completion_tokens': 123568, 'cache_hit_tokens': 33792}
-  [ladders] 3/4  usage={'calls': 210, 'cached': 0, 'prompt_tokens': 118474, 'completion_tokens': 123796, 'cache_hit_tokens': 34048}
-  [ladders] 4/4  usage={'calls': 211, 'cached': 0, 'prompt_tokens': 118915, 'completion_tokens': 124113, 'cache_hit_tokens': 34304}
-ladders: 4622/4652 non-empty; usage {'calls': 211, 'cached': 0, 'prompt_tokens': 118915, 'completion_tokens': 124113, 'cache_hit_tokens': 34304}
+4674 distinct values need an LLM ladder
+  [ladders] 11/117  usage={'calls': 0, 'cached': 11, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [ladders] 22/117  usage={'calls': 0, 'cached': 22, 'prompt_tokens': 0, 'completion_tokens': 0, 'cache_hit_tokens': 0}
+  [ladders] 33/117  usage={'calls': 6, 'cached': 27, 'prompt_tokens': 3957, 'completion_tokens': 4983, 'cache_hit_tokens': 0}
+  [ladders] 44/117  usage={'calls': 17, 'cached': 27, 'prompt_tokens': 11339, 'completion_tokens': 14225, 'cache_hit_tokens': 0}
+  [ladders] 55/117  usage={'calls': 28, 'cached': 27, 'prompt_tokens': 19035, 'completion_tokens': 24439, 'cache_hit_tokens': 128}
+  [ladders] 66/117  usage={'calls': 39, 'cached': 27, 'prompt_tokens': 27130, 'completion_tokens': 33815, 'cache_hit_tokens': 1024}
+  [ladders] 77/117  usage={'calls': 50, 'cached': 27, 'prompt_tokens': 34934, 'completion_tokens': 43233, 'cache_hit_tokens': 2432}
+  [ladders] 88/117  usage={'calls': 61, 'cached': 27, 'prompt_tokens': 43080, 'completion_tokens': 53553, 'cache_hit_tokens': 3840}
+  [ladders] 99/117  usage={'calls': 72, 'cached': 27, 'prompt_tokens': 50242, 'completion_tokens': 61588, 'cache_hit_tokens': 5248}
+  [ladders] 110/117  usage={'calls': 83, 'cached': 27, 'prompt_tokens': 57498, 'completion_tokens': 69727, 'cache_hit_tokens': 6656}
+  [ladders] 117/117  usage={'calls': 90, 'cached': 27, 'prompt_tokens': 62859, 'completion_tokens': 76411, 'cache_hit_tokens': 7552}
+retry 1: 520 values, batch size 10
+  [ladders] 5/52  usage={'calls': 90, 'cached': 32, 'prompt_tokens': 62859, 'completion_tokens': 76411, 'cache_hit_tokens': 7552}
+  [ladders] 10/52  usage={'calls': 90, 'cached': 37, 'prompt_tokens': 62859, 'completion_tokens': 76411, 'cache_hit_tokens': 7552}
+  [ladders] 15/52  usage={'calls': 90, 'cached': 42, 'prompt_tokens': 62859, 'completion_tokens': 76411, 'cache_hit_tokens': 7552}
+  [ladders] 20/52  usage={'calls': 90, 'cached': 47, 'prompt_tokens': 62859, 'completion_tokens': 76411, 'cache_hit_tokens': 7552}
+  [ladders] 25/52  usage={'calls': 95, 'cached': 47, 'prompt_tokens': 64857, 'completion_tokens': 77542, 'cache_hit_tokens': 8448}
+  [ladders] 30/52  usage={'calls': 100, 'cached': 47, 'prompt_tokens': 66813, 'completion_tokens': 78537, 'cache_hit_tokens': 9344}
+  [ladders] 35/52  usage={'calls': 105, 'cached': 47, 'prompt_tokens': 68828, 'completion_tokens': 79621, 'cache_hit_tokens': 10368}
+  [ladders] 40/52  usage={'calls': 110, 'cached': 47, 'prompt_tokens': 70868, 'completion_tokens': 80727, 'cache_hit_tokens': 11520}
+  [ladders] 45/52  usage={'calls': 115, 'cached': 47, 'prompt_tokens': 72911, 'completion_tokens': 82019, 'cache_hit_tokens': 12672}
+  [ladders] 50/52  usage={'calls': 120, 'cached': 47, 'prompt_tokens': 74988, 'completion_tokens': 83268, 'cache_hit_tokens': 13952}
+  [ladders] 52/52  usage={'calls': 122, 'cached': 47, 'prompt_tokens': 75862, 'completion_tokens': 83811, 'cache_hit_tokens': 14464}
+retry 2: 20 values, batch size 10
+  [ladders] 1/2  usage={'calls': 122, 'cached': 48, 'prompt_tokens': 75862, 'completion_tokens': 83811, 'cache_hit_tokens': 14464}
+  [ladders] 2/2  usage={'calls': 123, 'cached': 48, 'prompt_tokens': 76248, 'completion_tokens': 84023, 'cache_hit_tokens': 14716}
+retry 3: 10 values, batch size 5
+  [ladders] 1/2  usage={'calls': 124, 'cached': 48, 'prompt_tokens': 76585, 'completion_tokens': 84118, 'cache_hit_tokens': 14844}
+  [ladders] 2/2  usage={'calls': 125, 'cached': 48, 'prompt_tokens': 76925, 'completion_tokens': 84240, 'cache_hit_tokens': 14972}
+ladders: 4674/4674 non-empty; usage {'calls': 125, 'cached': 48, 'prompt_tokens': 76925, 'completion_tokens': 84240, 'cache_hit_tokens': 14972}

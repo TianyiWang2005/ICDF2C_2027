@@ -44,7 +44,7 @@ def _cache(tag: str) -> dict:
                 for line in f:
                     try:
                         r = json.loads(line)
-                        c[r["key"]] = r
+                        c[r["key"]] = {"output": r["output"]}  # keep only what lookups need (memory)
                     except json.JSONDecodeError:
                         pass  # truncated last line after a crash
         _caches[tag] = c
@@ -80,7 +80,7 @@ def chat(messages, tag: str, temperature=0.6, max_tokens=4096, json_mode=False, 
            "usage": {"prompt": u.prompt_tokens, "completion": u.completion_tokens,
                      "cache_hit": getattr(u, "prompt_cache_hit_tokens", 0) or 0}}
     with _lock:
-        c[key] = rec
+        c[key] = {"output": out}
         USAGE["calls"] += 1
         USAGE["prompt_tokens"] += u.prompt_tokens
         USAGE["completion_tokens"] += u.completion_tokens
