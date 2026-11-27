@@ -10,3 +10,5 @@ results/sage_v1/utility_answers.json
 data/graphs_full/*.json
 results/full/residual_per_doc.json
 results/full/utility.log
+results/full/utility.csv
+results/full/utility_answers.json
