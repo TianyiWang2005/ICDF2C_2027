@@ -5,9 +5,10 @@
 
 **第一次阅读建议的顺序**
 1. [`docs/framework.md`](docs/framework.md)：方法框架、流程图、当前进度
-2. [`docs/results_full.md`](docs/results_full.md)：**全数据集主结果**（1,266 篇）
-3. [`docs/results_analysis.md`](docs/results_analysis.md)：254 篇可行性验证的结果与各指标的详细解释
-4. 本文件：需要找某个具体文件时查阅
+2. [`docs/results_final.md`](docs/results_final.md)：**最终结果，写论文用这个**
+3. [`docs/results_full.md`](docs/results_full.md)：全数据集结果的演变过程（后处理前、发现效用问题、阶段 A）
+4. [`docs/results_analysis.md`](docs/results_analysis.md)：254 篇可行性验证的结果与各指标的详细解释
+5. 本文件：需要找某个具体文件时查阅
 
 ---
 
@@ -97,7 +98,7 @@ icdf2c_2027/
 | 目录 | 内容 |
 |---|---|
 | **`full/`** | **全数据集（1,266 篇）主结果** |
-| `full_filtered/` | 全数据集，QI 经规则过滤后的结果（阶段 A） |
+| **`full_filtered/`** | **最终结果**：全数据集，QI 经规则后处理；主表、残留率、效用（TAB-200）、高阶风险、效用汇总（`utility_summary.json`） |
 | `qi_filter/` | 过滤规则的依据（TAB 标注统计）、验证、免费检索指标对比 |
 | `sage/` | 254 篇可行性验证的结果，图在 `sage/figures/` |
 | `sage_common10/` | 254 篇的敏感性分析（ρ = 10%） |

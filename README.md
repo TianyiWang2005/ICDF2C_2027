@@ -9,9 +9,10 @@ generalisation.
 |---|---|
 | [`DIRECTORY.md`](DIRECTORY.md) | what every directory and file in this repository is |
 | [`docs/framework.md`](docs/framework.md) | method, flowchart, progress |
-| [`docs/results_full.md`](docs/results_full.md) | main results (1,266 documents) |
+| [`docs/results_final.md`](docs/results_final.md) | **final results for the paper** (1,266 documents) |
+| [`docs/results_full.md`](docs/results_full.md) | how the full-corpus results evolved |
 | [`docs/results_analysis.md`](docs/results_analysis.md) | 254-document feasibility run, metric explanations |
-| `results/full/` | main results (1,266 TAB documents) |
+| `results/full_filtered/` | final result files |
 | `run_all.sh` | reproduce everything |
 
 ## Pipeline

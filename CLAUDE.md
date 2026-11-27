@@ -73,11 +73,10 @@ Tianyi 自己的 EMNLP 2027 论文做的是：对合成 RAG 数据的推断攻�
 2. 拿到学弟的 SAGE 改写结果和 QI 抽取格式，接上 `load_jsonl`，在 SAGE 输出上跑主实验。
 3. 写论文初稿（LNICST 模板）。
 
-## 当前状态（2026-11-25 更新，以本节为准）
-- 仓库每个目录和文件的说明见 `DIRECTORY.md`。全数据集（1266 篇）主结果在 `results/full/`，分析见 `docs/results_full.md`；旧结果在 `results/archive/`。
-- **2026-11-27 重要发现**：在 TAB-200 题库上 ours 比 SAGE 低 7–10 分（显著），原因是 QI 抽取把公共机构、法律程序等非识别性案情内容当成 QI 泛化掉。下一步是提高 QI 抽取精确率（见 `docs/results_full.md` 第 7 节）。
-- 已在 254 篇（TAB dev+test）上完成可行性验证，整条流程由本仓库实现：SAGE（ECHR 版，DeepSeek）→ LLM QI 抽取 → 风险图迭代泛化 → 评估。框架见 `docs/framework.md`，结果见 `docs/results_analysis.md`。
-- 方法定义调整：主方法 = 风险图 + 迭代贪心覆盖 + 最稀有优先（`choice="rarest"`）；风险加权度 / 考虑代价 / 前瞻 / 介数中心性为消融。QI 识别改为 LLM few-shot（不微调）。泛化层级 = 规则 + LLM 离线生成。占位符不计入组合；值做规范化。
-- 关键数字（k₀=5）：SAGE 两两风险 97.2% → ours 0%（order 3 三元组也 0%）；信息损失 ours o2 68.2% / o3 73.6%；原文 QI 残留 SAGE 4.29% → ours 0.73%；RAG 问答相对 SAGE 无显著下降。
-- 待办：人工标注 κ（`data/human_eval/`）；是否扩大到 1266 篇；论文写作。
-- 运行方式：`run_all.sh`；LLM 缓存在 `data/llm_cache/*.jsonl.gz`，解压到同名 `.jsonl` 后重跑零成本。
+## 当前状态（2026-11-27 更新，以本节为准）
+- **实验已完成，最终结果见 `docs/results_final.md`（写论文用）**，数据在 `results/full_filtered/`。仓库说明见 `DIRECTORY.md`。
+- 最终设置：TAB 1266 篇（全部减 2 篇 few-shot 示例）；SAGE 由 DeepSeek 复现；QI = 2-shot LLM 抽取 + 按 TAB 指南的规则后处理（`pipeline/qi_filter.py`，过滤不含专名的机构、法律程序、公职角色）；主方法 = 风险图 + 迭代贪心覆盖 + 最稀有优先，order 2 / 3；效用用学弟的 TAB-200 题库。
+- 关键数字（k₀=5）：SAGE 两两风险 97.3% → ours 0%（o3 三元组 0%，四元组 8.8%）；单值方法 94.8%、随机同步数 90.1%；信息损失 o2 58.8% / o3 70.7%；原文 QI 残留 3.07% → 0.69%；RAG 问答 SAGE 49.2 → ours 44.6（−4.7，CI [−6.8, −2.5]），与"全部抹掉"相同；后处理使效用损失减半（+5.0）。
+- 选点规则（最稀有 / 加权度 / 代价 / 介数）差距 ≤ 2 个百分点：论文贡献放在"风险图 + 迭代覆盖"框架上。
+- 待办：人工标注 κ（`data/human_eval/`）；论文写作（LNICST）。DeepSeek 余额约 18 元，非必要不再调用 API。
+- 运行方式：`run_all.sh`；LLM 缓存在 `data/llm_cache/*.jsonl.gz`。

@@ -1,0 +1,13 @@
+  [residual ours_o3_k5] 126/1266  usage={'calls': 106, 'cached': 20, 'prompt_tokens': 132249, 'completion_tokens': 17286, 'cache_hit_tokens': 18688}
+  [residual ours_o3_k5] 252/1266  usage={'calls': 192, 'cached': 60, 'prompt_tokens': 281980, 'completion_tokens': 41764, 'cache_hit_tokens': 36096}
+  [residual ours_o3_k5] 378/1266  usage={'calls': 295, 'cached': 83, 'prompt_tokens': 411857, 'completion_tokens': 58945, 'cache_hit_tokens': 53504}
+  [residual ours_o3_k5] 504/1266  usage={'calls': 393, 'cached': 111, 'prompt_tokens': 547225, 'completion_tokens': 77827, 'cache_hit_tokens': 76672}
+  [residual ours_o3_k5] 630/1266  usage={'calls': 500, 'cached': 130, 'prompt_tokens': 722676, 'completion_tokens': 104230, 'cache_hit_tokens': 103040}
+  [residual ours_o3_k5] 756/1266  usage={'calls': 603, 'cached': 153, 'prompt_tokens': 853395, 'completion_tokens': 122333, 'cache_hit_tokens': 125568}
+  [residual ours_o3_k5] 882/1266  usage={'calls': 700, 'cached': 182, 'prompt_tokens': 979374, 'completion_tokens': 139790, 'cache_hit_tokens': 148736}
+  [residual ours_o3_k5] 1008/1266  usage={'calls': 810, 'cached': 198, 'prompt_tokens': 1177003, 'completion_tokens': 168580, 'cache_hit_tokens': 181504}
+  [residual ours_o3_k5] 1134/1266  usage={'calls': 915, 'cached': 219, 'prompt_tokens': 1317670, 'completion_tokens': 188801, 'cache_hit_tokens': 205184}
+  [residual ours_o3_k5] 1260/1266  usage={'calls': 1016, 'cached': 244, 'prompt_tokens': 1453013, 'completion_tokens': 207680, 'cache_hit_tokens': 225408}
+  [residual ours_o3_k5] 1266/1266  usage={'calls': 1022, 'cached': 244, 'prompt_tokens': 1461059, 'completion_tokens': 208678, 'cache_hit_tokens': 226560}
+{'corpus': 'ours_o3_k5', 'docs': 1266, 'original_quasi': 47629, 'residual_rate_%': 0.6886560708811859, 'docs_with_any_residual_%': 13.428120063191153, 'residual_CODE_%': 0.0, 'residual_DATETIME_%': 0.03480561066443911, 'residual_DEM_%': 7.743857036485481, 'residual_LOC_%': 0.6252442360296991, 'residual_MISC_%': 8.062015503875969, 'residual_ORG_%': 1.7395182872435326, 'residual_PERSON_%': 0.016409583196586808, 'residual_QUANTITY_%': 0.7218479307025987}
+usage {'calls': 1022, 'cached': 244, 'prompt_tokens': 1461059, 'completion_tokens': 208678, 'cache_hit_tokens': 226560} $0.58

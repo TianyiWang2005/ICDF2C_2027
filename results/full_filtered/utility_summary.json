@@ -1,0 +1,78 @@
+{
+ "score_%": {
+  "original": 79.5,
+  "sage": 49.2,
+  "ours_o3_unfiltered": 39.6,
+  "suppress_unfiltered": 42.4,
+  "ours_o3_filtered": 44.6,
+  "ours_o2_filtered": 44.6,
+  "suppress_filtered": 44.6
+ },
+ "hit@2_%": {
+  "original": 68.4,
+  "sage": 54.7,
+  "ours_o3_unfiltered": 48.9,
+  "suppress_unfiltered": 48.5,
+  "ours_o3_filtered": 51.0,
+  "ours_o2_filtered": 51.3,
+  "suppress_filtered": 50.8
+ },
+ "vs_sage": {
+  "original": [
+   30.2,
+   [
+    27.0,
+    33.7
+   ]
+  ],
+  "ours_o3_unfiltered": [
+   -9.7,
+   [
+    -12.2,
+    -7.1
+   ]
+  ],
+  "suppress_unfiltered": [
+   -6.8,
+   [
+    -9.3,
+    -4.3
+   ]
+  ],
+  "ours_o3_filtered": [
+   -4.7,
+   [
+    -6.8,
+    -2.5
+   ]
+  ],
+  "ours_o2_filtered": [
+   -4.7,
+   [
+    -7.0,
+    -2.5
+   ]
+  ],
+  "suppress_filtered": [
+   -4.7,
+   [
+    -6.9,
+    -2.4
+   ]
+  ]
+ },
+ "filtered_vs_unfiltered_o3": [
+  5.0,
+  [
+   3.0,
+   7.0
+  ]
+ ],
+ "o3_filtered_vs_suppress_filtered": [
+  0.0,
+  [
+   -1.1,
+   1.2
+  ]
+ ]
+}
