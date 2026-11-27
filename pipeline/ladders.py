@@ -62,12 +62,13 @@ def main():
     res = {}
     for r in llm.pmap(run_batch, batches, workers=a.workers, desc="ladders"):
         res.update(r)
-    for attempt in range(1, 4):  # retry failed values in small batches (a failed JSON reply empties a whole batch)
+    for attempt in range(1, 7):  # retry failed values in ever smaller batches (a bad reply empties a whole batch)
         miss = [tuple(k.split("\t", 1)) for k, v in res.items() if not v]
         if not miss:
             break
-        print(f"retry {attempt}: {len(miss)} values")
-        small = [miss[i:i + 10] for i in range(0, len(miss), 10)]
+        size = {1: 10, 2: 10, 3: 5, 4: 5}.get(attempt, 1)
+        print(f"retry {attempt}: {len(miss)} values, batch size {size}")
+        small = [miss[i:i + size] for i in range(0, len(miss), size)]
         for r in llm.pmap(lambda b: run_batch(b, f"retry{attempt}"), small, workers=a.workers, desc="ladders"):
             res.update({k: v for k, v in r.items() if v})
     os.makedirs(os.path.dirname(a.out), exist_ok=True)

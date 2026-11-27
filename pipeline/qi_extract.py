@@ -93,8 +93,27 @@ def tag(text, examples):
     try:
         raw = llm.parse_json(out).get("entities", [])
     except Exception:
-        raw = []
+        raw = salvage_entities(out)
     return align(text, raw), raw
+
+
+_ENTITY_OBJ = re.compile(r'\{\s*"type"\s*:\s*"[^"]*"\s*,\s*"identifier"\s*:\s*"[^"]*"\s*,\s*"mentions"\s*:\s*\[[^\]]*\]\s*\}')
+
+
+def salvage_entities(out: str) -> list:
+    """Recover every complete entity object from a truncated / malformed JSON reply (e.g. when the model gets
+    stuck repeating one entity until max_tokens). Duplicates are removed."""
+    ents, seen = [], set()
+    for m in _ENTITY_OBJ.finditer(out):
+        try:
+            e = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            continue
+        k = json.dumps(e, sort_keys=True)
+        if k not in seen:
+            seen.add(k)
+            ents.append(e)
+    return ents
 
 
 # ----------------------------------------------------------------- validation metrics (TAB-style)
